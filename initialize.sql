@@ -56,3 +56,42 @@ CREATE TABLE studentSupplies (
     stuSuppTime TIME NOT NULL,
     PRIMARY KEY (resourceType, department)
 );
+
+-- MM RELATIONSHIPS
+
+CREATE TABLE studentSuppliesRecord (
+    studentID VARCHAR(50) NOT NULL,
+    resourceType VARCHAR(50) NOT NULL,
+    stuDepartment VARCHAR(50) NOT NULL,
+    stuSuppDate DATE NOT NULL,
+    stuSuppTime TIME NOT NULL
+);
+
+CREATE TABLE tutoringRecord (
+    studentID INTEGER NOT NULL,
+    sessionID INTEGER NOT NULL,
+    tutoringLocation VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE fundingRecord (
+    studentID INTEGER NOT NULL,
+    fundingType VARCHAR(50) NOT NULL,
+    FUNDINGLocation VARCHAR(50) NOT NULL,
+    fundingDate DATE NOT NULL,
+    fundingTime TIME NOT NULL
+);
+
+CREATE TABLE acaSuppRecord (
+    studentID INTEGER NOT NULL,
+    acaSuppType VARCHAR(50) NOT NULL,
+    acaSuppLocation VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE healthRecord (
+    studentID INTEGER NOT NULL,
+    healthCategory VARCHAR(50) NOT NULL,
+    healthLocation VARCHAR(50) NOT NULL,
+    healthDate DATE NOT NULL,
+    healthTime TIME NOT NULL
+);
+
