@@ -221,7 +221,7 @@ CREATE TABLE academic_support_raw (
 .import academic_support.csv academic_support_raw
 
 DELETE FROM academic_support_raw
-WHERE AcaSuppService = 'AcaSuppService';
+WHERE AcaSuppService = 'acaSuppService';
 
 DROP TABLE IF EXISTS academic_support;
 
