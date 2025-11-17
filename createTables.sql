@@ -51,10 +51,10 @@ FROM supplies_raw;
 
 
 -- ##############################################################
--- Create Tutoring Table with Updated Schema
-DROP TABLE IF EXISTS tutoring;
 
-CREATE TABLE tutoring (
+
+DROP TABLE IF EXISTS tutoring_raw;
+CREATE TABLE tutoring_raw (
     resource_type TEXT,
     subject TEXT,
     department TEXT,
@@ -66,8 +66,15 @@ CREATE TABLE tutoring (
     notes TEXT
 );
 
-CREATE TABLE tutoring_clone (
-    tutoring_id INT AUTO_INCREMENT PRIMARY KEY,
+.mode csv
+.import tutoring.csv tutoring_raw
+
+DELETE FROM tutoring_raw
+WHERE resource_type = 'ResourceType';
+
+DROP TABLE IF EXISTS tutoring;
+CREATE TABLE tutoring (
+    tutoring_id INTEGER PRIMARY KEY AUTOINCREMENT,
     resource_type VARCHAR(50) NOT NULL,
     subject VARCHAR(100) NOT NULL,
     department VARCHAR(100),
@@ -79,70 +86,16 @@ CREATE TABLE tutoring_clone (
     notes TEXT
 );
 
-INSERT INTO tutoring_clone (
-    resource_type,
-    subject,
-    department,
-    building,
-    location,
-    weekday,
-    start_time,
-    end_time,
-    notes
-)
-SELECT
-    resource_type,
-    subject,
-    department,
-    building,
-    location,
-    weekday,
-    start_time,
-    end_time,
-    notes
-FROM tutoring;
-
-DROP TABLE tutoring;
-
-ALTER TABLE tutoring_clone RENAME TO tutoring;
-
-ALTER TABLE tutoring RENAME TO tutoring_old;
-
-CREATE TABLE tutoring (
-    tutoring_id   INTEGER PRIMARY KEY AUTOINCREMENT,
-    resource_type VARCHAR(50) NOT NULL,
-    subject       VARCHAR(100) NOT NULL,
-    department    VARCHAR(100),
-    building      VARCHAR(50),
-    location      VARCHAR(100),
-    weekday       VARCHAR(50),
-    start_time    TIME,
-    end_time      TIME,
-    notes         TEXT
-);
-
 INSERT INTO tutoring (
-    resource_type,
-    subject,
-    department,
-    building,
-    location,
-    weekday,
-    start_time,
-    end_time,
-    notes
+    resource_type, subject, department, building,
+    location, weekday, start_time, end_time, notes
 )
 SELECT
-    resource_type,
-    subject,
-    department,
-    building,
-    location,
-    weekday,
-    start_time,
-    end_time,
-    notes
-FROM tutoring_old;
+    resource_type, subject, department, building,
+    location, weekday, start_time, end_time, notes
+FROM tutoring_raw;
+
+DROP TABLE tutoring_raw;
 
 -- ##############################################################
 
