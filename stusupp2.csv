@@ -1,0 +1,49 @@
+ResourceType,Item,Department,Building,Location,Limit,Weekday,StartTime,EndTime,Notes
+Free Printing,Printing,Monarch Center,KL 127,Kolligian Library,3 pages only BW,Monday-Friday,9:00 AM,5:00 PM,
+Food,Snack,Monarch Center,KL 127,Kolligian Library,1 snack or drink,Monday-Friday,9:00 AM,5:00 PM,
+Food,Drink,Monarch Center,KL 127,Kolligian Library,1 snack or drink,Monday-Friday,9:00 AM,5:00 PM,
+School Supplies,Scantrons,Monarch Center,KL 127,Kolligian Library,N/A,Monday-Friday,9:00 AM,5:00 PM,
+School Supplies,Post-its,Monarch Center,KL 127,Kolligian Library,N/A,Monday-Friday,9:00 AM,5:00 PM,
+School Supplies,Highlighters,Monarch Center,KL 127,Kolligian Library,N/A,Monday-Friday,9:00 AM,5:00 PM,
+School Supplies,Erasers,Monarch Center,KL 127,Kolligian Library,N/A,Monday-Friday,9:00 AM,5:00 PM,
+School Supplies,Pencil Bags,Monarch Center,KL 127,Kolligian Library,N/A,Monday-Friday,9:00 AM,5:00 PM,
+School Supplies,Blue Books,Monarch Center,KL 127,Kolligian Library,N/A,Monday-Friday,9:00 AM,5:00 PM,
+School Supplies,Rulers,Monarch Center,KL 127,Kolligian Library,N/A,Monday-Friday,9:00 AM,5:00 PM,
+School Supplies,Staplers,Monarch Center,KL 127,Kolligian Library,N/A,Monday-Friday,9:00 AM,5:00 PM,
+School Supplies,Pens,Monarch Center,KL 127,Kolligian Library,N/A,Monday-Friday,9:00 AM,5:00 PM,
+School Supplies,Folders,Monarch Center,KL 127,Kolligian Library,N/A,Monday-Friday,9:00 AM,5:00 PM,
+School Supplies,Paper Clips,Monarch Center,KL 127,Kolligian Library,N/A,Monday-Friday,9:00 AM,5:00 PM,
+School Supplies,Color Paper,Monarch Center,KL 127,Kolligian Library,N/A,Monday-Friday,9:00 AM,5:00 PM,
+School Supplies,Calculator,Monarch Center,KL 127,Kolligian Library,1,Monday-Friday,9:00 AM,5:00 PM,Borrow
+Other Supplies,Condoms,Monarch Center,KL 127,Kolligian Library,2,Monday-Friday,9:00 AM,5:00 PM,
+Other Supplies,Ear Plugs,Monarch Center,KL 127,Kolligian Library,2,Monday-Friday,9:00 AM,5:00 PM,
+Hygeine,Tampons,Monarch Center,KL 127,Kolligian Library,2,Monday-Friday,9:00 AM,5:00 PM,
+Hygeine,Pads,Monarch Center,KL 127,Kolligian Library,2,Monday-Friday,9:00 AM,5:00 PM,
+Free Printing,Printing,Social Justice Center,KL 127,Kolligian Library,Up to 20 pages with color,Monday-Friday,9:00 AM,5:00 PM,
+Food,Snack,Social Justice Center,KL 127,Kolligian Library,2,Monday-Friday,9:00 AM,5:00 PM,
+Other Supplies,Professional Clothing,Basic Needs Center,,,,,,,Need to make appointment
+Other Supplies,Condoms,Basic Needs Center,,,2,,,,
+Other Supplies,Ear Plugs,Basic Needs Center,,,2,,,,
+Hygeine,Tampons,Basic Needs Center,,,2,,,,
+Hygeine,Pads,Basic Needs Center,,,2,,,,
+Food,Snack,Bobcat Pantry,TC 131,Terrace Center,"1 small, 4 large",,12:00 PM,5:30 PM,Need to make appointment
+Food,Fruit,Bobcat Pantry,TC 131,Terrace Center,N/A,,12:00 PM,5:30 PM,Need to make appointment
+Food,Vegetable,Bobcat Pantry,TC 131,Terrace Center,N/A,,12:00 PM,5:30 PM,Need to make appointment
+Other Supplies,Condoms,Bobcat Pantry,TC 131,Terrace Center,2,,12:00 PM,5:30 PM,Need to make appointment
+Hygeine,Pads,Bobcat Pantry,TC 131,Terrace Center,2,,12:00 PM,5:30 PM,Need to make appointment
+Hygeine,Tampons,Bobcat Pantry,TC 131,Terrace Center,2,,12:00 PM,5:30 PM,Need to make appointment
+Hygeine ,Soap,Bobcat Pantry,TC 131,Terrace Center,1,,12:00 PM,5:30 PM,Need to make appointment
+Hygeine ,Toothbrush,Bobcat Pantry,TC 131,Terrace Center,1,,12:00 PM,5:30 PM,Need to make appointment
+Hygeine ,Toothpaste,Bobcat Pantry,TC 131,Terrace Center,1,,12:00 PM,5:30 PM,Need to make appointment
+Hygeine ,Deodorant,Bobcat Pantry,TC 131,Terrace Center,1,,12:00 PM,5:30 PM,Need to make appointment
+Food,Snack,Office of Student Involvement,Granite Pass 163,Granite,,Monday-Friday,8:00 AM,5:00 PM,
+School Supplies,CSET Books,ASUCM Office,Granite Pass 174,Granite,,Monday-Friday,8:00 AM,5:00 PM,
+School Supplies,LSAT Books,ASUCM Office,Granite Pass 174,Granite,,Monday-Friday,8:00 AM,5:00 PM,
+School Supplies,GRE Books,ASUCM Office,Granite Pass 174,Granite,,Monday-Friday,8:00 AM,5:00 PM,
+School Supplies,CBEST Books,ASUCM Office,Granite Pass 174,Granite,,Monday-Friday,8:00 AM,5:00 PM,
+School Supplies,Scantrons,ASUCM Office,Granite Pass 174,Granite,,Monday-Friday,8:00 AM,5:00 PM,
+School Supplies,Index Cards,ASUCM Office,Granite Pass 174,Granite,,Monday-Friday,8:00 AM,5:00 PM,
+School Supplies,Calculator,ASUCM Office,Granite Pass 174,Granite,,Monday-Friday,8:00 AM,5:00 PM,
+School Supplies,Portable Chargers,ASUCM Office,Granite Pass 174,Granite,,Monday-Friday,8:00 AM,5:00 PM,
+School Supplies,Stickers,ASUCM Office,Granite Pass 174,Granite,,Monday-Friday,8:00 AM,5:00 PM,
+Food,Snack,ASUCM Office,Granite Pass 174,Granite,,Wednesday,10:00 AM,5:00 PM,
