@@ -1,4 +1,3 @@
-
 -- Create Student Supplies
 DROP TABLE IF EXISTS supplies_raw;
 
@@ -97,22 +96,6 @@ FROM tutoring_raw;
 
 DROP TABLE tutoring_raw;
 
--- ##############################################################
-
--- DROP TABLE IF EXISTS health_services;
-
--- CREATE TABLE health_services (
---     health_id INTEGER PRIMARY KEY AUTOINCREMENT,
---     health_category VARCHAR(100) NOT NULL,
---     service VARCHAR(255) NOT NULL,
---     location VARCHAR(255),
---     weekday VARCHAR(50),
---     start_time TEXT,   -- store HH:MM
---     end_time TEXT,     -- store HH:MM
---     link VARCHAR(255)
--- );
-
--- DROP TABLE IF EXISTS health_services;
 DROP TABLE IF EXISTS health_services_raw;
 
 CREATE TABLE health_services_raw (

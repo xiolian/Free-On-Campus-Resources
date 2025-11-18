@@ -3,9 +3,9 @@
 -- 3 tables - complex [AT LEAST]
 -- 20 Queries 
 
--- Simple Queries + Single Table: 6
+-- Simple Queries + Single Table: 7
 -- Join Queries: 7
--- Complex Join Queries: 4
+-- Complex Join Queries: 6
 
 
 
@@ -51,6 +51,10 @@ FROM tutoring
 GROUP BY subject
 ORDER BY subject;
 
+-- Find how many want scholarship (7)
+SELECT COUNT(*) AS number_wanting_scholarship
+FROM FundingRecord
+WHERE funding_type = 'Scholarships';
 
 
 
@@ -218,14 +222,17 @@ SELECT
 FROM student_supplies s, tutoring t
 WHERE s.location = t.location;
 
--- Find students who have all resources (7)
-SELECT s.studentID, s.studentName
-FROM Student s
-WHERE s.studentID IN (SELECT studentID FROM TutoringRecord)
-AND s.studentID IN (SELECT studentID FROM StudentSuppliesRecord)
-AND s.studentID IN (SELECT studentID FROM HealthRecord)
-AND s.studentID IN (SELECT studentID FROM AdvisorRecord)
-AND s.studentID IN (SELECT studentID FROM FundingRecord);
+-- Find Student, tutoring subject, and advisor based on advisors that are affiliated with CSE (7)
+SELECT 
+    s.studentID,
+    s.studentName,
+    t.subject AS tutoring_subject,
+    a.name AS advisor_name,
+    a.affiliation AS advisor_affiliation
+FROM Student s, TutoringRecord t, AdvisorRecord a
+WHERE s.studentID = t.studentID
+AND s.studentID = a.studentID
+AND a.affiliation LIKE '%CSE%';
 
 
 
@@ -360,3 +367,23 @@ WHERE mr.studentID = s.studentID
 GROUP BY s.studentID, s.studentName
 HAVING total_monday_resources > 0
 ORDER BY total_monday_resources DESC, s.studentID;
+
+-- Find students who want resources available on Wednesdays (5)
+SELECT s.studentID, s.studentName, asr.service_name AS AcaSuppName, t.subject AS TutoringSubject, h.service AS HealthService
+FROM Student s, AcademicSupportRecord asr, TutoringRecord t, HealthRecord h
+WHERE s.studentID = asr.studentID
+AND s.studentID = t.studentID
+AND s.studentID = h.studentID
+AND (asr.weekday LIKE '%Wednesday%' OR asr.weekday LIKE 'Monday-Friday%')
+AND (t.weekday LIKE '%Wednesday%' OR t.weekday LIKE 'Monday-Friday%')
+AND (h.weekday LIKE '%Wednesday%' OR h.weekday LIKE 'Monday-Friday%')
+GROUP BY s.studentID, s.studentName, asr.service_name, t.subject, h.service;
+
+-- Find students who have all resources (6)
+SELECT s.studentID, s.studentName
+FROM Student s
+WHERE s.studentID IN (SELECT studentID FROM TutoringRecord)
+AND s.studentID IN (SELECT studentID FROM StudentSuppliesRecord)
+AND s.studentID IN (SELECT studentID FROM HealthRecord)
+AND s.studentID IN (SELECT studentID FROM AdvisorRecord)
+AND s.studentID IN (SELECT studentID FROM FundingRecord);
