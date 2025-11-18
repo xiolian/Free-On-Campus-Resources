@@ -265,6 +265,7 @@ FROM academic_support_raw;
 DROP TABLE IF EXISTS funding_raw;
 CREATE TABLE funding_raw (
     FundingType TEXT,
+    FundingName TEXT,
     Department  TEXT,
     Building    TEXT,
     Location    TEXT,
@@ -275,7 +276,7 @@ CREATE TABLE funding_raw (
 );
 
 .mode csv
-.import funding.csv funding_raw
+.import fundingnew.csv funding_raw
 
 DELETE FROM funding_raw
 WHERE FundingType = 'FundingType';
@@ -284,6 +285,7 @@ DROP TABLE IF EXISTS funding;
 CREATE TABLE funding (
     funding_id INTEGER PRIMARY KEY AUTOINCREMENT,
     funding_type VARCHAR(100) NOT NULL,
+    funding_name VARCHAR(100) NOT NULL,
     department VARCHAR(100),
     building VARCHAR(50),
     location VARCHAR(255),
@@ -295,6 +297,7 @@ CREATE TABLE funding (
 
 INSERT INTO funding (
     funding_type,
+    funding_name,
     department,
     building,
     location,
@@ -305,6 +308,7 @@ INSERT INTO funding (
 )
 SELECT
     FundingType,
+    FundingName,
     Department,
     Building,
     Location,
@@ -321,3 +325,158 @@ DROP TABLE IF EXISTS funding_raw;
 DROP TABLE IF EXISTS supplies_raw;
 DROP TABLE IF EXISTS tutoring_old;
 DROP TABLE IF EXISTS health_service_raw;
+
+
+-- ==============================================================
+
+DROP TABLE IF EXISTS Student;
+
+CREATE TABLE Student (
+    studentID   VARCHAR(50) PRIMARY KEY,
+    studentName VARCHAR(100) NOT NULL
+);
+
+.mode csv
+.import Student.csv Student
+
+DELETE FROM Student
+WHERE studentID = 'studentID';
+
+DROP TABLE IF EXISTS TutoringRecord;
+
+CREATE TABLE TutoringRecord (
+    studentID   VARCHAR(50) NOT NULL,
+    studentName VARCHAR(100) NOT NULL,
+    tutoring_id INTEGER NOT NULL,
+    resource_type VARCHAR(50) NOT NULL,
+    subject      VARCHAR(100) NOT NULL,
+    department   VARCHAR(100),
+    building     VARCHAR(50),
+    location     VARCHAR(100),
+    weekday      VARCHAR(50),
+    start_time   TEXT,
+    end_time     TEXT
+);
+
+.mode csv
+.import tutoringrec.csv TutoringRecord
+
+DELETE FROM TutoringRecord
+WHERE studentID = 'studentID';
+
+-- ==============================================================
+
+DROP TABLE IF EXISTS StudentSuppliesRecord;
+
+CREATE TABLE StudentSuppliesRecord (
+    studentID    VARCHAR(50) NOT NULL,
+    studentName  VARCHAR(100) NOT NULL,
+    supply_id    INTEGER NOT NULL,
+    resource_type VARCHAR(50) NOT NULL,
+    item         VARCHAR(100) NOT NULL,
+    department    VARCHAR(100),
+    building     VARCHAR(50),
+    location     VARCHAR(100),
+    weekday      VARCHAR(50),
+    start_time   TEXT,
+    end_time     TEXT
+);
+
+.mode csv
+.import stsupprec.csv StudentSuppliesRecord
+
+DELETE FROM StudentSuppliesRecord
+WHERE studentID = 'studentID';
+
+DROP TABLE IF EXISTS HealthRecord;
+
+CREATE TABLE HealthRecord (
+    studentID    VARCHAR(50) NOT NULL,
+    studentName  VARCHAR(100) NOT NULL,
+    health_id    INTEGER NOT NULL,
+    health_category VARCHAR(100) NOT NULL,
+    service      VARCHAR(255) NOT NULL,
+    location     VARCHAR(255),
+    weekday      VARCHAR(50),
+    start_time   TEXT,
+    end_time     TEXT,
+    link        VARCHAR(255)
+);
+
+.mode csv
+.import healthrec.csv HealthRecord
+
+DELETE FROM HealthRecord
+WHERE studentID = 'studentID';
+
+-- ==============================================================
+
+DROP TABLE IF EXISTS AcademicSupportRecord;
+
+CREATE TABLE AcademicSupportRecord (
+    studentID     VARCHAR(50) NOT NULL,
+    studentName   VARCHAR(100) NOT NULL,
+    support_id    INTEGER NOT NULL,
+    aca_supp_service VARCHAR(100) NOT NULL,
+    service_name  VARCHAR(255) NOT NULL,
+    department    VARCHAR(100),
+    building      VARCHAR(50),
+    location      VARCHAR(255),
+    weekday       VARCHAR(50),
+    start_time    TEXT,
+    end_time      TEXT,
+    link         VARCHAR(255)
+);
+
+.mode csv
+.import acaSuppRecord.csv AcademicSupportRecord
+
+DELETE FROM AcademicSupportRecord
+WHERE studentID = 'studentID';
+
+-- ==============================================================
+
+DROP TABLE IF EXISTS AdvisorRecord;
+
+CREATE TABLE AdvisorRecord (
+    studentID    VARCHAR(50) NOT NULL,
+    studentName  VARCHAR(100) NOT NULL,
+    advisor_id   INTEGER NOT NULL,
+    name         VARCHAR(100) NOT NULL,
+    affiliation  TEXT,
+    role         VARCHAR(100),
+    building     VARCHAR(50),
+    location     VARCHAR(255),
+    link         VARCHAR(255)
+);
+
+.mode csv
+.import AdvisorRecordNew.csv AdvisorRecord
+
+DELETE FROM AdvisorRecord
+WHERE studentID = 'studentID';
+
+-- ##############################################################
+
+DROP TABLE IF EXISTS FundingRecord;
+
+CREATE TABLE FundingRecord (
+    studentID    VARCHAR(50) NOT NULL,
+    studentName  VARCHAR(100) NOT NULL,
+    funding_id   INTEGER NOT NULL,
+    funding_type VARCHAR(100) NOT NULL,
+    funding_name VARCHAR(100) NOT NULL,
+    department   VARCHAR(100),
+    building     VARCHAR(50),
+    location     VARCHAR(255),
+    weekday      VARCHAR(50),
+    start_time   TEXT,
+    end_time     TEXT,
+    link         VARCHAR(255)
+);
+
+.mode csv
+.import fundingrecord.csv FundingRecord
+
+DELETE FROM FundingRecord
+WHERE studentID = 'studentID';
