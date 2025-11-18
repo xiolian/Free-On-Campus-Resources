@@ -198,15 +198,10 @@ FROM student_supplies stu
 WHERE stu.weekday LIKE '%Wednesday%' or stu.weekday = 'Monday-Friday';
 
 -- Resources in the same building from Academic Support & Student Supplies (5)
-SELECT
-    s.building,
-    s.location AS supplies_location,
-    s.item AS supply_item,
-    asupp.aca_supp_service,
-    asupp.service_name
+SELECT s.building, s.location AS supplies_location, s.item AS supply_item, asupp.aca_supp_service, asupp.service_name
 FROM student_supplies s, academic_support asupp
 WHERE s.building = asupp.building
-ORDER BY s.building, s.item;
+GROUP BY s.building, s.item;
 
 -- Student Supplies & Tutoring (Same Location) (6)
 SELECT
@@ -220,10 +215,11 @@ SELECT
     t.start_time as TutoringStart,
     t.end_time as TutoringEnd
 FROM student_supplies s, tutoring t
-WHERE s.location = t.location;
+WHERE s.location = t.location
+GROUP BY s.item, s.location, s.weekday, s.start_time, s.end_time, t.subject, t.weekday, t.start_time, t.end_time;
 
 -- Find Student, tutoring subject, and advisor based on advisors that are affiliated with CSE (7)
-SELECT 
+SELECT DISTINCT
     s.studentID,
     s.studentName,
     t.subject AS tutoring_subject,
@@ -253,23 +249,24 @@ SELECT
     f.funding_id
 
 FROM Student AS s, AdvisorRecord AS a, TutoringRecord AS t, StudentSuppliesRecord AS sup, HealthRecord AS h, FundingRecord AS f, AcademicSupportRecord AS asupp
-WHERE a.studentID   = s.studentID
-AND t.studentID   = s.studentID
+WHERE a.studentID = s.studentID
+AND t.studentID = s.studentID
 AND sup.studentID = s.studentID
-AND h.studentID   = s.studentID
+AND h.studentID = s.studentID
 AND asupp.studentID = s.studentID
-AND f.studentID   = s.studentID;
+AND f.studentID = s.studentID;
+
 
 -- Count of Resources Obtained by all students (2)
 SELECT
     s.studentID,
     s.studentName,
-    COUNT(DISTINCT a.advisor_id)        AS advisor_count,
-    COUNT(DISTINCT t.tutoring_id)       AS tutoring_count,
-    COUNT(DISTINCT sup.supply_id)       AS supplies_count,
-    COUNT(DISTINCT h.health_id)         AS health_count,
-    COUNT(DISTINCT asupp.support_id)    AS academic_support_count,
-    COUNT(DISTINCT f.funding_id)        AS funding_count,
+    COUNT(DISTINCT a.advisor_id) AS advisor_count,
+    COUNT(DISTINCT t.tutoring_id) AS tutoring_count,
+    COUNT(DISTINCT sup.supply_id) AS supplies_count,
+    COUNT(DISTINCT h.health_id) AS health_count,
+    COUNT(DISTINCT asupp.support_id) AS academic_support_count,
+    COUNT(DISTINCT f.funding_id) AS funding_count,
     (
       COUNT(DISTINCT a.advisor_id) +
       COUNT(DISTINCT t.tutoring_id) +
@@ -287,7 +284,6 @@ AND h.studentID   = s.studentID
 AND asupp.studentID = s.studentID
 AND f.studentID   = s.studentID
 GROUP BY s.studentID, s.studentName;
-
 
 -- Funding & Advisor for all students (3)
 SELECT
@@ -369,15 +365,14 @@ HAVING total_monday_resources > 0
 ORDER BY total_monday_resources DESC, s.studentID;
 
 -- Find students who want resources available on Wednesdays (5)
-SELECT s.studentID, s.studentName, asr.service_name AS AcaSuppName, t.subject AS TutoringSubject, h.service AS HealthService
+SELECT DISTINCT s.studentID, s.studentName, asr.service_name AS AcaSuppName, t.subject AS TutoringSubject, h.service AS HealthService
 FROM Student s, AcademicSupportRecord asr, TutoringRecord t, HealthRecord h
 WHERE s.studentID = asr.studentID
 AND s.studentID = t.studentID
 AND s.studentID = h.studentID
 AND (asr.weekday LIKE '%Wednesday%' OR asr.weekday LIKE 'Monday-Friday%')
 AND (t.weekday LIKE '%Wednesday%' OR t.weekday LIKE 'Monday-Friday%')
-AND (h.weekday LIKE '%Wednesday%' OR h.weekday LIKE 'Monday-Friday%')
-GROUP BY s.studentID, s.studentName, asr.service_name, t.subject, h.service;
+AND (h.weekday LIKE '%Wednesday%' OR h.weekday LIKE 'Monday-Friday%');
 
 -- Find students who have all resources (6)
 SELECT s.studentID, s.studentName
