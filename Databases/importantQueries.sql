@@ -24,3 +24,21 @@ AND h.studentID   = s.studentID
 AND asupp.studentID = s.studentID
 AND f.studentID   = s.studentID
 GROUP BY s.studentID, s.studentName;
+
+SELECT *
+FROM academic_advising;
+
+SELECT *
+FROM academic_support;
+
+SELECT *
+FROM funding;
+
+SELECT *
+FROM health_services;
+
+SELECT * 
+FROM student_supplies;
+
+SELECT * 
+FROM tutoring;
