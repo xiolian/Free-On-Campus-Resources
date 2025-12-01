@@ -10,10 +10,12 @@ def main():
     conn = dbc.openConnection(database)
     with conn:
         af.viewAllStudents(conn)
-    #     Q2(conn)
-    #     Q3(conn)
-    #     Q4(conn)
-    #     Q5(conn)
+        af.viewAcaSuppRecord(conn)
+        af.viewAdvisorRecord(conn)
+        af.viewFundingRecord(conn)
+        af.viewHealthRecord(conn)
+        af.viewStudentSuppliesRecord(conn)
+        af.viewTutoringRecord(conn)
 
     dbc.closeConnection(conn, database)
 

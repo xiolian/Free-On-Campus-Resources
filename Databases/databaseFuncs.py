@@ -30,6 +30,162 @@ class databaseConn:
         print("++++++++++++++++++++++++++++++++++")
 
 class adminFuncs:
+    def viewAcaSuppRecord(_conn):
+        try:
+            sql = """
+            SELECT *
+            FROM AcademicSupportRecord;
+            """
+            cur = _conn.cursor()
+            cur.execute(sql)
+            rows = cur.fetchall()
+
+            output = open('adminOutput/vAcaSuppRec.out', 'w')
+            header = "{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}\n".format("studentID", "studentName", "Support ID", "Support Service", "Service Name", "Department", "Building", "Location", "Week Day", "Start Time", "End Time", "Link")
+            output.write(header)
+            for row in rows:
+                output.write(f"{row[0]}|{row[1]}|{row[2]}|{row[3]}|{row[4]}|{row[5]}|{row[6]}|{row[7]}|{row[8]}|{row[9]}|{row[10]}|{row[11]}\n")
+            output.close()
+        except Error as e:
+            print(e)        
+
+    def viewTutoringRecord(_conn):
+        try:
+            sql = """
+            SELECT *
+            FROM TutoringRecord;
+            """
+            cur = _conn.cursor()
+            cur.execute(sql)
+            rows = cur.fetchall()
+
+            output = open('adminOutput/vTutoringRec.out', 'w')
+            header = "{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}\n".format(
+                "studentID", "studentName", "tutoring_id", "resource_type", "subject",
+                "department", "building", "location", "weekday", "start_time", "end_time"
+            )
+            output.write(header)
+
+            for row in rows:
+                output.write(
+                    f"{row[0]}|{row[1]}|{row[2]}|{row[3]}|{row[4]}|"
+                    f"{row[5]}|{row[6]}|{row[7]}|{row[8]}|{row[9]}|{row[10]}\n"
+                )
+
+            output.close()
+        except Error as e:
+            print(e)
+
+    def viewStudentSuppliesRecord(_conn):
+        try:
+            sql = """
+            SELECT *
+            FROM StudentSuppliesRecord;
+            """
+            cur = _conn.cursor()
+            cur.execute(sql)
+            rows = cur.fetchall()
+
+            output = open('adminOutput/vStudSuppRec.out', 'w')
+            header = "{}|{}|{}|{}|{}|{}|{}|{}|{}\n".format(
+                "studentID", "studentName", "supply_id", "resource_type", "item",
+                "role", "building", "location", "link"
+            )
+            output.write(header)
+
+            for row in rows:
+                output.write(
+                    f"{row[0]}|{row[1]}|{row[2]}|{row[3]}|{row[4]}|"
+                    f"{row[5]}|{row[6]}|{row[7]}|{row[8]}\n"
+                )
+
+            output.close()
+        except Error as e:
+            print(e)
+
+    def viewHealthRecord(_conn):
+        try:
+            sql = """
+            SELECT *
+            FROM HealthRecord;
+            """
+            cur = _conn.cursor()
+            cur.execute(sql)
+            rows = cur.fetchall()
+
+            output = open('adminOutput/vHealthRec.out', 'w')
+            header = "{}|{}|{}|{}|{}|{}|{}|{}|{}|{}\n".format(
+                "studentID", "studentName", "Health ID", "Health Category",
+                "Health Service", "Location",
+                "weekday", "start_time", "end_time", "link"
+            )
+            output.write(header)
+
+            for row in rows:
+                output.write(
+                    f"{row[0]}|{row[1]}|{row[2]}|{row[3]}|{row[4]}|"
+                    f"{row[5]}|{row[6]}|{row[7]}|{row[8]}|{row[9]}\n"
+                )
+
+            output.close()
+        except Error as e:
+            print(e)
+
+    def viewAdvisorRecord(_conn):
+        try:
+            sql = """
+            SELECT *
+            FROM AdvisorRecord;
+            """
+            cur = _conn.cursor()
+            cur.execute(sql)
+            rows = cur.fetchall()
+
+            output = open('adminOutput/vAdvisorRec.out', 'w')
+            header = "{}|{}|{}|{}|{}|{}|{}|{}|{}\n".format(
+                "studentID", "studentName", "Advisor ID", "Name",
+                "Affiliation", "role", "building", "location", "link"
+            )
+            output.write(header)
+
+            for row in rows:
+                output.write(
+                    f"{row[0]}|{row[1]}|{row[2]}|{row[3]}|{row[4]}|"
+                    f"{row[5]}|{row[6]}|{row[7]}|{row[8]}\n"
+                )
+
+            output.close()
+        except Error as e:
+            print(e)
+
+    def viewFundingRecord(_conn):
+        try:
+            sql = """
+            SELECT *
+            FROM FundingRecord;
+            """
+            cur = _conn.cursor()
+            cur.execute(sql)
+            rows = cur.fetchall()
+
+            output = open('adminOutput/vFundingRec.out', 'w')
+            header = "{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}\n".format(
+                "studentID", "studentName", "funding_id", "funding_type", "funding_name",
+                "department", "building", "location", "weekday", "start_time",
+                "end_time", "link"
+            )
+            output.write(header)
+
+            for row in rows:
+                output.write(
+                    f"{row[0]}|{row[1]}|{row[2]}|{row[3]}|{row[4]}|"
+                    f"{row[5]}|{row[6]}|{row[7]}|{row[8]}|{row[9]}|{row[10]}|{row[11]}\n"
+                )
+
+            output.close()
+        except Error as e:
+            print(e)
+
     def viewAllStudents(_conn):
         try:
             sql = """

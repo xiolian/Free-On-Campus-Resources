@@ -1,0 +1,492 @@
+studentID|studentName|Support ID|Support Service|Service Name|Department|Building|Location|Week Day|Start Time|End Time|Link
+U100001|Jordan Lee|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100001|Jordan Lee|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100001|Jordan Lee|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100001|Jordan Lee|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100001|Jordan Lee|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100001|Jordan Lee|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100002|Chris Thomas|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100002|Chris Thomas|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100002|Chris Thomas|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100002|Chris Thomas|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100003|Reese Jackson|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100003|Reese Jackson|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100003|Reese Jackson|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100003|Reese Jackson|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100003|Reese Jackson|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100003|Reese Jackson|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100004|Alex Brown|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100004|Alex Brown|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100004|Alex Brown|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100004|Alex Brown|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100005|Reese Lee|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100005|Reese Lee|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100005|Reese Lee|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100005|Reese Lee|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100005|Reese Lee|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100006|Skyler Lee|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100006|Skyler Lee|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100006|Skyler Lee|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100006|Skyler Lee|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100006|Skyler Lee|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100007|Skyler Nguyen|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100007|Skyler Nguyen|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100007|Skyler Nguyen|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100007|Skyler Nguyen|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100007|Skyler Nguyen|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100008|Robin Patel|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100008|Robin Patel|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100008|Robin Patel|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100008|Robin Patel|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100009|Skyler Jackson|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100009|Skyler Jackson|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100009|Skyler Jackson|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100009|Skyler Jackson|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100010|Skyler Martinez|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100010|Skyler Martinez|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100010|Skyler Martinez|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100010|Skyler Martinez|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100010|Skyler Martinez|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100010|Skyler Martinez|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100011|Jamie Davis|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100011|Jamie Davis|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100011|Jamie Davis|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100011|Jamie Davis|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100011|Jamie Davis|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100012|Jamie Harris|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100012|Jamie Harris|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100012|Jamie Harris|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100012|Jamie Harris|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100012|Jamie Harris|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100013|Robin Clark|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100013|Robin Clark|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100013|Robin Clark|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100013|Robin Clark|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100014|Devin Thomas|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100014|Devin Thomas|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100014|Devin Thomas|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100014|Devin Thomas|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100014|Devin Thomas|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100014|Devin Thomas|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100015|Alex Gonzalez|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100015|Alex Gonzalez|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100015|Alex Gonzalez|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100015|Alex Gonzalez|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100015|Alex Gonzalez|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100015|Alex Gonzalez|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100016|Riley Lee|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100016|Riley Lee|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100016|Riley Lee|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100016|Riley Lee|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100016|Riley Lee|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100017|Taylor Lopez|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100017|Taylor Lopez|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100017|Taylor Lopez|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100017|Taylor Lopez|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100018|Jordan Gonzalez|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100018|Jordan Gonzalez|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100018|Jordan Gonzalez|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100018|Jordan Gonzalez|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100019|Kai Thomas|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100019|Kai Thomas|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100019|Kai Thomas|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100019|Kai Thomas|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100020|Jamie Thomas|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100020|Jamie Thomas|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100020|Jamie Thomas|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100020|Jamie Thomas|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100021|Avery Harris|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100021|Avery Harris|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100021|Avery Harris|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100021|Avery Harris|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100021|Avery Harris|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100021|Avery Harris|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100022|Drew Patel|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100022|Drew Patel|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100022|Drew Patel|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100022|Drew Patel|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100023|Morgan Gonzalez|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100023|Morgan Gonzalez|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100023|Morgan Gonzalez|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100023|Morgan Gonzalez|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100023|Morgan Gonzalez|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100023|Morgan Gonzalez|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100024|Taylor Kim|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100024|Taylor Kim|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100024|Taylor Kim|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100024|Taylor Kim|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100025|Chris Kim|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100025|Chris Kim|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100025|Chris Kim|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100025|Chris Kim|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100026|Sam White|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100026|Sam White|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100026|Sam White|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100026|Sam White|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100026|Sam White|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100026|Sam White|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100027|Morgan Martinez|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100027|Morgan Martinez|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100027|Morgan Martinez|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100027|Morgan Martinez|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100027|Morgan Martinez|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100028|Robin Thomas|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100028|Robin Thomas|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100028|Robin Thomas|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100028|Robin Thomas|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100028|Robin Thomas|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100028|Robin Thomas|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100029|Chris Hernandez|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100029|Chris Hernandez|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100029|Chris Hernandez|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100029|Chris Hernandez|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100030|Taylor Martinez|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100030|Taylor Martinez|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100030|Taylor Martinez|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100030|Taylor Martinez|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100030|Taylor Martinez|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100031|Avery Perez|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100031|Avery Perez|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100031|Avery Perez|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100031|Avery Perez|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100032|Morgan Garcia|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100032|Morgan Garcia|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100032|Morgan Garcia|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100032|Morgan Garcia|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100033|Morgan Hernandez|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100033|Morgan Hernandez|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100033|Morgan Hernandez|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100033|Morgan Hernandez|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100033|Morgan Hernandez|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100034|Logan Kim|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100034|Logan Kim|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100034|Logan Kim|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100034|Logan Kim|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100034|Logan Kim|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100035|Sydney Lopez|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100035|Sydney Lopez|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100035|Sydney Lopez|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100035|Sydney Lopez|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100036|Riley Harris|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100036|Riley Harris|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100036|Riley Harris|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100036|Riley Harris|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100036|Riley Harris|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100036|Riley Harris|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100037|Jordan Patel|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100037|Jordan Patel|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100037|Jordan Patel|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100037|Jordan Patel|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100038|Reese Gonzalez|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100038|Reese Gonzalez|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100038|Reese Gonzalez|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100038|Reese Gonzalez|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100038|Reese Gonzalez|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100038|Reese Gonzalez|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100039|Jamie Lee|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100039|Jamie Lee|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100039|Jamie Lee|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100039|Jamie Lee|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100039|Jamie Lee|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100040|Robin Perez|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100040|Robin Perez|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100040|Robin Perez|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100040|Robin Perez|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100040|Robin Perez|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100041|Jamie Perez|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100041|Jamie Perez|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100041|Jamie Perez|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100041|Jamie Perez|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100041|Jamie Perez|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100042|Jordan Harris|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100042|Jordan Harris|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100042|Jordan Harris|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100042|Jordan Harris|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100042|Jordan Harris|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100043|Avery Gonzalez|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100043|Avery Gonzalez|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100043|Avery Gonzalez|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100043|Avery Gonzalez|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100043|Avery Gonzalez|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100043|Avery Gonzalez|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100044|Devin Harris|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100044|Devin Harris|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100044|Devin Harris|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100044|Devin Harris|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100044|Devin Harris|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100044|Devin Harris|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100045|Devin Davis|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100045|Devin Davis|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100045|Devin Davis|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100045|Devin Davis|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100046|Drew Hernandez|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100046|Drew Hernandez|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100046|Drew Hernandez|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100046|Drew Hernandez|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100047|Morgan Thomas|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100047|Morgan Thomas|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100047|Morgan Thomas|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100047|Morgan Thomas|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100048|Casey Wilson|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100048|Casey Wilson|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100048|Casey Wilson|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100048|Casey Wilson|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100048|Casey Wilson|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100049|Casey Clark|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100049|Casey Clark|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100049|Casey Clark|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100049|Casey Clark|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100049|Casey Clark|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100049|Casey Clark|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100050|Devin Martinez|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100050|Devin Martinez|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100050|Devin Martinez|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100050|Devin Martinez|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100050|Devin Martinez|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100050|Devin Martinez|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100051|Kai Davis|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100051|Kai Davis|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100051|Kai Davis|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100051|Kai Davis|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100051|Kai Davis|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100052|Drew Lee|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100052|Drew Lee|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100052|Drew Lee|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100052|Drew Lee|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100052|Drew Lee|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100053|Reese Garcia|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100053|Reese Garcia|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100053|Reese Garcia|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100053|Reese Garcia|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100053|Reese Garcia|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100053|Reese Garcia|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100054|Avery Lee|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100054|Avery Lee|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100054|Avery Lee|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100054|Avery Lee|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100054|Avery Lee|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100054|Avery Lee|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100055|Drew Nguyen|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100055|Drew Nguyen|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100055|Drew Nguyen|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100055|Drew Nguyen|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100055|Drew Nguyen|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100055|Drew Nguyen|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100056|Logan Wilson|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100056|Logan Wilson|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100056|Logan Wilson|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100056|Logan Wilson|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100056|Logan Wilson|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100057|Skyler Harris|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100057|Skyler Harris|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100057|Skyler Harris|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100057|Skyler Harris|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100058|Riley Gonzalez|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100058|Riley Gonzalez|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100058|Riley Gonzalez|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100058|Riley Gonzalez|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100058|Riley Gonzalez|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100058|Riley Gonzalez|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100059|Skyler Thomas|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100059|Skyler Thomas|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100059|Skyler Thomas|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100059|Skyler Thomas|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100060|Taylor White|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100060|Taylor White|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100060|Taylor White|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100060|Taylor White|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100061|Sam Jackson|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100061|Sam Jackson|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100061|Sam Jackson|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100061|Sam Jackson|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100062|Casey Hernandez|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100062|Casey Hernandez|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100062|Casey Hernandez|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100062|Casey Hernandez|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100062|Casey Hernandez|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100063|Chris Perez|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100063|Chris Perez|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100063|Chris Perez|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100063|Chris Perez|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100063|Chris Perez|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100064|Casey Patel|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100064|Casey Patel|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100064|Casey Patel|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100064|Casey Patel|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100064|Casey Patel|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100065|Logan Gonzalez|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100065|Logan Gonzalez|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100065|Logan Gonzalez|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100065|Logan Gonzalez|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100066|Sam Garcia|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100066|Sam Garcia|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100066|Sam Garcia|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100066|Sam Garcia|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100066|Sam Garcia|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100067|Chris Nguyen|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100067|Chris Nguyen|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100067|Chris Nguyen|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100067|Chris Nguyen|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100068|Skyler Anderson|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100068|Skyler Anderson|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100068|Skyler Anderson|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100068|Skyler Anderson|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100068|Skyler Anderson|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100069|Alex Patel|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100069|Alex Patel|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100069|Alex Patel|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100069|Alex Patel|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100069|Alex Patel|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100069|Alex Patel|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100070|Cameron Patel|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100070|Cameron Patel|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100070|Cameron Patel|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100070|Cameron Patel|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100070|Cameron Patel|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100070|Cameron Patel|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100071|Morgan Anderson|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100071|Morgan Anderson|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100071|Morgan Anderson|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100071|Morgan Anderson|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100071|Morgan Anderson|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100071|Morgan Anderson|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100072|Jamie Wilson|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100072|Jamie Wilson|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100072|Jamie Wilson|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100072|Jamie Wilson|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100072|Jamie Wilson|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100072|Jamie Wilson|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100073|Skyler Brown|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100073|Skyler Brown|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100073|Skyler Brown|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100073|Skyler Brown|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100073|Skyler Brown|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100074|Quinn Davis|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100074|Quinn Davis|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100074|Quinn Davis|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100074|Quinn Davis|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100074|Quinn Davis|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100074|Quinn Davis|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100075|Taylor Perez|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100075|Taylor Perez|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100075|Taylor Perez|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100075|Taylor Perez|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100075|Taylor Perez|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100076|Cameron Harris|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100076|Cameron Harris|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100076|Cameron Harris|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100076|Cameron Harris|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100076|Cameron Harris|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100076|Cameron Harris|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100077|Kai Patel|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100077|Kai Patel|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100077|Kai Patel|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100077|Kai Patel|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100077|Kai Patel|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100077|Kai Patel|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100078|Casey Lee|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100078|Casey Lee|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100078|Casey Lee|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100078|Casey Lee|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100078|Casey Lee|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100079|Avery Davis|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100079|Avery Davis|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100079|Avery Davis|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100079|Avery Davis|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100079|Avery Davis|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100079|Avery Davis|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100080|Riley Lopez|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100080|Riley Lopez|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100080|Riley Lopez|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100080|Riley Lopez|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100080|Riley Lopez|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100080|Riley Lopez|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100081|Robin Gonzalez|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100081|Robin Gonzalez|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100081|Robin Gonzalez|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100081|Robin Gonzalez|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100081|Robin Gonzalez|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100082|Cameron Lopez|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100082|Cameron Lopez|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100082|Cameron Lopez|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100082|Cameron Lopez|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100083|Taylor Patel|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100083|Taylor Patel|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100083|Taylor Patel|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100083|Taylor Patel|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100084|Robin Harris|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100084|Robin Harris|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100084|Robin Harris|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100084|Robin Harris|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100085|Robin Kim|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100085|Robin Kim|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100085|Robin Kim|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100085|Robin Kim|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100086|Alex Nguyen|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100086|Alex Nguyen|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100086|Alex Nguyen|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100086|Alex Nguyen|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100087|Morgan Harris|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100087|Morgan Harris|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100087|Morgan Harris|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100087|Morgan Harris|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100088|Casey Anderson|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100088|Casey Anderson|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100088|Casey Anderson|6|Student Accessibility Services|Communication Access||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100088|Casey Anderson|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100088|Casey Anderson|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100089|Skyler White|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100089|Skyler White|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100089|Skyler White|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100089|Skyler White|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100089|Skyler White|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100089|Skyler White|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100090|Alex Anderson|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100090|Alex Anderson|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100090|Alex Anderson|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100090|Alex Anderson|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100090|Alex Anderson|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100091|Riley Brown|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100091|Riley Brown|9|Student Accessibility Services|Transcription Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100091|Riley Brown|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100091|Riley Brown|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100091|Riley Brown|8|Student Accessibility Services|Proctoring Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100091|Riley Brown|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100092|Sam Brown|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100092|Sam Brown|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100092|Sam Brown|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100092|Sam Brown|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100093|Taylor Clark|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100093|Taylor Clark|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100093|Taylor Clark|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100093|Taylor Clark|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100093|Taylor Clark|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100094|Jordan Jackson|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100094|Jordan Jackson|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100094|Jordan Jackson|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100094|Jordan Jackson|14|Undocumented Student Services|Internship Opportunities|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/academic-support/internship-opportunities
+U100095|Jamie Clark|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100095|Jamie Clark|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100095|Jamie Clark|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100095|Jamie Clark|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100096|Kai Brown|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100096|Kai Brown|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100096|Kai Brown|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100096|Kai Brown|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100097|Drew Kim|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100097|Drew Kim|4|Student Accessibility Services|Parking and Campus Transportation Needs||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100097|Drew Kim|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100097|Drew Kim|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100097|Drew Kim|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100098|Logan Thomas|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100098|Logan Thomas|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100098|Logan Thomas|7|Student Accessibility Services|Mobility Assistance||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100098|Logan Thomas|10|Student Accessibility Services|Alternative Media Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100099|Logan Martinez|2|Student Accessibility Services|Note-Taking Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100099|Logan Martinez|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100099|Logan Martinez|1|Student Accessibility Services|Exam Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100099|Logan Martinez|3|Student Accessibility Services|Transportation Services||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100100|Kai Garcia|12|Student Accessibility Services|Housing Accommodations||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100100|Kai Garcia|13|Undocumented Student Services|Off-Campus Housing|Monarch Center|KL 127|Kolligian Library|Monday-Friday|9:00 AM|5:00 PM|https://undoc.ucmerced.edu/community-resources/campus-housing
+U100100|Kai Garcia|5|Student Accessibility Services|Facilities Outages and Emergencies||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources
+U100100|Kai Garcia|11|Student Accessibility Services|Pregnancy and Parenting||ACS 140|Arts and Computational Sciences|Monday-Friday|8:00 AM|5:00 PM|https://access.ucmerced.edu/student-resources

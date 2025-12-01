@@ -1,0 +1,501 @@
+studentID|studentName|supply_id|resource_type|item|role|building|location|link
+U100001|Jordan Lee|8|School Supplies|Pencil Bags|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100001|Jordan Lee|2|Food|Snack|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100001|Jordan Lee|18|Other Supplies|Ear Plugs|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100001|Jordan Lee|16|School Supplies|Calculator|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100001|Jordan Lee|15|School Supplies|Color Paper|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100001|Jordan Lee|9|School Supplies|Blue Books|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100002|Chris Thomas|7|School Supplies|Erasers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100002|Chris Thomas|44|School Supplies|Index Cards|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100002|Chris Thomas|35|Hygeine |Toothbrush|Bobcat Pantry|TC 131|Terrace Center|
+U100002|Chris Thomas|6|School Supplies|Highlighters|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100002|Chris Thomas|38|Food|Snack|Office of Student Involvement|Granite Pass 163|Granite|Monday-Friday
+U100002|Chris Thomas|28|Food|Snack|Bobcat Pantry|TC 131|Terrace Center|
+U100003|Reese Jackson|2|Food|Snack|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100003|Reese Jackson|6|School Supplies|Highlighters|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100003|Reese Jackson|14|School Supplies|Paper Clips|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100003|Reese Jackson|15|School Supplies|Color Paper|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100004|Alex Brown|39|School Supplies|CSET Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100004|Alex Brown|2|Food|Snack|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100004|Alex Brown|36|Hygeine |Toothpaste|Bobcat Pantry|TC 131|Terrace Center|
+U100004|Alex Brown|13|School Supplies|Folders|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100004|Alex Brown|42|School Supplies|CBEST Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100004|Alex Brown|35|Hygeine |Toothbrush|Bobcat Pantry|TC 131|Terrace Center|
+U100005|Reese Lee|15|School Supplies|Color Paper|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100005|Reese Lee|29|Food|Fruit|Bobcat Pantry|TC 131|Terrace Center|
+U100005|Reese Lee|38|Food|Snack|Office of Student Involvement|Granite Pass 163|Granite|Monday-Friday
+U100005|Reese Lee|18|Other Supplies|Ear Plugs|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100005|Reese Lee|1|Free Printing|Printing|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100006|Skyler Lee|45|School Supplies|Calculator|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100006|Skyler Lee|28|Food|Snack|Bobcat Pantry|TC 131|Terrace Center|
+U100006|Skyler Lee|22|Food|Snack|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100006|Skyler Lee|18|Other Supplies|Ear Plugs|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100007|Skyler Nguyen|14|School Supplies|Paper Clips|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100007|Skyler Nguyen|22|Food|Snack|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100007|Skyler Nguyen|7|School Supplies|Erasers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100007|Skyler Nguyen|6|School Supplies|Highlighters|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100008|Robin Patel|7|School Supplies|Erasers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100008|Robin Patel|23|Other Supplies|Professional Clothing|Basic Needs Center|||
+U100008|Robin Patel|39|School Supplies|CSET Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100008|Robin Patel|17|Other Supplies|Condoms|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100008|Robin Patel|3|Food|Drink|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100009|Skyler Jackson|30|Food|Vegetable|Bobcat Pantry|TC 131|Terrace Center|
+U100009|Skyler Jackson|35|Hygeine |Toothbrush|Bobcat Pantry|TC 131|Terrace Center|
+U100009|Skyler Jackson|8|School Supplies|Pencil Bags|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100009|Skyler Jackson|25|Other Supplies|Ear Plugs|Basic Needs Center|||
+U100009|Skyler Jackson|6|School Supplies|Highlighters|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100009|Skyler Jackson|36|Hygeine |Toothpaste|Bobcat Pantry|TC 131|Terrace Center|
+U100010|Skyler Martinez|41|School Supplies|GRE Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100010|Skyler Martinez|40|School Supplies|LSAT Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100010|Skyler Martinez|24|Other Supplies|Condoms|Basic Needs Center|||
+U100010|Skyler Martinez|37|Hygeine |Deodorant|Bobcat Pantry|TC 131|Terrace Center|
+U100010|Skyler Martinez|13|School Supplies|Folders|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100011|Jamie Davis|5|School Supplies|Post-its|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100011|Jamie Davis|3|Food|Drink|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100011|Jamie Davis|43|School Supplies|Scantrons|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100011|Jamie Davis|15|School Supplies|Color Paper|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100011|Jamie Davis|19|Hygeine|Tampons|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100011|Jamie Davis|6|School Supplies|Highlighters|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100012|Jamie Harris|7|School Supplies|Erasers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100012|Jamie Harris|25|Other Supplies|Ear Plugs|Basic Needs Center|||
+U100012|Jamie Harris|18|Other Supplies|Ear Plugs|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100012|Jamie Harris|30|Food|Vegetable|Bobcat Pantry|TC 131|Terrace Center|
+U100013|Robin Clark|24|Other Supplies|Condoms|Basic Needs Center|||
+U100013|Robin Clark|11|School Supplies|Staplers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100013|Robin Clark|48|Food|Snack|ASUCM Office|Granite Pass 174|Granite|Wednesday
+U100013|Robin Clark|23|Other Supplies|Professional Clothing|Basic Needs Center|||
+U100013|Robin Clark|14|School Supplies|Paper Clips|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100013|Robin Clark|43|School Supplies|Scantrons|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100014|Devin Thomas|45|School Supplies|Calculator|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100014|Devin Thomas|44|School Supplies|Index Cards|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100014|Devin Thomas|42|School Supplies|CBEST Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100014|Devin Thomas|5|School Supplies|Post-its|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100014|Devin Thomas|39|School Supplies|CSET Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100015|Alex Gonzalez|11|School Supplies|Staplers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100015|Alex Gonzalez|35|Hygeine |Toothbrush|Bobcat Pantry|TC 131|Terrace Center|
+U100015|Alex Gonzalez|16|School Supplies|Calculator|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100015|Alex Gonzalez|48|Food|Snack|ASUCM Office|Granite Pass 174|Granite|Wednesday
+U100015|Alex Gonzalez|30|Food|Vegetable|Bobcat Pantry|TC 131|Terrace Center|
+U100015|Alex Gonzalez|25|Other Supplies|Ear Plugs|Basic Needs Center|||
+U100016|Riley Lee|41|School Supplies|GRE Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100016|Riley Lee|45|School Supplies|Calculator|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100016|Riley Lee|36|Hygeine |Toothpaste|Bobcat Pantry|TC 131|Terrace Center|
+U100016|Riley Lee|15|School Supplies|Color Paper|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100016|Riley Lee|44|School Supplies|Index Cards|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100017|Taylor Lopez|4|School Supplies|Scantrons|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100017|Taylor Lopez|15|School Supplies|Color Paper|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100017|Taylor Lopez|3|Food|Drink|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100017|Taylor Lopez|21|Free Printing|Printing|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100017|Taylor Lopez|26|Hygeine|Tampons|Basic Needs Center|||
+U100018|Jordan Gonzalez|5|School Supplies|Post-its|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100018|Jordan Gonzalez|14|School Supplies|Paper Clips|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100018|Jordan Gonzalez|37|Hygeine |Deodorant|Bobcat Pantry|TC 131|Terrace Center|
+U100018|Jordan Gonzalez|46|School Supplies|Portable Chargers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100018|Jordan Gonzalez|21|Free Printing|Printing|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100019|Kai Thomas|42|School Supplies|CBEST Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100019|Kai Thomas|32|Hygeine|Pads|Bobcat Pantry|TC 131|Terrace Center|
+U100019|Kai Thomas|26|Hygeine|Tampons|Basic Needs Center|||
+U100019|Kai Thomas|30|Food|Vegetable|Bobcat Pantry|TC 131|Terrace Center|
+U100020|Jamie Thomas|17|Other Supplies|Condoms|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100020|Jamie Thomas|9|School Supplies|Blue Books|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100020|Jamie Thomas|16|School Supplies|Calculator|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100020|Jamie Thomas|48|Food|Snack|ASUCM Office|Granite Pass 174|Granite|Wednesday
+U100021|Avery Harris|35|Hygeine |Toothbrush|Bobcat Pantry|TC 131|Terrace Center|
+U100021|Avery Harris|17|Other Supplies|Condoms|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100021|Avery Harris|38|Food|Snack|Office of Student Involvement|Granite Pass 163|Granite|Monday-Friday
+U100021|Avery Harris|28|Food|Snack|Bobcat Pantry|TC 131|Terrace Center|
+U100021|Avery Harris|46|School Supplies|Portable Chargers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100021|Avery Harris|26|Hygeine|Tampons|Basic Needs Center|||
+U100022|Drew Patel|15|School Supplies|Color Paper|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100022|Drew Patel|9|School Supplies|Blue Books|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100022|Drew Patel|33|Hygeine|Tampons|Bobcat Pantry|TC 131|Terrace Center|
+U100022|Drew Patel|32|Hygeine|Pads|Bobcat Pantry|TC 131|Terrace Center|
+U100022|Drew Patel|6|School Supplies|Highlighters|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100023|Morgan Gonzalez|8|School Supplies|Pencil Bags|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100023|Morgan Gonzalez|10|School Supplies|Rulers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100023|Morgan Gonzalez|41|School Supplies|GRE Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100023|Morgan Gonzalez|11|School Supplies|Staplers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100024|Taylor Kim|28|Food|Snack|Bobcat Pantry|TC 131|Terrace Center|
+U100024|Taylor Kim|39|School Supplies|CSET Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100024|Taylor Kim|5|School Supplies|Post-its|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100024|Taylor Kim|25|Other Supplies|Ear Plugs|Basic Needs Center|||
+U100024|Taylor Kim|45|School Supplies|Calculator|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100024|Taylor Kim|47|School Supplies|Stickers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100025|Chris Kim|34|Hygeine |Soap|Bobcat Pantry|TC 131|Terrace Center|
+U100025|Chris Kim|17|Other Supplies|Condoms|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100025|Chris Kim|36|Hygeine |Toothpaste|Bobcat Pantry|TC 131|Terrace Center|
+U100025|Chris Kim|1|Free Printing|Printing|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100025|Chris Kim|44|School Supplies|Index Cards|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100026|Sam White|8|School Supplies|Pencil Bags|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100026|Sam White|44|School Supplies|Index Cards|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100026|Sam White|35|Hygeine |Toothbrush|Bobcat Pantry|TC 131|Terrace Center|
+U100026|Sam White|18|Other Supplies|Ear Plugs|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100026|Sam White|42|School Supplies|CBEST Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100026|Sam White|22|Food|Snack|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100027|Morgan Martinez|19|Hygeine|Tampons|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100027|Morgan Martinez|28|Food|Snack|Bobcat Pantry|TC 131|Terrace Center|
+U100027|Morgan Martinez|11|School Supplies|Staplers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100027|Morgan Martinez|30|Food|Vegetable|Bobcat Pantry|TC 131|Terrace Center|
+U100028|Robin Thomas|47|School Supplies|Stickers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100028|Robin Thomas|17|Other Supplies|Condoms|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100028|Robin Thomas|33|Hygeine|Tampons|Bobcat Pantry|TC 131|Terrace Center|
+U100028|Robin Thomas|12|School Supplies|Pens|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100029|Chris Hernandez|7|School Supplies|Erasers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100029|Chris Hernandez|41|School Supplies|GRE Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100029|Chris Hernandez|20|Hygeine|Pads|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100029|Chris Hernandez|47|School Supplies|Stickers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100029|Chris Hernandez|33|Hygeine|Tampons|Bobcat Pantry|TC 131|Terrace Center|
+U100029|Chris Hernandez|39|School Supplies|CSET Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100030|Taylor Martinez|10|School Supplies|Rulers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100030|Taylor Martinez|24|Other Supplies|Condoms|Basic Needs Center|||
+U100030|Taylor Martinez|11|School Supplies|Staplers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100030|Taylor Martinez|35|Hygeine |Toothbrush|Bobcat Pantry|TC 131|Terrace Center|
+U100031|Avery Perez|1|Free Printing|Printing|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100031|Avery Perez|39|School Supplies|CSET Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100031|Avery Perez|21|Free Printing|Printing|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100031|Avery Perez|32|Hygeine|Pads|Bobcat Pantry|TC 131|Terrace Center|
+U100031|Avery Perez|2|Food|Snack|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100031|Avery Perez|8|School Supplies|Pencil Bags|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100032|Morgan Garcia|20|Hygeine|Pads|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100032|Morgan Garcia|16|School Supplies|Calculator|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100032|Morgan Garcia|4|School Supplies|Scantrons|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100032|Morgan Garcia|37|Hygeine |Deodorant|Bobcat Pantry|TC 131|Terrace Center|
+U100032|Morgan Garcia|6|School Supplies|Highlighters|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100033|Morgan Hernandez|47|School Supplies|Stickers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100033|Morgan Hernandez|32|Hygeine|Pads|Bobcat Pantry|TC 131|Terrace Center|
+U100033|Morgan Hernandez|5|School Supplies|Post-its|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100033|Morgan Hernandez|35|Hygeine |Toothbrush|Bobcat Pantry|TC 131|Terrace Center|
+U100034|Logan Kim|9|School Supplies|Blue Books|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100034|Logan Kim|43|School Supplies|Scantrons|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100034|Logan Kim|31|Other Supplies|Condoms|Bobcat Pantry|TC 131|Terrace Center|
+U100034|Logan Kim|36|Hygeine |Toothpaste|Bobcat Pantry|TC 131|Terrace Center|
+U100035|Sydney Lopez|17|Other Supplies|Condoms|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100035|Sydney Lopez|34|Hygeine |Soap|Bobcat Pantry|TC 131|Terrace Center|
+U100035|Sydney Lopez|39|School Supplies|CSET Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100035|Sydney Lopez|28|Food|Snack|Bobcat Pantry|TC 131|Terrace Center|
+U100036|Riley Harris|35|Hygeine |Toothbrush|Bobcat Pantry|TC 131|Terrace Center|
+U100036|Riley Harris|47|School Supplies|Stickers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100036|Riley Harris|45|School Supplies|Calculator|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100036|Riley Harris|13|School Supplies|Folders|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100037|Jordan Patel|20|Hygeine|Pads|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100037|Jordan Patel|26|Hygeine|Tampons|Basic Needs Center|||
+U100037|Jordan Patel|43|School Supplies|Scantrons|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100037|Jordan Patel|42|School Supplies|CBEST Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100037|Jordan Patel|24|Other Supplies|Condoms|Basic Needs Center|||
+U100037|Jordan Patel|29|Food|Fruit|Bobcat Pantry|TC 131|Terrace Center|
+U100038|Reese Gonzalez|29|Food|Fruit|Bobcat Pantry|TC 131|Terrace Center|
+U100038|Reese Gonzalez|8|School Supplies|Pencil Bags|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100038|Reese Gonzalez|16|School Supplies|Calculator|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100038|Reese Gonzalez|15|School Supplies|Color Paper|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100038|Reese Gonzalez|5|School Supplies|Post-its|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100038|Reese Gonzalez|22|Food|Snack|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100039|Jamie Lee|38|Food|Snack|Office of Student Involvement|Granite Pass 163|Granite|Monday-Friday
+U100039|Jamie Lee|36|Hygeine |Toothpaste|Bobcat Pantry|TC 131|Terrace Center|
+U100039|Jamie Lee|15|School Supplies|Color Paper|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100039|Jamie Lee|1|Free Printing|Printing|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100040|Robin Perez|46|School Supplies|Portable Chargers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100040|Robin Perez|41|School Supplies|GRE Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100040|Robin Perez|4|School Supplies|Scantrons|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100040|Robin Perez|15|School Supplies|Color Paper|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100041|Jamie Perez|3|Food|Drink|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100041|Jamie Perez|22|Food|Snack|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100041|Jamie Perez|5|School Supplies|Post-its|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100041|Jamie Perez|33|Hygeine|Tampons|Bobcat Pantry|TC 131|Terrace Center|
+U100042|Jordan Harris|18|Other Supplies|Ear Plugs|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100042|Jordan Harris|43|School Supplies|Scantrons|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100042|Jordan Harris|32|Hygeine|Pads|Bobcat Pantry|TC 131|Terrace Center|
+U100042|Jordan Harris|14|School Supplies|Paper Clips|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100043|Avery Gonzalez|9|School Supplies|Blue Books|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100043|Avery Gonzalez|47|School Supplies|Stickers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100043|Avery Gonzalez|37|Hygeine |Deodorant|Bobcat Pantry|TC 131|Terrace Center|
+U100043|Avery Gonzalez|46|School Supplies|Portable Chargers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100043|Avery Gonzalez|31|Other Supplies|Condoms|Bobcat Pantry|TC 131|Terrace Center|
+U100043|Avery Gonzalez|16|School Supplies|Calculator|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100044|Devin Harris|27|Hygeine|Pads|Basic Needs Center|||
+U100044|Devin Harris|13|School Supplies|Folders|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100044|Devin Harris|7|School Supplies|Erasers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100044|Devin Harris|43|School Supplies|Scantrons|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100044|Devin Harris|28|Food|Snack|Bobcat Pantry|TC 131|Terrace Center|
+U100045|Devin Davis|28|Food|Snack|Bobcat Pantry|TC 131|Terrace Center|
+U100045|Devin Davis|27|Hygeine|Pads|Basic Needs Center|||
+U100045|Devin Davis|30|Food|Vegetable|Bobcat Pantry|TC 131|Terrace Center|
+U100045|Devin Davis|47|School Supplies|Stickers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100045|Devin Davis|4|School Supplies|Scantrons|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100046|Drew Hernandez|42|School Supplies|CBEST Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100046|Drew Hernandez|48|Food|Snack|ASUCM Office|Granite Pass 174|Granite|Wednesday
+U100046|Drew Hernandez|7|School Supplies|Erasers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100046|Drew Hernandez|4|School Supplies|Scantrons|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100046|Drew Hernandez|26|Hygeine|Tampons|Basic Needs Center|||
+U100046|Drew Hernandez|22|Food|Snack|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100047|Morgan Thomas|16|School Supplies|Calculator|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100047|Morgan Thomas|13|School Supplies|Folders|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100047|Morgan Thomas|35|Hygeine |Toothbrush|Bobcat Pantry|TC 131|Terrace Center|
+U100047|Morgan Thomas|29|Food|Fruit|Bobcat Pantry|TC 131|Terrace Center|
+U100048|Casey Wilson|28|Food|Snack|Bobcat Pantry|TC 131|Terrace Center|
+U100048|Casey Wilson|12|School Supplies|Pens|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100048|Casey Wilson|18|Other Supplies|Ear Plugs|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100048|Casey Wilson|30|Food|Vegetable|Bobcat Pantry|TC 131|Terrace Center|
+U100049|Casey Clark|5|School Supplies|Post-its|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100049|Casey Clark|29|Food|Fruit|Bobcat Pantry|TC 131|Terrace Center|
+U100049|Casey Clark|36|Hygeine |Toothpaste|Bobcat Pantry|TC 131|Terrace Center|
+U100049|Casey Clark|7|School Supplies|Erasers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100050|Devin Martinez|42|School Supplies|CBEST Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100050|Devin Martinez|35|Hygeine |Toothbrush|Bobcat Pantry|TC 131|Terrace Center|
+U100050|Devin Martinez|1|Free Printing|Printing|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100050|Devin Martinez|6|School Supplies|Highlighters|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100051|Kai Davis|11|School Supplies|Staplers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100051|Kai Davis|27|Hygeine|Pads|Basic Needs Center|||
+U100051|Kai Davis|32|Hygeine|Pads|Bobcat Pantry|TC 131|Terrace Center|
+U100051|Kai Davis|31|Other Supplies|Condoms|Bobcat Pantry|TC 131|Terrace Center|
+U100052|Drew Lee|26|Hygeine|Tampons|Basic Needs Center|||
+U100052|Drew Lee|4|School Supplies|Scantrons|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100052|Drew Lee|11|School Supplies|Staplers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100052|Drew Lee|25|Other Supplies|Ear Plugs|Basic Needs Center|||
+U100053|Reese Garcia|25|Other Supplies|Ear Plugs|Basic Needs Center|||
+U100053|Reese Garcia|17|Other Supplies|Condoms|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100053|Reese Garcia|30|Food|Vegetable|Bobcat Pantry|TC 131|Terrace Center|
+U100053|Reese Garcia|19|Hygeine|Tampons|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100054|Avery Lee|45|School Supplies|Calculator|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100054|Avery Lee|47|School Supplies|Stickers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100054|Avery Lee|36|Hygeine |Toothpaste|Bobcat Pantry|TC 131|Terrace Center|
+U100054|Avery Lee|43|School Supplies|Scantrons|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100054|Avery Lee|46|School Supplies|Portable Chargers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100055|Drew Nguyen|10|School Supplies|Rulers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100055|Drew Nguyen|13|School Supplies|Folders|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100055|Drew Nguyen|19|Hygeine|Tampons|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100055|Drew Nguyen|14|School Supplies|Paper Clips|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100055|Drew Nguyen|4|School Supplies|Scantrons|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100056|Logan Wilson|48|Food|Snack|ASUCM Office|Granite Pass 174|Granite|Wednesday
+U100056|Logan Wilson|35|Hygeine |Toothbrush|Bobcat Pantry|TC 131|Terrace Center|
+U100056|Logan Wilson|4|School Supplies|Scantrons|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100056|Logan Wilson|21|Free Printing|Printing|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100056|Logan Wilson|46|School Supplies|Portable Chargers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100056|Logan Wilson|44|School Supplies|Index Cards|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100057|Skyler Harris|31|Other Supplies|Condoms|Bobcat Pantry|TC 131|Terrace Center|
+U100057|Skyler Harris|33|Hygeine|Tampons|Bobcat Pantry|TC 131|Terrace Center|
+U100057|Skyler Harris|34|Hygeine |Soap|Bobcat Pantry|TC 131|Terrace Center|
+U100057|Skyler Harris|11|School Supplies|Staplers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100057|Skyler Harris|4|School Supplies|Scantrons|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100057|Skyler Harris|47|School Supplies|Stickers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100058|Riley Gonzalez|12|School Supplies|Pens|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100058|Riley Gonzalez|5|School Supplies|Post-its|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100058|Riley Gonzalez|39|School Supplies|CSET Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100058|Riley Gonzalez|44|School Supplies|Index Cards|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100059|Skyler Thomas|26|Hygeine|Tampons|Basic Needs Center|||
+U100059|Skyler Thomas|8|School Supplies|Pencil Bags|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100059|Skyler Thomas|37|Hygeine |Deodorant|Bobcat Pantry|TC 131|Terrace Center|
+U100059|Skyler Thomas|16|School Supplies|Calculator|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100060|Taylor White|39|School Supplies|CSET Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100060|Taylor White|3|Food|Drink|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100060|Taylor White|40|School Supplies|LSAT Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100060|Taylor White|6|School Supplies|Highlighters|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100060|Taylor White|27|Hygeine|Pads|Basic Needs Center|||
+U100060|Taylor White|43|School Supplies|Scantrons|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100061|Sam Jackson|37|Hygeine |Deodorant|Bobcat Pantry|TC 131|Terrace Center|
+U100061|Sam Jackson|34|Hygeine |Soap|Bobcat Pantry|TC 131|Terrace Center|
+U100061|Sam Jackson|21|Free Printing|Printing|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100061|Sam Jackson|17|Other Supplies|Condoms|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100061|Sam Jackson|14|School Supplies|Paper Clips|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100061|Sam Jackson|43|School Supplies|Scantrons|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100062|Casey Hernandez|21|Free Printing|Printing|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100062|Casey Hernandez|16|School Supplies|Calculator|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100062|Casey Hernandez|17|Other Supplies|Condoms|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100062|Casey Hernandez|26|Hygeine|Tampons|Basic Needs Center|||
+U100062|Casey Hernandez|9|School Supplies|Blue Books|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100062|Casey Hernandez|43|School Supplies|Scantrons|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100063|Chris Perez|20|Hygeine|Pads|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100063|Chris Perez|30|Food|Vegetable|Bobcat Pantry|TC 131|Terrace Center|
+U100063|Chris Perez|21|Free Printing|Printing|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100063|Chris Perez|5|School Supplies|Post-its|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100063|Chris Perez|1|Free Printing|Printing|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100063|Chris Perez|47|School Supplies|Stickers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100064|Casey Patel|37|Hygeine |Deodorant|Bobcat Pantry|TC 131|Terrace Center|
+U100064|Casey Patel|7|School Supplies|Erasers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100064|Casey Patel|5|School Supplies|Post-its|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100064|Casey Patel|35|Hygeine |Toothbrush|Bobcat Pantry|TC 131|Terrace Center|
+U100064|Casey Patel|14|School Supplies|Paper Clips|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100064|Casey Patel|33|Hygeine|Tampons|Bobcat Pantry|TC 131|Terrace Center|
+U100065|Logan Gonzalez|9|School Supplies|Blue Books|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100065|Logan Gonzalez|23|Other Supplies|Professional Clothing|Basic Needs Center|||
+U100065|Logan Gonzalez|5|School Supplies|Post-its|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100065|Logan Gonzalez|16|School Supplies|Calculator|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100065|Logan Gonzalez|24|Other Supplies|Condoms|Basic Needs Center|||
+U100066|Sam Garcia|11|School Supplies|Staplers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100066|Sam Garcia|29|Food|Fruit|Bobcat Pantry|TC 131|Terrace Center|
+U100066|Sam Garcia|35|Hygeine |Toothbrush|Bobcat Pantry|TC 131|Terrace Center|
+U100066|Sam Garcia|46|School Supplies|Portable Chargers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100066|Sam Garcia|20|Hygeine|Pads|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100067|Chris Nguyen|42|School Supplies|CBEST Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100067|Chris Nguyen|34|Hygeine |Soap|Bobcat Pantry|TC 131|Terrace Center|
+U100067|Chris Nguyen|1|Free Printing|Printing|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100067|Chris Nguyen|43|School Supplies|Scantrons|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100067|Chris Nguyen|36|Hygeine |Toothpaste|Bobcat Pantry|TC 131|Terrace Center|
+U100067|Chris Nguyen|20|Hygeine|Pads|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100068|Skyler Anderson|7|School Supplies|Erasers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100068|Skyler Anderson|9|School Supplies|Blue Books|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100068|Skyler Anderson|17|Other Supplies|Condoms|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100068|Skyler Anderson|8|School Supplies|Pencil Bags|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100068|Skyler Anderson|48|Food|Snack|ASUCM Office|Granite Pass 174|Granite|Wednesday
+U100068|Skyler Anderson|36|Hygeine |Toothpaste|Bobcat Pantry|TC 131|Terrace Center|
+U100069|Alex Patel|18|Other Supplies|Ear Plugs|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100069|Alex Patel|19|Hygeine|Tampons|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100069|Alex Patel|39|School Supplies|CSET Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100069|Alex Patel|14|School Supplies|Paper Clips|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100070|Cameron Patel|22|Food|Snack|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100070|Cameron Patel|14|School Supplies|Paper Clips|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100070|Cameron Patel|44|School Supplies|Index Cards|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100070|Cameron Patel|41|School Supplies|GRE Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100070|Cameron Patel|17|Other Supplies|Condoms|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100070|Cameron Patel|33|Hygeine|Tampons|Bobcat Pantry|TC 131|Terrace Center|
+U100071|Morgan Anderson|17|Other Supplies|Condoms|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100071|Morgan Anderson|4|School Supplies|Scantrons|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100071|Morgan Anderson|6|School Supplies|Highlighters|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100071|Morgan Anderson|41|School Supplies|GRE Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100071|Morgan Anderson|28|Food|Snack|Bobcat Pantry|TC 131|Terrace Center|
+U100072|Jamie Wilson|3|Food|Drink|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100072|Jamie Wilson|1|Free Printing|Printing|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100072|Jamie Wilson|22|Food|Snack|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100072|Jamie Wilson|9|School Supplies|Blue Books|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100072|Jamie Wilson|41|School Supplies|GRE Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100073|Skyler Brown|11|School Supplies|Staplers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100073|Skyler Brown|48|Food|Snack|ASUCM Office|Granite Pass 174|Granite|Wednesday
+U100073|Skyler Brown|29|Food|Fruit|Bobcat Pantry|TC 131|Terrace Center|
+U100073|Skyler Brown|36|Hygeine |Toothpaste|Bobcat Pantry|TC 131|Terrace Center|
+U100073|Skyler Brown|46|School Supplies|Portable Chargers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100074|Quinn Davis|36|Hygeine |Toothpaste|Bobcat Pantry|TC 131|Terrace Center|
+U100074|Quinn Davis|1|Free Printing|Printing|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100074|Quinn Davis|8|School Supplies|Pencil Bags|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100074|Quinn Davis|5|School Supplies|Post-its|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100074|Quinn Davis|45|School Supplies|Calculator|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100075|Taylor Perez|35|Hygeine |Toothbrush|Bobcat Pantry|TC 131|Terrace Center|
+U100075|Taylor Perez|3|Food|Drink|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100075|Taylor Perez|24|Other Supplies|Condoms|Basic Needs Center|||
+U100075|Taylor Perez|38|Food|Snack|Office of Student Involvement|Granite Pass 163|Granite|Monday-Friday
+U100076|Cameron Harris|10|School Supplies|Rulers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100076|Cameron Harris|28|Food|Snack|Bobcat Pantry|TC 131|Terrace Center|
+U100076|Cameron Harris|9|School Supplies|Blue Books|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100076|Cameron Harris|3|Food|Drink|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100076|Cameron Harris|20|Hygeine|Pads|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100076|Cameron Harris|24|Other Supplies|Condoms|Basic Needs Center|||
+U100077|Kai Patel|23|Other Supplies|Professional Clothing|Basic Needs Center|||
+U100077|Kai Patel|14|School Supplies|Paper Clips|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100077|Kai Patel|44|School Supplies|Index Cards|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100077|Kai Patel|16|School Supplies|Calculator|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100078|Casey Lee|7|School Supplies|Erasers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100078|Casey Lee|23|Other Supplies|Professional Clothing|Basic Needs Center|||
+U100078|Casey Lee|36|Hygeine |Toothpaste|Bobcat Pantry|TC 131|Terrace Center|
+U100078|Casey Lee|27|Hygeine|Pads|Basic Needs Center|||
+U100078|Casey Lee|40|School Supplies|LSAT Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100078|Casey Lee|10|School Supplies|Rulers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100079|Avery Davis|11|School Supplies|Staplers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100079|Avery Davis|12|School Supplies|Pens|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100079|Avery Davis|27|Hygeine|Pads|Basic Needs Center|||
+U100079|Avery Davis|2|Food|Snack|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100080|Riley Lopez|48|Food|Snack|ASUCM Office|Granite Pass 174|Granite|Wednesday
+U100080|Riley Lopez|22|Food|Snack|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100080|Riley Lopez|27|Hygeine|Pads|Basic Needs Center|||
+U100080|Riley Lopez|43|School Supplies|Scantrons|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100081|Robin Gonzalez|16|School Supplies|Calculator|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100081|Robin Gonzalez|18|Other Supplies|Ear Plugs|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100081|Robin Gonzalez|11|School Supplies|Staplers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100081|Robin Gonzalez|45|School Supplies|Calculator|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100081|Robin Gonzalez|7|School Supplies|Erasers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100081|Robin Gonzalez|25|Other Supplies|Ear Plugs|Basic Needs Center|||
+U100082|Cameron Lopez|31|Other Supplies|Condoms|Bobcat Pantry|TC 131|Terrace Center|
+U100082|Cameron Lopez|15|School Supplies|Color Paper|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100082|Cameron Lopez|13|School Supplies|Folders|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100082|Cameron Lopez|30|Food|Vegetable|Bobcat Pantry|TC 131|Terrace Center|
+U100083|Taylor Patel|20|Hygeine|Pads|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100083|Taylor Patel|15|School Supplies|Color Paper|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100083|Taylor Patel|2|Food|Snack|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100083|Taylor Patel|43|School Supplies|Scantrons|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100083|Taylor Patel|13|School Supplies|Folders|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100084|Robin Harris|22|Food|Snack|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100084|Robin Harris|18|Other Supplies|Ear Plugs|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100084|Robin Harris|5|School Supplies|Post-its|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100084|Robin Harris|23|Other Supplies|Professional Clothing|Basic Needs Center|||
+U100084|Robin Harris|42|School Supplies|CBEST Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100085|Robin Kim|26|Hygeine|Tampons|Basic Needs Center|||
+U100085|Robin Kim|44|School Supplies|Index Cards|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100085|Robin Kim|35|Hygeine |Toothbrush|Bobcat Pantry|TC 131|Terrace Center|
+U100085|Robin Kim|22|Food|Snack|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100085|Robin Kim|2|Food|Snack|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100085|Robin Kim|8|School Supplies|Pencil Bags|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100086|Alex Nguyen|12|School Supplies|Pens|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100086|Alex Nguyen|38|Food|Snack|Office of Student Involvement|Granite Pass 163|Granite|Monday-Friday
+U100086|Alex Nguyen|17|Other Supplies|Condoms|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100086|Alex Nguyen|3|Food|Drink|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100086|Alex Nguyen|7|School Supplies|Erasers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100087|Morgan Harris|28|Food|Snack|Bobcat Pantry|TC 131|Terrace Center|
+U100087|Morgan Harris|23|Other Supplies|Professional Clothing|Basic Needs Center|||
+U100087|Morgan Harris|21|Free Printing|Printing|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100087|Morgan Harris|48|Food|Snack|ASUCM Office|Granite Pass 174|Granite|Wednesday
+U100087|Morgan Harris|39|School Supplies|CSET Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100087|Morgan Harris|33|Hygeine|Tampons|Bobcat Pantry|TC 131|Terrace Center|
+U100088|Casey Anderson|25|Other Supplies|Ear Plugs|Basic Needs Center|||
+U100088|Casey Anderson|37|Hygeine |Deodorant|Bobcat Pantry|TC 131|Terrace Center|
+U100088|Casey Anderson|13|School Supplies|Folders|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100088|Casey Anderson|17|Other Supplies|Condoms|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100089|Skyler White|46|School Supplies|Portable Chargers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100089|Skyler White|28|Food|Snack|Bobcat Pantry|TC 131|Terrace Center|
+U100089|Skyler White|1|Free Printing|Printing|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100089|Skyler White|34|Hygeine |Soap|Bobcat Pantry|TC 131|Terrace Center|
+U100090|Alex Anderson|44|School Supplies|Index Cards|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100090|Alex Anderson|47|School Supplies|Stickers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100090|Alex Anderson|43|School Supplies|Scantrons|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100090|Alex Anderson|13|School Supplies|Folders|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100090|Alex Anderson|24|Other Supplies|Condoms|Basic Needs Center|||
+U100090|Alex Anderson|28|Food|Snack|Bobcat Pantry|TC 131|Terrace Center|
+U100091|Riley Brown|43|School Supplies|Scantrons|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100091|Riley Brown|22|Food|Snack|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100091|Riley Brown|40|School Supplies|LSAT Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100091|Riley Brown|21|Free Printing|Printing|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100092|Sam Brown|8|School Supplies|Pencil Bags|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100092|Sam Brown|47|School Supplies|Stickers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100092|Sam Brown|20|Hygeine|Pads|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100092|Sam Brown|33|Hygeine|Tampons|Bobcat Pantry|TC 131|Terrace Center|
+U100092|Sam Brown|46|School Supplies|Portable Chargers|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100092|Sam Brown|43|School Supplies|Scantrons|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100093|Taylor Clark|21|Free Printing|Printing|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100093|Taylor Clark|26|Hygeine|Tampons|Basic Needs Center|||
+U100093|Taylor Clark|45|School Supplies|Calculator|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100093|Taylor Clark|19|Hygeine|Tampons|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100093|Taylor Clark|36|Hygeine |Toothpaste|Bobcat Pantry|TC 131|Terrace Center|
+U100094|Jordan Jackson|13|School Supplies|Folders|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100094|Jordan Jackson|27|Hygeine|Pads|Basic Needs Center|||
+U100094|Jordan Jackson|43|School Supplies|Scantrons|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100094|Jordan Jackson|25|Other Supplies|Ear Plugs|Basic Needs Center|||
+U100095|Jamie Clark|48|Food|Snack|ASUCM Office|Granite Pass 174|Granite|Wednesday
+U100095|Jamie Clark|12|School Supplies|Pens|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100095|Jamie Clark|40|School Supplies|LSAT Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100095|Jamie Clark|37|Hygeine |Deodorant|Bobcat Pantry|TC 131|Terrace Center|
+U100095|Jamie Clark|20|Hygeine|Pads|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100095|Jamie Clark|26|Hygeine|Tampons|Basic Needs Center|||
+U100096|Kai Brown|1|Free Printing|Printing|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100096|Kai Brown|20|Hygeine|Pads|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100096|Kai Brown|19|Hygeine|Tampons|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100096|Kai Brown|14|School Supplies|Paper Clips|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100096|Kai Brown|28|Food|Snack|Bobcat Pantry|TC 131|Terrace Center|
+U100096|Kai Brown|38|Food|Snack|Office of Student Involvement|Granite Pass 163|Granite|Monday-Friday
+U100097|Drew Kim|42|School Supplies|CBEST Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100097|Drew Kim|21|Free Printing|Printing|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100097|Drew Kim|30|Food|Vegetable|Bobcat Pantry|TC 131|Terrace Center|
+U100097|Drew Kim|29|Food|Fruit|Bobcat Pantry|TC 131|Terrace Center|
+U100097|Drew Kim|45|School Supplies|Calculator|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100097|Drew Kim|14|School Supplies|Paper Clips|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100098|Logan Thomas|31|Other Supplies|Condoms|Bobcat Pantry|TC 131|Terrace Center|
+U100098|Logan Thomas|11|School Supplies|Staplers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100098|Logan Thomas|43|School Supplies|Scantrons|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100098|Logan Thomas|6|School Supplies|Highlighters|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100098|Logan Thomas|19|Hygeine|Tampons|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100098|Logan Thomas|33|Hygeine|Tampons|Bobcat Pantry|TC 131|Terrace Center|
+U100099|Logan Martinez|41|School Supplies|GRE Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100099|Logan Martinez|40|School Supplies|LSAT Books|ASUCM Office|Granite Pass 174|Granite|Monday-Friday
+U100099|Logan Martinez|22|Food|Snack|Social Justice Center|KL 127|Kolligian Library|Monday-Friday
+U100099|Logan Martinez|6|School Supplies|Highlighters|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100099|Logan Martinez|16|School Supplies|Calculator|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100099|Logan Martinez|20|Hygeine|Pads|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100100|Kai Garcia|13|School Supplies|Folders|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100100|Kai Garcia|10|School Supplies|Rulers|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100100|Kai Garcia|2|Food|Snack|Monarch Center|KL 127|Kolligian Library|Monday-Friday
+U100100|Kai Garcia|3|Food|Drink|Monarch Center|KL 127|Kolligian Library|Monday-Friday

@@ -1,0 +1,499 @@
+studentID|studentName|tutoring_id|resource_type|subject|department|building|location|weekday|start_time|end_time
+U100001|Jordan Lee|23|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100001|Jordan Lee|10|STEM Tutoring|CHEM 1|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100001|Jordan Lee|56|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100001|Jordan Lee|26|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100001|Jordan Lee|24|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100001|Jordan Lee|72|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Sunday|4:00 PM|7:00 PM
+U100002|Chris Thomas|22|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100002|Chris Thomas|20|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100002|Chris Thomas|63|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100002|Chris Thomas|13|STEM Tutoring|CHEM 8|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100003|Reese Jackson|20|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100003|Reese Jackson|36|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100003|Reese Jackson|38|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100003|Reese Jackson|12|STEM Tutoring|CHEM 2|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100004|Alex Brown|34|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100004|Alex Brown|54|STEM Tutoring|MATH 32|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100004|Alex Brown|50|STEM Tutoring|MATH 23|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100004|Alex Brown|53|STEM Tutoring|MATH 32|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100004|Alex Brown|43|STEM Tutoring|MATH 12|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100004|Alex Brown|35|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100005|Reese Lee|66|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100005|Reese Lee|44|STEM Tutoring|MATH 12|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100005|Reese Lee|9|STEM Tutoring|CHEM 1|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100005|Reese Lee|29|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100006|Skyler Lee|63|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100006|Skyler Lee|30|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100006|Skyler Lee|26|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100006|Skyler Lee|18|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100006|Skyler Lee|22|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100006|Skyler Lee|57|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100007|Skyler Nguyen|22|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100007|Skyler Nguyen|20|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100007|Skyler Nguyen|57|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100007|Skyler Nguyen|21|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100007|Skyler Nguyen|54|STEM Tutoring|MATH 32|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100008|Robin Patel|42|STEM Tutoring|MATH 11|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100008|Robin Patel|14|STEM Tutoring|CHEM 8|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100008|Robin Patel|67|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|10:00 AM|11:00 AM
+U100008|Robin Patel|24|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100008|Robin Patel|57|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100009|Skyler Jackson|46|STEM Tutoring|MATH 21|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100009|Skyler Jackson|55|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100009|Skyler Jackson|33|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100009|Skyler Jackson|17|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100010|Skyler Martinez|38|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100010|Skyler Martinez|46|STEM Tutoring|MATH 21|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100010|Skyler Martinez|19|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100010|Skyler Martinez|21|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100011|Jamie Davis|44|STEM Tutoring|MATH 12|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100011|Jamie Davis|67|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|10:00 AM|11:00 AM
+U100011|Jamie Davis|55|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100011|Jamie Davis|29|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100011|Jamie Davis|56|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100012|Jamie Harris|35|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100012|Jamie Harris|43|STEM Tutoring|MATH 12|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100012|Jamie Harris|18|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100012|Jamie Harris|30|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100012|Jamie Harris|40|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100013|Robin Clark|68|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|1:00 PM|4:00 PM
+U100013|Robin Clark|57|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100013|Robin Clark|43|STEM Tutoring|MATH 12|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100013|Robin Clark|37|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100014|Devin Thomas|50|STEM Tutoring|MATH 23|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100014|Devin Thomas|62|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100014|Devin Thomas|58|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100014|Devin Thomas|70|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Monday, Tuesday, Wednesday, Thursday|9:00 AM|6:00 PM
+U100014|Devin Thomas|12|STEM Tutoring|CHEM 2|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100014|Devin Thomas|23|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100015|Alex Gonzalez|49|STEM Tutoring|MATH 23|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100015|Alex Gonzalez|60|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100015|Alex Gonzalez|43|STEM Tutoring|MATH 12|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100015|Alex Gonzalez|17|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100016|Riley Lee|49|STEM Tutoring|MATH 23|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100016|Riley Lee|36|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100016|Riley Lee|72|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Sunday|4:00 PM|7:00 PM
+U100016|Riley Lee|59|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100017|Taylor Lopez|67|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|10:00 AM|11:00 AM
+U100017|Taylor Lopez|18|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100017|Taylor Lopez|25|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100017|Taylor Lopez|17|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100017|Taylor Lopez|24|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100017|Taylor Lopez|56|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100018|Jordan Gonzalez|42|STEM Tutoring|MATH 11|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100018|Jordan Gonzalez|56|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100018|Jordan Gonzalez|46|STEM Tutoring|MATH 21|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100018|Jordan Gonzalez|36|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100018|Jordan Gonzalez|66|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100018|Jordan Gonzalez|70|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Monday, Tuesday, Wednesday, Thursday|9:00 AM|6:00 PM
+U100019|Kai Thomas|55|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100019|Kai Thomas|37|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100019|Kai Thomas|26|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100019|Kai Thomas|72|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Sunday|4:00 PM|7:00 PM
+U100019|Kai Thomas|20|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100020|Jamie Thomas|23|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100020|Jamie Thomas|28|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100020|Jamie Thomas|29|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100020|Jamie Thomas|63|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100021|Avery Harris|17|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100021|Avery Harris|33|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100021|Avery Harris|71|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Friday|9:00 AM|3:00 PM
+U100021|Avery Harris|47|STEM Tutoring|MATH 22|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100021|Avery Harris|38|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100021|Avery Harris|42|STEM Tutoring|MATH 11|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100022|Drew Patel|10|STEM Tutoring|CHEM 1|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100022|Drew Patel|23|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100022|Drew Patel|43|STEM Tutoring|MATH 12|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100022|Drew Patel|52|STEM Tutoring|MATH 24|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100022|Drew Patel|46|STEM Tutoring|MATH 21|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100023|Morgan Gonzalez|29|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100023|Morgan Gonzalez|67|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|10:00 AM|11:00 AM
+U100023|Morgan Gonzalez|9|STEM Tutoring|CHEM 1|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100023|Morgan Gonzalez|42|STEM Tutoring|MATH 11|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100023|Morgan Gonzalez|31|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100024|Taylor Kim|22|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100024|Taylor Kim|64|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100024|Taylor Kim|49|STEM Tutoring|MATH 23|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100024|Taylor Kim|28|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100024|Taylor Kim|62|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100024|Taylor Kim|70|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Monday, Tuesday, Wednesday, Thursday|9:00 AM|6:00 PM
+U100025|Chris Kim|34|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100025|Chris Kim|18|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100025|Chris Kim|32|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100025|Chris Kim|57|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100025|Chris Kim|19|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100025|Chris Kim|43|STEM Tutoring|MATH 12|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100026|Sam White|9|STEM Tutoring|CHEM 1|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100026|Sam White|47|STEM Tutoring|MATH 22|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100026|Sam White|29|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100026|Sam White|40|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100026|Sam White|10|STEM Tutoring|CHEM 1|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100026|Sam White|16|STEM Tutoring|CHEM 10|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100027|Morgan Martinez|48|STEM Tutoring|MATH 22|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100027|Morgan Martinez|39|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100027|Morgan Martinez|16|STEM Tutoring|CHEM 10|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100027|Morgan Martinez|19|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100027|Morgan Martinez|71|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Friday|9:00 AM|3:00 PM
+U100028|Robin Thomas|25|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100028|Robin Thomas|69|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Tuesday, Thursday|10:00 AM|5:00 PM
+U100028|Robin Thomas|30|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100028|Robin Thomas|42|STEM Tutoring|MATH 11|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100029|Chris Hernandez|63|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100029|Chris Hernandez|70|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Monday, Tuesday, Wednesday, Thursday|9:00 AM|6:00 PM
+U100029|Chris Hernandez|22|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100029|Chris Hernandez|68|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|1:00 PM|4:00 PM
+U100029|Chris Hernandez|43|STEM Tutoring|MATH 12|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100029|Chris Hernandez|57|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100030|Taylor Martinez|34|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100030|Taylor Martinez|54|STEM Tutoring|MATH 32|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100030|Taylor Martinez|28|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100030|Taylor Martinez|72|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Sunday|4:00 PM|7:00 PM
+U100030|Taylor Martinez|51|STEM Tutoring|MATH 24|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100030|Taylor Martinez|50|STEM Tutoring|MATH 23|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100031|Avery Perez|65|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100031|Avery Perez|66|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100031|Avery Perez|24|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100031|Avery Perez|40|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100031|Avery Perez|37|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100032|Morgan Garcia|52|STEM Tutoring|MATH 24|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100032|Morgan Garcia|11|STEM Tutoring|CHEM 2|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100032|Morgan Garcia|38|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100032|Morgan Garcia|37|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100033|Morgan Hernandez|18|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100033|Morgan Hernandez|16|STEM Tutoring|CHEM 10|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100033|Morgan Hernandez|38|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100033|Morgan Hernandez|17|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100034|Logan Kim|51|STEM Tutoring|MATH 24|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100034|Logan Kim|18|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100034|Logan Kim|39|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100034|Logan Kim|44|STEM Tutoring|MATH 12|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100035|Sydney Lopez|71|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Friday|9:00 AM|3:00 PM
+U100035|Sydney Lopez|22|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100035|Sydney Lopez|43|STEM Tutoring|MATH 12|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100035|Sydney Lopez|17|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100035|Sydney Lopez|55|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100035|Sydney Lopez|65|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100036|Riley Harris|69|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Tuesday, Thursday|10:00 AM|5:00 PM
+U100036|Riley Harris|24|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100036|Riley Harris|59|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100036|Riley Harris|39|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100036|Riley Harris|60|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100036|Riley Harris|35|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100037|Jordan Patel|21|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100037|Jordan Patel|64|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100037|Jordan Patel|54|STEM Tutoring|MATH 32|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100037|Jordan Patel|63|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100038|Reese Gonzalez|68|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|1:00 PM|4:00 PM
+U100038|Reese Gonzalez|15|STEM Tutoring|CHEM 10|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100038|Reese Gonzalez|21|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100038|Reese Gonzalez|16|STEM Tutoring|CHEM 10|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100038|Reese Gonzalez|60|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100039|Jamie Lee|52|STEM Tutoring|MATH 24|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100039|Jamie Lee|60|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100039|Jamie Lee|64|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100039|Jamie Lee|15|STEM Tutoring|CHEM 10|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100039|Jamie Lee|24|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100039|Jamie Lee|21|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100040|Robin Perez|66|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100040|Robin Perez|26|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100040|Robin Perez|63|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100040|Robin Perez|32|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100041|Jamie Perez|68|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|1:00 PM|4:00 PM
+U100041|Jamie Perez|40|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100041|Jamie Perez|18|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100041|Jamie Perez|65|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100041|Jamie Perez|21|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100042|Jordan Harris|10|STEM Tutoring|CHEM 1|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100042|Jordan Harris|20|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100042|Jordan Harris|39|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100042|Jordan Harris|30|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100043|Avery Gonzalez|71|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Friday|9:00 AM|3:00 PM
+U100043|Avery Gonzalez|70|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Monday, Tuesday, Wednesday, Thursday|9:00 AM|6:00 PM
+U100043|Avery Gonzalez|36|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100043|Avery Gonzalez|60|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100043|Avery Gonzalez|16|STEM Tutoring|CHEM 10|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100044|Devin Harris|57|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100044|Devin Harris|9|STEM Tutoring|CHEM 1|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100044|Devin Harris|58|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100044|Devin Harris|42|STEM Tutoring|MATH 11|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100045|Devin Davis|45|STEM Tutoring|MATH 21|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100045|Devin Davis|63|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100045|Devin Davis|71|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Friday|9:00 AM|3:00 PM
+U100045|Devin Davis|28|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100045|Devin Davis|33|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100046|Drew Hernandez|36|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100046|Drew Hernandez|16|STEM Tutoring|CHEM 10|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100046|Drew Hernandez|49|STEM Tutoring|MATH 23|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100046|Drew Hernandez|15|STEM Tutoring|CHEM 10|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100046|Drew Hernandez|70|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Monday, Tuesday, Wednesday, Thursday|9:00 AM|6:00 PM
+U100047|Morgan Thomas|29|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100047|Morgan Thomas|12|STEM Tutoring|CHEM 2|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100047|Morgan Thomas|70|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Monday, Tuesday, Wednesday, Thursday|9:00 AM|6:00 PM
+U100047|Morgan Thomas|41|STEM Tutoring|MATH 11|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100047|Morgan Thomas|14|STEM Tutoring|CHEM 8|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100047|Morgan Thomas|63|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100048|Casey Wilson|17|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100048|Casey Wilson|39|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100048|Casey Wilson|60|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100048|Casey Wilson|24|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100049|Casey Clark|40|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100049|Casey Clark|46|STEM Tutoring|MATH 21|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100049|Casey Clark|47|STEM Tutoring|MATH 22|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100049|Casey Clark|11|STEM Tutoring|CHEM 2|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100049|Casey Clark|48|STEM Tutoring|MATH 22|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100049|Casey Clark|14|STEM Tutoring|CHEM 8|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100050|Devin Martinez|49|STEM Tutoring|MATH 23|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100050|Devin Martinez|42|STEM Tutoring|MATH 11|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100050|Devin Martinez|35|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100050|Devin Martinez|39|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100050|Devin Martinez|59|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100051|Kai Davis|47|STEM Tutoring|MATH 22|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100051|Kai Davis|67|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|10:00 AM|11:00 AM
+U100051|Kai Davis|49|STEM Tutoring|MATH 23|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100051|Kai Davis|18|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100052|Drew Lee|67|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|10:00 AM|11:00 AM
+U100052|Drew Lee|21|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100052|Drew Lee|18|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100052|Drew Lee|36|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100053|Reese Garcia|42|STEM Tutoring|MATH 11|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100053|Reese Garcia|17|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100053|Reese Garcia|68|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|1:00 PM|4:00 PM
+U100053|Reese Garcia|31|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100053|Reese Garcia|65|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100053|Reese Garcia|13|STEM Tutoring|CHEM 8|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100054|Avery Lee|56|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100054|Avery Lee|45|STEM Tutoring|MATH 21|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100054|Avery Lee|29|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100054|Avery Lee|65|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100055|Drew Nguyen|47|STEM Tutoring|MATH 22|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100055|Drew Nguyen|48|STEM Tutoring|MATH 22|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100055|Drew Nguyen|60|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100055|Drew Nguyen|50|STEM Tutoring|MATH 23|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100055|Drew Nguyen|42|STEM Tutoring|MATH 11|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100055|Drew Nguyen|9|STEM Tutoring|CHEM 1|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100056|Logan Wilson|47|STEM Tutoring|MATH 22|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100056|Logan Wilson|68|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|1:00 PM|4:00 PM
+U100056|Logan Wilson|51|STEM Tutoring|MATH 24|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100056|Logan Wilson|15|STEM Tutoring|CHEM 10|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100056|Logan Wilson|65|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100056|Logan Wilson|17|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100057|Skyler Harris|23|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100057|Skyler Harris|22|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100057|Skyler Harris|28|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100057|Skyler Harris|43|STEM Tutoring|MATH 12|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100057|Skyler Harris|45|STEM Tutoring|MATH 21|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100058|Riley Gonzalez|35|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100058|Riley Gonzalez|54|STEM Tutoring|MATH 32|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100058|Riley Gonzalez|30|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100058|Riley Gonzalez|22|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100058|Riley Gonzalez|52|STEM Tutoring|MATH 24|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100058|Riley Gonzalez|49|STEM Tutoring|MATH 23|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100059|Skyler Thomas|71|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Friday|9:00 AM|3:00 PM
+U100059|Skyler Thomas|41|STEM Tutoring|MATH 11|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100059|Skyler Thomas|15|STEM Tutoring|CHEM 10|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100059|Skyler Thomas|20|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100059|Skyler Thomas|63|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100060|Taylor White|14|STEM Tutoring|CHEM 8|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100060|Taylor White|9|STEM Tutoring|CHEM 1|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100060|Taylor White|51|STEM Tutoring|MATH 24|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100060|Taylor White|25|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100060|Taylor White|42|STEM Tutoring|MATH 11|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100061|Sam Jackson|65|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100061|Sam Jackson|63|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100061|Sam Jackson|10|STEM Tutoring|CHEM 1|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100061|Sam Jackson|23|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100062|Casey Hernandez|28|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100062|Casey Hernandez|13|STEM Tutoring|CHEM 8|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100062|Casey Hernandez|56|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100062|Casey Hernandez|27|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100063|Chris Perez|25|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100063|Chris Perez|14|STEM Tutoring|CHEM 8|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100063|Chris Perez|48|STEM Tutoring|MATH 22|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100063|Chris Perez|55|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100063|Chris Perez|54|STEM Tutoring|MATH 32|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100064|Casey Patel|40|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100064|Casey Patel|22|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100064|Casey Patel|54|STEM Tutoring|MATH 32|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100064|Casey Patel|61|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100065|Logan Gonzalez|28|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100065|Logan Gonzalez|68|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|1:00 PM|4:00 PM
+U100065|Logan Gonzalez|71|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Friday|9:00 AM|3:00 PM
+U100065|Logan Gonzalez|24|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100065|Logan Gonzalez|64|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100065|Logan Gonzalez|19|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100066|Sam Garcia|61|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100066|Sam Garcia|12|STEM Tutoring|CHEM 2|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100066|Sam Garcia|31|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100066|Sam Garcia|51|STEM Tutoring|MATH 24|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100067|Chris Nguyen|40|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100067|Chris Nguyen|43|STEM Tutoring|MATH 12|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100067|Chris Nguyen|29|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100067|Chris Nguyen|22|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100067|Chris Nguyen|57|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100068|Skyler Anderson|69|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Tuesday, Thursday|10:00 AM|5:00 PM
+U100068|Skyler Anderson|37|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100068|Skyler Anderson|34|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100068|Skyler Anderson|67|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|10:00 AM|11:00 AM
+U100069|Alex Patel|48|STEM Tutoring|MATH 22|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100069|Alex Patel|38|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100069|Alex Patel|37|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100069|Alex Patel|12|STEM Tutoring|CHEM 2|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100069|Alex Patel|33|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100070|Cameron Patel|51|STEM Tutoring|MATH 24|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100070|Cameron Patel|44|STEM Tutoring|MATH 12|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100070|Cameron Patel|17|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100070|Cameron Patel|53|STEM Tutoring|MATH 32|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100070|Cameron Patel|60|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100071|Morgan Anderson|51|STEM Tutoring|MATH 24|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100071|Morgan Anderson|69|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Tuesday, Thursday|10:00 AM|5:00 PM
+U100071|Morgan Anderson|10|STEM Tutoring|CHEM 1|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100071|Morgan Anderson|16|STEM Tutoring|CHEM 10|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100071|Morgan Anderson|65|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100071|Morgan Anderson|25|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100072|Jamie Wilson|42|STEM Tutoring|MATH 11|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100072|Jamie Wilson|13|STEM Tutoring|CHEM 8|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100072|Jamie Wilson|22|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100072|Jamie Wilson|64|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100073|Skyler Brown|49|STEM Tutoring|MATH 23|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100073|Skyler Brown|64|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100073|Skyler Brown|23|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100073|Skyler Brown|58|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100073|Skyler Brown|33|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100074|Quinn Davis|14|STEM Tutoring|CHEM 8|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100074|Quinn Davis|64|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100074|Quinn Davis|9|STEM Tutoring|CHEM 1|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100074|Quinn Davis|34|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100074|Quinn Davis|55|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100075|Taylor Perez|17|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100075|Taylor Perez|51|STEM Tutoring|MATH 24|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100075|Taylor Perez|49|STEM Tutoring|MATH 23|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100075|Taylor Perez|24|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100075|Taylor Perez|47|STEM Tutoring|MATH 22|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100076|Cameron Harris|48|STEM Tutoring|MATH 22|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100076|Cameron Harris|51|STEM Tutoring|MATH 24|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100076|Cameron Harris|35|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100076|Cameron Harris|29|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100076|Cameron Harris|34|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100076|Cameron Harris|53|STEM Tutoring|MATH 32|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100077|Kai Patel|25|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100077|Kai Patel|33|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100077|Kai Patel|62|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100077|Kai Patel|57|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100077|Kai Patel|31|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100078|Casey Lee|47|STEM Tutoring|MATH 22|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100078|Casey Lee|34|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100078|Casey Lee|44|STEM Tutoring|MATH 12|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100078|Casey Lee|62|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100078|Casey Lee|9|STEM Tutoring|CHEM 1|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100078|Casey Lee|28|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100079|Avery Davis|35|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100079|Avery Davis|64|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100079|Avery Davis|50|STEM Tutoring|MATH 23|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100079|Avery Davis|68|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|1:00 PM|4:00 PM
+U100079|Avery Davis|65|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100080|Riley Lopez|36|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100080|Riley Lopez|69|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Tuesday, Thursday|10:00 AM|5:00 PM
+U100080|Riley Lopez|30|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100080|Riley Lopez|19|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100080|Riley Lopez|45|STEM Tutoring|MATH 21|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100081|Robin Gonzalez|51|STEM Tutoring|MATH 24|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100081|Robin Gonzalez|14|STEM Tutoring|CHEM 8|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100081|Robin Gonzalez|61|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100081|Robin Gonzalez|69|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Tuesday, Thursday|10:00 AM|5:00 PM
+U100081|Robin Gonzalez|57|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100081|Robin Gonzalez|24|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100082|Cameron Lopez|48|STEM Tutoring|MATH 22|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100082|Cameron Lopez|23|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100082|Cameron Lopez|60|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100082|Cameron Lopez|21|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100082|Cameron Lopez|18|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100082|Cameron Lopez|10|STEM Tutoring|CHEM 1|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100083|Taylor Patel|40|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100083|Taylor Patel|69|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Tuesday, Thursday|10:00 AM|5:00 PM
+U100083|Taylor Patel|18|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100083|Taylor Patel|67|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|10:00 AM|11:00 AM
+U100084|Robin Harris|33|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100084|Robin Harris|58|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100084|Robin Harris|72|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Sunday|4:00 PM|7:00 PM
+U100084|Robin Harris|60|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100084|Robin Harris|40|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100085|Robin Kim|9|STEM Tutoring|CHEM 1|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100085|Robin Kim|22|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100085|Robin Kim|63|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100085|Robin Kim|37|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100086|Alex Nguyen|68|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|1:00 PM|4:00 PM
+U100086|Alex Nguyen|15|STEM Tutoring|CHEM 10|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100086|Alex Nguyen|40|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100086|Alex Nguyen|24|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100087|Morgan Harris|26|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100087|Morgan Harris|68|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|1:00 PM|4:00 PM
+U100087|Morgan Harris|49|STEM Tutoring|MATH 23|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100087|Morgan Harris|65|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100087|Morgan Harris|63|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100088|Casey Anderson|66|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100088|Casey Anderson|72|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Sunday|4:00 PM|7:00 PM
+U100088|Casey Anderson|19|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100088|Casey Anderson|56|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100088|Casey Anderson|64|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100088|Casey Anderson|39|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100089|Skyler White|42|STEM Tutoring|MATH 11|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100089|Skyler White|40|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100089|Skyler White|44|STEM Tutoring|MATH 12|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100089|Skyler White|71|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Friday|9:00 AM|3:00 PM
+U100089|Skyler White|39|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100090|Alex Anderson|65|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100090|Alex Anderson|18|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100090|Alex Anderson|45|STEM Tutoring|MATH 21|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100090|Alex Anderson|39|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100090|Alex Anderson|43|STEM Tutoring|MATH 12|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100091|Riley Brown|49|STEM Tutoring|MATH 23|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100091|Riley Brown|19|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100091|Riley Brown|26|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100091|Riley Brown|28|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100091|Riley Brown|38|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100092|Sam Brown|28|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100092|Sam Brown|36|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100092|Sam Brown|17|STEM Tutoring|CHEM 100|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100092|Sam Brown|62|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100092|Sam Brown|61|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100093|Taylor Clark|68|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|1:00 PM|4:00 PM
+U100093|Taylor Clark|62|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100093|Taylor Clark|16|STEM Tutoring|CHEM 10|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100093|Taylor Clark|35|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100093|Taylor Clark|58|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100094|Jordan Jackson|11|STEM Tutoring|CHEM 2|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100094|Jordan Jackson|63|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100094|Jordan Jackson|65|STEM Tutoring|PHYS 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100094|Jordan Jackson|57|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100094|Jordan Jackson|45|STEM Tutoring|MATH 21|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100094|Jordan Jackson|33|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100095|Jamie Clark|9|STEM Tutoring|CHEM 1|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100095|Jamie Clark|54|STEM Tutoring|MATH 32|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100095|Jamie Clark|47|STEM Tutoring|MATH 22|STEM Center|SSB 320|Student Services Building|Monday, Tuesday, Wednesday, Thursday|10:00 AM|6:00 PM
+U100095|Jamie Clark|58|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100095|Jamie Clark|62|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100096|Kai Brown|37|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100096|Kai Brown|40|STEM Tutoring|MATH 5|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100096|Kai Brown|23|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Thursday|3:00 PM|6:00 PM
+U100096|Kai Brown|26|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100096|Kai Brown|36|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100096|Kai Brown|71|Writing Consultation|WRI|University Writing Center|KL 296|Kolligian Library|Friday|9:00 AM|3:00 PM
+U100097|Drew Kim|58|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Monday, Thursday|11:00 AM|5:00 PM
+U100097|Drew Kim|52|STEM Tutoring|MATH 24|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100097|Drew Kim|60|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100097|Drew Kim|30|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100098|Logan Thomas|25|STEM Tutoring|CSE 19|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|1:00 PM
+U100098|Logan Thomas|12|STEM Tutoring|CHEM 2|STEM Center|SSB 330|Student Services Building|Tuesday, Wednesday, Thursday|10:00 AM|5:00 PM
+U100098|Logan Thomas|59|STEM Tutoring|PHYS 9|STEM Center|SSB 340|Student Services Building|Tuesday|10:00 AM|5:00 PM
+U100098|Logan Thomas|19|STEM Tutoring|CSE 5|STEM Center|SSB 340|Student Services Building|Monday, Wednesday|10:00 AM|5:00 PM
+U100098|Logan Thomas|63|STEM Tutoring|PHYS 18|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
+U100099|Logan Martinez|68|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|1:00 PM|4:00 PM
+U100099|Logan Martinez|32|STEM Tutoring|CSE 22|STEM Center|SSB 340|Student Services Building|Thursday|10:00 AM|1:00 PM
+U100099|Logan Martinez|15|STEM Tutoring|CHEM 10|STEM Center|SSB 330|Student Services Building|Monday|10:00 AM|4:00 PM
+U100099|Logan Martinez|42|STEM Tutoring|MATH 11|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100100|Kai Garcia|50|STEM Tutoring|MATH 23|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100100|Kai Garcia|36|STEM Tutoring|CSE 24|STEM Center|SSB 340|Student Services Building|Tuesday|3:00 PM|6:00 PM
+U100100|Kai Garcia|67|STEM Tutoring|ENGR 57|STEM Center|SSB 340|Student Services Building|Monday|10:00 AM|11:00 AM
+U100100|Kai Garcia|52|STEM Tutoring|MATH 24|STEM Center|SSB 320|Student Services Building|Friday|10:00 AM|3:00 PM
+U100100|Kai Garcia|57|STEM Tutoring|PHYS 8|STEM Center|SSB 340|Student Services Building|Wednesday|10:30 AM|3:00 PM
