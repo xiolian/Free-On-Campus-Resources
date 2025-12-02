@@ -382,3 +382,107 @@ AND s.studentID IN (SELECT studentID FROM StudentSuppliesRecord)
 AND s.studentID IN (SELECT studentID FROM HealthRecord)
 AND s.studentID IN (SELECT studentID FROM AdvisorRecord)
 AND s.studentID IN (SELECT studentID FROM FundingRecord);
+
+
+
+                -- Tutoring
+                SELECT studentID,
+                       studentName,
+                       'Tutoring' AS category,
+                       subject     AS name,
+                       department,
+                       building,
+                       location,
+                       weekday,
+                       start_time,
+                       end_time,
+                       NULL AS link
+                FROM TutoringRecord
+                WHERE studentID = 'U100001'
+
+                UNION ALL
+
+                -- Student Supplies
+                SELECT studentID,
+                       studentName,
+                       'Supplies'  AS category,
+                       item        AS name,
+                       department,
+                       building,
+                       location,
+                       weekday,
+                       start_time,
+                       end_time,
+                       NULL AS link
+                FROM StudentSuppliesRecord
+                WHERE studentID = 'U100001'
+
+                UNION ALL
+
+                -- Health Services
+                SELECT studentID,
+                       studentName,
+                       'Health Service' AS category,
+                       service          AS name,
+                       NULL AS department,
+                       NULL AS building,
+                       location,
+                       weekday,
+                       start_time,
+                       end_time,
+                       link
+                FROM HealthRecord
+                WHERE studentID = 'U100001'
+
+                UNION ALL
+
+                -- Academic Support
+                SELECT studentID,
+                       studentName,
+                       'Academic Support' AS category,
+                       aca_supp_service   AS name,
+                       department,
+                       building,
+                       location,
+                       weekday,
+                       start_time,
+                       end_time,
+                       link
+                FROM AcademicSupportRecord
+                WHERE studentID = 'U100001'
+
+                UNION ALL
+
+                -- Advisor assignments
+                SELECT studentID,
+                       studentName,
+                       'Advisor' AS category,
+                       name      AS name,
+                       NULL AS department,
+                       building,
+                       location,
+                       NULL AS weekday,
+                       NULL AS start_time,
+                       NULL AS end_time,
+                       link
+                FROM AdvisorRecord
+                WHERE studentID = 'U100001'
+
+                UNION ALL
+
+                -- Funding
+                SELECT studentID,
+                       studentName,
+                       'Funding' AS category,
+                       funding_name AS name,
+                       department,
+                       building,
+                       location,
+                       weekday,
+                       start_time,
+                       end_time,
+                       link
+                FROM FundingRecord
+                WHERE studentID = 'U100001'
+
+                ORDER BY category, name;

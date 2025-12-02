@@ -55,6 +55,29 @@
 								template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
 								<p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
 							</header>
+
+							<!-- Student Resource History Section -->
+							<section id="student-resources">
+								<h2>Student Resource History</h2>
+
+								<form id="resource-form">
+									<div class="fields">
+										<div class="field half">
+											<label for="studentID">Student ID</label>
+											<input type="text" name="studentID" id="studentID" placeholder="e.g. U100001" required />
+										</div>
+										<div class="field half">
+											<label>&nbsp;</label>
+											<input type="submit" value="View Resources" class="primary" />
+										</div>
+									</div>
+								</form>
+
+								<div id="resource-results">
+									<!-- Results table will be injected here by JS -->
+								</div>
+							</section>
+
 							<section class="tiles">
 								<article class="style1">
 									<span class="image">
@@ -241,6 +264,93 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- Custom script to connect to Flask backend -->
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					const form = document.getElementById("resource-form");
+					const resultsContainer = document.getElementById("resource-results");
+
+					if (!form) return;
+
+					form.addEventListener("submit", async function (e) {
+						e.preventDefault();
+
+						const studentID = document.getElementById("studentID").value.trim();
+
+						if (!studentID) {
+							resultsContainer.innerHTML = "<p>Please enter a student ID.</p>";
+							return;
+						}
+
+						try {
+							const response = await fetch("/api/resources-history", {
+								method: "POST",
+								headers: { "Content-Type": "application/json" },
+								body: JSON.stringify({ studentID })
+							});
+
+							if (!response.ok) {
+								const err = await response.json().catch(() => ({}));
+								resultsContainer.innerHTML = `<p>Error: ${err.error || "Request failed"}</p>`;
+								return;
+							}
+
+							const data = await response.json();
+
+							if (!data.length) {
+								resultsContainer.innerHTML = "<p>No resources found for this student.</p>";
+								return;
+							}
+
+							let html = `
+								<table>
+									<thead>
+										<tr>
+											<th>Category</th>
+											<th>Name</th>
+											<th>Department</th>
+											<th>Building</th>
+											<th>Location</th>
+											<th>When</th>
+											<th>Link</th>
+										</tr>
+									</thead>
+									<tbody>
+							`;
+
+							data.forEach(item => {
+								const when = item.weekday
+									? `${item.weekday} ${item.start_time || ""}-${item.end_time || ""}`.trim()
+									: "";
+
+								html += `
+									<tr>
+										<td>${item.category || ""}</td>
+										<td>${item.name || ""}</td>
+										<td>${item.department || ""}</td>
+										<td>${item.building || ""}</td>
+										<td>${item.location || ""}</td>
+										<td>${when}</td>
+										<td>${item.link ? `<a href="${item.link}" target="_blank">Link</a>` : ""}</td>
+									</tr>
+								`;
+							});
+
+							html += `
+									</tbody>
+								</table>
+							`;
+
+							resultsContainer.innerHTML = html;
+
+						} catch (err) {
+							console.error(err);
+							resultsContainer.innerHTML = "<p>Network error. Please try again.</p>";
+						}
+					});
+				});
+			</script>
 
 	</body>
 </html>
