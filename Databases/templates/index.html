@@ -1,356 +1,544 @@
 <!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Phantom by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <head>
+    <title>UC Merced Resources</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+    <div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <a href="/" class="logo">
+            <span class="symbol"><img src="/images/logo.svg" alt="" /></span>
+            <span class="title">UC Merced Resources</span>
+          </a>
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
-								</a>
+          <nav>
+            <ul>
+              <li><a href="/">Student View</a></li>
+              <li><a href="/admin">Admin Dashboard</a></li>
+              <li><a href="#menu">Menu</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+      <!-- Menu -->
+      <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="/">Student View</a></li>
+          <li><a href="/admin">Admin Dashboard</a></li>
+        </ul>
+      </nav>
 
-						</div>
-					</header>
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-					</nav>
+          <header>
+            <h1>Free On-Campus Resources</h1>
+            <p>
+              Browse UC Merced resources, add them to your cart, and check them out
+              under your student account. You can also view and manage your
+              resource history.
+            </p>
+          </header>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
-								<h1>This is Phantom, a free, fully responsive site<br />
-								template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
-								<p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
-							</header>
+          <!-- Resource Catalog + Cart -->
+          <section id="resource-browser">
+            <h2>Browse Resources</h2>
 
-							<!-- Student Resource History Section -->
-							<section id="student-resources">
-								<h2>Student Resource History</h2>
+            <div class="row">
+              <div class="col-8 col-12-medium">
+                <div class="fields">
+                  <div class="field half">
+                    <label for="filter-category">Filter by category</label>
+                    <select id="filter-category">
+                      <option value="">All categories</option>
+                      <option value="supplies">Student Supplies</option>
+                      <option value="tutoring">Tutoring</option>
+                      <option value="health">Health Services</option>
+                      <option value="funding">Funding</option>
+                      <option value="academic_support">Academic Support</option>
+                      <option value="advisor">Advisors</option>
+                    </select>
+                  </div>
+                </div>
 
-								<form id="resource-form">
-									<div class="fields">
-										<div class="field half">
-											<label for="studentID">Student ID</label>
-											<input type="text" name="studentID" id="studentID" placeholder="e.g. U100001" required />
-										</div>
-										<div class="field half">
-											<label>&nbsp;</label>
-											<input type="submit" value="View Resources" class="primary" />
-										</div>
-									</div>
-								</form>
+                <div id="resource-table-wrapper">
+                  <p>Loading resources...</p>
+                </div>
+              </div>
 
-								<div id="resource-results">
-									<!-- Results table will be injected here by JS -->
-								</div>
-							</section>
+              <div class="col-4 col-12-medium">
+                <h3>Your Cart</h3>
+                <div id="cart-contents">
+                  <p>No items in cart.</p>
+                </div>
 
-							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Magna</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Lorem</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Feugiat</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Tempus</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style5">
-									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Aliquam</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style6">
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Veroeros</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/pic07.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Ipsum</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/pic08.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Dolor</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style1">
-									<span class="image">
-										<img src="images/pic09.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Nullam</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style5">
-									<span class="image">
-										<img src="images/pic10.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Ultricies</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style6">
-									<span class="image">
-										<img src="images/pic11.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Dictum</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/pic12.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Pretium</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-							</section>
-						</div>
-					</div>
+                <hr />
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+                <h3>Checkout</h3>
+                <form id="checkout-form">
+                  <div class="fields">
+                    <div class="field">
+                      <label for="checkout-name">Student Name</label>
+                      <input type="text" id="checkout-name" placeholder="e.g. Rufus T. Bobcat" required />
+                    </div>
+                    <div class="field">
+                      <label for="checkout-id">Student ID</label>
+                      <input type="text" id="checkout-id" placeholder="e.g. U200123" required />
+                    </div>
+                    <div class="field">
+                      <label for="checkout-password">Password</label>
+                      <input type="password" id="checkout-password" placeholder="Create or use existing" required />
+                    </div>
+                  </div>
+                  <ul class="actions">
+                    <li><input type="submit" value="Checkout Cart" class="primary" /></li>
+                  </ul>
+                  <p id="checkout-status"></p>
+                </form>
+              </div>
+            </div>
+          </section>
 
-			</div>
+          <hr />
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+          <!-- Resource History -->
+          <section id="student-history">
+            <h2>Student Resource History</h2>
+            <p>
+              Log in with your Student ID and password to see everything you've
+              checked out. You can remove individual entries if needed.
+            </p>
 
-			<!-- Custom script to connect to Flask backend -->
-			<script>
-				document.addEventListener("DOMContentLoaded", function () {
-					const form = document.getElementById("resource-form");
-					const resultsContainer = document.getElementById("resource-results");
+            <form id="history-form">
+              <div class="fields">
+                <div class="field">
+                  <label for="history-id">Student ID</label>
+                  <input type="text" id="history-id" placeholder="U200123" required />
+                </div>
+                <div class="field">
+                  <label for="history-password">Password</label>
+                  <input type="password" id="history-password" placeholder="Your student password" required />
+                </div>
+              </div>
+              <ul class="actions">
+                <li><input type="submit" value="View History" class="primary" /></li>
+              </ul>
+            </form>
 
-					if (!form) return;
+            <div id="history-results">
+              <!-- history table goes here -->
+            </div>
+          </section>
 
-					form.addEventListener("submit", async function (e) {
-						e.preventDefault();
+        </div>
+      </div>
 
-						const studentID = document.getElementById("studentID").value.trim();
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="inner">
+          <ul class="copyright">
+            <li>&copy; UC Merced Resources (demo). All rights reserved.</li>
+          </ul>
+        </div>
+      </footer>
 
-						if (!studentID) {
-							resultsContainer.innerHTML = "<p>Please enter a student ID.</p>";
-							return;
-						}
+    </div>
 
-						try {
-							const response = await fetch("/api/resources-history", {
-								method: "POST",
-								headers: { "Content-Type": "application/json" },
-								body: JSON.stringify({ studentID })
-							});
+    <!-- Scripts (same template stack) -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
 
-							if (!response.ok) {
-								const err = await response.json().catch(() => ({}));
-								resultsContainer.innerHTML = `<p>Error: ${err.error || "Request failed"}</p>`;
-								return;
-							}
+    <!-- Page-specific JS -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterCategory   = document.getElementById("filter-category");
+        const resourceWrapper  = document.getElementById("resource-table-wrapper");
+        const cartContents     = document.getElementById("cart-contents");
+        const checkoutForm     = document.getElementById("checkout-form");
+        const checkoutStatus   = document.getElementById("checkout-status");
 
-							const data = await response.json();
+        const historyForm      = document.getElementById("history-form");
+        const historyResults   = document.getElementById("history-results");
 
-							if (!data.length) {
-								resultsContainer.innerHTML = "<p>No resources found for this student.</p>";
-								return;
-							}
+        // Cart data: array of {category_key, resource_id, name, category}
+        let cart = [];
 
-							let html = `
-								<table>
-									<thead>
-										<tr>
-											<th>Category</th>
-											<th>Name</th>
-											<th>Department</th>
-											<th>Building</th>
-											<th>Location</th>
-											<th>When</th>
-											<th>Link</th>
-										</tr>
-									</thead>
-									<tbody>
-							`;
+        // History data (after login)
+        let historyData = [];
+        let historyStudentID = "";
+        let historyPassword = "";
 
-							data.forEach(item => {
-								const when = item.weekday
-									? `${item.weekday} ${item.start_time || ""}-${item.end_time || ""}`.trim()
-									: "";
+        // ------------------------
+        // Helpers
+        // ------------------------
+        function escapeHtml(value) {
+          return String(value || "")
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#39;");
+        }
 
-								html += `
-									<tr>
-										<td>${item.category || ""}</td>
-										<td>${item.name || ""}</td>
-										<td>${item.department || ""}</td>
-										<td>${item.building || ""}</td>
-										<td>${item.location || ""}</td>
-										<td>${when}</td>
-										<td>${item.link ? `<a href="${item.link}" target="_blank">Link</a>` : ""}</td>
-									</tr>
-								`;
-							});
+        function renderResourceTable(resources) {
+          if (!resources || !resources.length) {
+            resourceWrapper.innerHTML = "<p>No resources found.</p>";
+            return;
+          }
 
-							html += `
-									</tbody>
-								</table>
-							`;
+          let html = `
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Add</th>
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Building</th>
+                    <th>Location</th>
+                    <th>When</th>
+                    <th>Notes / Link</th>
+                  </tr>
+                </thead>
+                <tbody>
+          `;
 
-							resultsContainer.innerHTML = html;
+          resources.forEach((r, index) => {
+            const when = r.weekday
+              ? (r.weekday + " " + (r.start_time || "") + "-" + (r.end_time || "")).trim()
+              : "";
+            const notes = r.notes || "";
+            const link  = r.link ? `<a href="${escapeHtml(r.link)}" target="_blank">Link</a>` : "";
 
-						} catch (err) {
-							console.error(err);
-							resultsContainer.innerHTML = "<p>Network error. Please try again.</p>";
-						}
-					});
-				});
-			</script>
+            html += `
+              <tr>
+                <td>
+                  <button type="button"
+                          class="button small"
+                          data-add-index="${index}">
+                    Add
+                  </button>
+                </td>
+                <td>${escapeHtml(r.category)}</td>
+                <td>${escapeHtml(r.name)}</td>
+                <td>${escapeHtml(r.department)}</td>
+                <td>${escapeHtml(r.building)}</td>
+                <td>${escapeHtml(r.location)}</td>
+                <td>${escapeHtml(when)}</td>
+                <td>${escapeHtml(notes)} ${link}</td>
+              </tr>
+            `;
+          });
 
-	</body>
+          html += `
+                </tbody>
+              </table>
+            </div>
+          `;
+
+          resourceWrapper.innerHTML = html;
+
+          // attach add-to-cart buttons
+          resourceWrapper.querySelectorAll("button[data-add-index]").forEach(btn => {
+            btn.addEventListener("click", function () {
+              const idx = parseInt(btn.getAttribute("data-add-index"), 10);
+              const item = resources[idx];
+              if (!item) return;
+              cart.push({
+                category_key: item.category_key,
+                resource_id: item.resource_id,
+                name: item.name,
+                category: item.category
+              });
+              renderCart();
+            });
+          });
+        }
+
+        function renderCart() {
+          if (!cart.length) {
+            cartContents.innerHTML = "<p>No items in cart.</p>";
+            return;
+          }
+
+          let html = `
+            <ul>
+          `;
+          cart.forEach((item, index) => {
+            html += `
+              <li>
+                [${escapeHtml(item.category)}] ${escapeHtml(item.name)}
+                <button type="button"
+                        class="button small"
+                        data-remove-index="${index}">
+                  Remove
+                </button>
+              </li>
+            `;
+          });
+          html += `</ul>`;
+
+          cartContents.innerHTML = html;
+
+          cartContents.querySelectorAll("button[data-remove-index]").forEach(btn => {
+            btn.addEventListener("click", function () {
+              const idx = parseInt(btn.getAttribute("data-remove-index"), 10);
+              if (!isNaN(idx)) {
+                cart.splice(idx, 1);
+                renderCart();
+              }
+            });
+          });
+        }
+
+        function renderHistoryTable(data) {
+          if (!data || !data.length) {
+            historyResults.innerHTML = "<p>No resources found for this student.</p>";
+            return;
+          }
+
+          let html = `
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Building</th>
+                    <th>Location</th>
+                    <th>When</th>
+                    <th>Link</th>
+                    <th>Delete</th>
+                  </tr>
+                </thead>
+                <tbody>
+          `;
+
+          data.forEach((item, index) => {
+            const when = item.weekday
+              ? (item.weekday + " " + (item.start_time || "") + "-" + (item.end_time || "")).trim()
+              : "";
+            const link = item.link ? `<a href="${escapeHtml(item.link)}" target="_blank">Link</a>` : "";
+
+            html += `
+              <tr>
+                <td>${escapeHtml(item.category)}</td>
+                <td>${escapeHtml(item.name)}</td>
+                <td>${escapeHtml(item.department)}</td>
+                <td>${escapeHtml(item.building)}</td>
+                <td>${escapeHtml(item.location)}</td>
+                <td>${escapeHtml(when)}</td>
+                <td>${link}</td>
+                <td>
+                  <button type="button"
+                          class="button small"
+                          data-delete-index="${index}">
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            `;
+          });
+
+          html += `
+                </tbody>
+              </table>
+            </div>
+          `;
+
+          historyResults.innerHTML = html;
+        }
+
+        // ------------------------
+        // Load resources
+        // ------------------------
+        async function loadResources() {
+          resourceWrapper.innerHTML = "<p>Loading resources...</p>";
+          try {
+            const cat = filterCategory.value;
+            const url = cat ? `/api/resources?category=${encodeURIComponent(cat)}` : "/api/resources";
+            const res = await fetch(url);
+            if (!res.ok) {
+              resourceWrapper.innerHTML = "<p>Error loading resources.</p>";
+              return;
+            }
+            const data = await res.json();
+            renderResourceTable(data);
+          } catch (err) {
+            console.error(err);
+            resourceWrapper.innerHTML = "<p>Network error loading resources.</p>";
+          }
+        }
+
+        filterCategory.addEventListener("change", loadResources);
+
+        // ------------------------
+        // Checkout handler
+        // ------------------------
+        checkoutForm.addEventListener("submit", async function (e) {
+          e.preventDefault();
+          checkoutStatus.textContent = "";
+
+          const name = document.getElementById("checkout-name").value.trim();
+          const id   = document.getElementById("checkout-id").value.trim();
+          const pw   = document.getElementById("checkout-password").value.trim();
+
+          if (!name || !id || !pw) {
+            checkoutStatus.textContent = "Please fill out name, ID, and password.";
+            checkoutStatus.style.color = "red";
+            return;
+          }
+          if (!cart.length) {
+            checkoutStatus.textContent = "Your cart is empty.";
+            checkoutStatus.style.color = "red";
+            return;
+          }
+
+          const payload = {
+            studentName: name,
+            studentID: id,
+            password: pw,
+            items: cart.map(c => ({
+              category_key: c.category_key,
+              resource_id: c.resource_id
+            }))
+          };
+
+          try {
+            const res = await fetch("/api/cart/checkout", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload)
+            });
+            const data = await res.json();
+            if (!res.ok || !data.success) {
+              checkoutStatus.textContent = "Error: " + (data.error || "Checkout failed.");
+              checkoutStatus.style.color = "red";
+              return;
+            }
+            checkoutStatus.textContent = `Success! ${data.inserted || 0} item(s) recorded.`;
+            checkoutStatus.style.color = "green";
+            cart = [];
+            renderCart();
+          } catch (err) {
+            console.error(err);
+            checkoutStatus.textContent = "Network error during checkout.";
+            checkoutStatus.style.color = "red";
+          }
+        });
+
+        // ------------------------
+        // History: delete handler (delegated)
+        // ------------------------
+        historyResults.addEventListener("click", async function (e) {
+          const btn = e.target.closest("button[data-delete-index]");
+          if (!btn) return;
+
+          const index = parseInt(btn.getAttribute("data-delete-index"), 10);
+          if (isNaN(index) || !historyData[index]) return;
+
+          if (!historyStudentID || !historyPassword) {
+            alert("No student login in context. Please load your history again.");
+            return;
+          }
+
+          if (!confirm("Delete this entry from your history?")) return;
+
+          const entry = historyData[index];
+
+          const payload = {
+            studentID: historyStudentID,
+            password: historyPassword,
+            entry: {
+              category:  entry.category,
+              name:      entry.name,
+              department:entry.department,
+              building:  entry.building,
+              location:  entry.location,
+              weekday:   entry.weekday,
+              start_time:entry.start_time,
+              end_time:  entry.end_time,
+              link:      entry.link
+            }
+          };
+
+          try {
+            const res = await fetch("/api/resources-history/delete", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload)
+            });
+            const data = await res.json();
+            if (!res.ok || !data.success) {
+              alert("Error deleting entry: " + (data.error || "Unknown error."));
+              return;
+            }
+            // Remove from local list and re-render
+            historyData.splice(index, 1);
+            renderHistoryTable(historyData);
+          } catch (err) {
+            console.error(err);
+            alert("Network error while deleting entry.");
+          }
+        });
+
+        // ------------------------
+        // History form submit
+        // ------------------------
+        historyForm.addEventListener("submit", async function (e) {
+          e.preventDefault();
+          historyResults.innerHTML = "<p>Loading history...</p>";
+
+          const id = document.getElementById("history-id").value.trim();
+          const pw = document.getElementById("history-password").value.trim();
+
+          if (!id || !pw) {
+            historyResults.innerHTML = "<p>Please enter your student ID and password.</p>";
+            return;
+          }
+
+          try {
+            const res = await fetch("/api/resources-history", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ studentID: id, password: pw })
+            });
+            const data = await res.json();
+            if (!res.ok) {
+              historyResults.innerHTML = `<p>Error: ${data.error || "Unable to load history."}</p>`;
+              return;
+            }
+
+            historyStudentID = id;
+            historyPassword  = pw;
+            historyData = Array.isArray(data) ? data : [];
+            renderHistoryTable(historyData);
+          } catch (err) {
+            console.error(err);
+            historyResults.innerHTML = "<p>Network error loading history.</p>";
+          }
+        });
+
+        // Initial load
+        renderCart();
+        loadResources();
+      });
+    </script>
+  </body>
 </html>

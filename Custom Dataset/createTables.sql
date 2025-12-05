@@ -316,11 +316,12 @@ DROP TABLE IF EXISTS Student;
 
 CREATE TABLE Student (
     studentID   VARCHAR(50) PRIMARY KEY,
-    studentName VARCHAR(100) NOT NULL
+    studentName VARCHAR(100) NOT NULL,
+    studentPass VARCHAR(50) NOT NULL
 );
 
 .mode csv
-.import Student.csv Student
+.import student.csv Student
 
 DELETE FROM Student
 WHERE studentID = 'studentID';
@@ -342,7 +343,7 @@ CREATE TABLE TutoringRecord (
 );
 
 .mode csv
-.import tutoringrec.csv TutoringRecord
+.import TutoringRecord.csv TutoringRecord
 
 DELETE FROM TutoringRecord
 WHERE studentID = 'studentID';
@@ -366,7 +367,7 @@ CREATE TABLE StudentSuppliesRecord (
 );
 
 .mode csv
-.import stsupprec.csv StudentSuppliesRecord
+.import StudentSuppliesRecord.csv StudentSuppliesRecord
 
 DELETE FROM StudentSuppliesRecord
 WHERE studentID = 'studentID';
@@ -387,7 +388,7 @@ CREATE TABLE HealthRecord (
 );
 
 .mode csv
-.import healthrec.csv HealthRecord
+.import HealthRecord.csv HealthRecord
 
 DELETE FROM HealthRecord
 WHERE studentID = 'studentID';
@@ -412,7 +413,7 @@ CREATE TABLE AcademicSupportRecord (
 );
 
 .mode csv
-.import acaSuppRecord.csv AcademicSupportRecord
+.import AcademicSupportRecord.csv AcademicSupportRecord
 
 DELETE FROM AcademicSupportRecord
 WHERE studentID = 'studentID';
@@ -434,7 +435,7 @@ CREATE TABLE AdvisorRecord (
 );
 
 .mode csv
-.import AdvisorRecordNew.csv AdvisorRecord
+.import AdvisorRecord.csv AdvisorRecord
 
 DELETE FROM AdvisorRecord
 WHERE studentID = 'studentID';
@@ -459,7 +460,7 @@ CREATE TABLE FundingRecord (
 );
 
 .mode csv
-.import fundingrecord.csv FundingRecord
+.import FundingRecord.csv FundingRecord
 
 DELETE FROM FundingRecord
 WHERE studentID = 'studentID';

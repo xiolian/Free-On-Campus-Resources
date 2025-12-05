@@ -9,7 +9,8 @@ class databaseConn:
 
         conn = None
         try:
-            conn = sqlite3.connect(_dbFile)
+            # allow the same connection object to be used from multiple threads
+            conn = sqlite3.connect(_dbFile, check_same_thread=False)
             print("success")
         except Error as e:
             print(e)
@@ -17,6 +18,7 @@ class databaseConn:
         print("++++++++++++++++++++++++++++++++++")
 
         return conn
+
 
     def closeConnection(_conn, _dbFile):
         print("++++++++++++++++++++++++++++++++++")

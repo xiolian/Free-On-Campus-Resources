@@ -1,0 +1,549 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>UC Merced Resource Admin Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+    <style>
+    .admin-compact .table-wrapper {
+        overflow-x: auto;              /* horizontal scroll if many columns */
+    }
+
+    .admin-compact .table-wrapper table {
+        font-size: 0.8rem;             /* smaller text in tables */
+        white-space: nowrap;           /* keep columns narrow, no wrapping */
+    }
+
+    .admin-compact .table-wrapper th,
+    .admin-compact .table-wrapper td {
+        padding: 0.25rem 0.5rem;       /* less padding = more columns visible */
+    }
+
+    .admin-compact .manage-form .fields {
+        display: flex;
+        flex-wrap: wrap;               /* put form fields side-by-side */
+        gap: 0.5rem;
+    }
+
+    .admin-compact .manage-form .field {
+        flex: 1 1 220px;               /* multiple fields in a row */
+        margin-bottom: 0.3rem;
+    }
+
+    .admin-compact .manage-form input[type="text"] {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .admin-compact .manage-form label {
+        font-size: 0.75rem;
+        margin-bottom: 0.1rem;
+    }
+
+    .admin-compact .manage-form-status {
+        font-size: 0.8rem;
+    }
+    </style>
+
+  </head>
+  <body class="is-preload admin-compact">
+
+    <div id="wrapper">
+
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <a href="/" class="logo">
+            <span class="symbol"><img src="/images/logo.svg" alt="" /></span>
+            <span class="title">UC Merced Resources</span>
+          </a>
+
+          <nav>
+            <ul>
+              <li><a href="/">Student View</a></li>
+              <li><a href="#menu">Menu</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Menu -->
+      <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="/">Student View</a></li>
+          <li><a href="/admin">Admin Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <header>
+            <h1>Admin Dashboard: UC Merced Student Resources</h1>
+            <p>
+              Admin-only view for reviewing and editing resource data and
+              per-student resource usage.
+            </p>
+          </header>
+
+          <!-- Overview of all students (read-only) -->
+          <!-- <section id="admin-students"> -->
+            <!-- <h2>All Students &amp; Resource Usage</h2> -->
+            <!-- <p> -->
+              <!-- Aggregated counts from all *Record tables (advisors, tutoring, -->
+              <!-- supplies, health, academic support, funding). -->
+            <!-- </p> -->
+            <!-- <div id="admin-students-table-wrapper"> -->
+              <!-- Table will be injected here -->
+            <!-- </div> -->
+          <!-- </section> -->
+
+          <hr />
+
+          <!-- Manage RECORD tables (per-student histories) -->
+          <section id="admin-records">
+            <h2>Manage Record Tables (per-student history)</h2>
+            <p>
+              <!-- Edit rows in the *Record tables that track which resources an
+              individual student has used. -->
+            </p>
+            <div class="fields">
+              <div class="field half">
+                <label for="manage-records-category">Record table</label>
+                <select id="manage-records-category">
+                  <option value="">-- Select a record table --</option>
+                  <option value="academic_support">Academic Support Record</option>
+                  <option value="advisor">Advisor Record</option>
+                  <option value="funding">Funding Record</option>
+                  <option value="health">Health Record</option>
+                  <option value="supplies">Student Supplies Record</option>
+                  <option value="tutoring">Tutoring Record</option>
+                </select>
+              </div>
+            </div>
+
+            <div id="manage-records-table-wrapper">
+              <!-- Editable table + form will be injected here -->
+            </div>
+          </section>
+
+          <hr />
+
+          <!-- Manage RESOURCE tables (master data) -->
+          <section id="admin-resources">
+            <h2>Manage Resource Tables (master data)</h2>
+            <p>
+              <!-- Edit the master lists of resources (supplies, tutors, health services,
+              funding, etc.) that are available to students. -->
+            </p>
+            <div class="fields">
+              <div class="field half">
+                <label for="manage-resources-category">Resource table</label>
+                <select id="manage-resources-category">
+                  <option value="">-- Select a resource table --</option>
+                  <option value="academic_support">Academic Support Services</option>
+                  <option value="advisor">Academic Advising / Advisors</option>
+                  <option value="funding">Funding Opportunities</option>
+                  <option value="health">Health Services</option>
+                  <option value="supplies">Student Supplies</option>
+                  <option value="tutoring">Tutoring Schedule</option>
+                </select>
+              </div>
+            </div>
+
+            <div id="manage-resources-table-wrapper">
+              <!-- Editable table + form will be injected here -->
+            </div>
+          </section>
+
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="inner">
+          <ul class="copyright">
+            <li>&copy; UC Merced Resources (demo). All rights reserved.</li>
+          </ul>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- Scripts (template) -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+    <!-- Admin-specific JS -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const studentsWrapper = document.getElementById("admin-students-table-wrapper");
+
+        const recordsCategory   = document.getElementById("manage-records-category");
+        const recordsWrapper    = document.getElementById("manage-records-table-wrapper");
+
+        const resourcesCategory = document.getElementById("manage-resources-category");
+        const resourcesWrapper  = document.getElementById("manage-resources-table-wrapper");
+
+        // PK names (must match backend TABLE_CONFIG)
+        const PK_MAP = {
+          records: {
+            academic_support: "rowid",
+            advisor:          "rowid",
+            funding:          "rowid",
+            health:           "rowid",
+            supplies:         "rowid",
+            tutoring:         "rowid"
+          },
+          resources: {
+            academic_support: "support_id",
+            advisor:          "advisor_id",
+            funding:          "funding_id",
+            health:           "health_id",
+            supplies:         "supply_id",
+            tutoring:         "tutoring_id"
+          }
+        };
+
+        // ---------- utility: escape HTML ----------
+        function escapeHtml(value) {
+          return String(value)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#39;");
+        }
+
+        // ---------- Basic read-only table (students) ----------
+        function renderTable(data, container, columnOrder = null) {
+          if (!data || !data.length) {
+            container.innerHTML = "<p>No data found.</p>";
+            return;
+          }
+
+          const keys = columnOrder || Object.keys(data[0]);
+
+          let html = "<div class='table-wrapper'><table>";
+          html += "<thead><tr>";
+          keys.forEach(k => {
+            html += `<th>${k}</th>`;
+          });
+          html += "</tr></thead><tbody>";
+
+          data.forEach(row => {
+            html += "<tr>";
+            keys.forEach(k => {
+              let value = row[k];
+              if (value === null || value === undefined) value = "";
+              html += `<td>${escapeHtml(value)}</td>`;
+            });
+            html += "</tr>";
+          });
+
+          html += "</tbody></table></div>";
+          container.innerHTML = html;
+        }
+
+        async function loadStudents() {
+          studentsWrapper.innerHTML = "<p>Loading students...</p>";
+          try {
+            const res = await fetch("/api/admin/students");
+            if (!res.ok) {
+              studentsWrapper.innerHTML = "<p>Error loading students.</p>";
+              return;
+            }
+            const data = await res.json();
+
+            const studentColumns = [
+              "studentID",
+              "studentName",
+              "academic_support",
+              "advisor",
+              "funding",
+              "health",
+              "supplies",
+              "tutoring"
+            ];
+
+            renderTable(data, studentsWrapper, studentColumns);
+          } catch (err) {
+            console.error(err);
+            studentsWrapper.innerHTML = "<p>Network error loading students.</p>";
+          }
+        }
+
+        // ---------- Editable tables for records/resources ----------
+
+        function renderManageTable(data, container, options) {
+          const { group, category, pkName } = options;
+
+          container._manageOptions = options;
+          container._manageRows = data || [];
+
+          if (!data || !data.length) {
+            container.innerHTML = `
+              <p>No rows in this table yet.</p>
+              <ul class="actions">
+                <li><button class="button primary small" data-action="add">Add New Row</button></li>
+              </ul>
+              <div class="manage-form-container"></div>
+            `;
+            if (!container._clickAttached) {
+              container.addEventListener("click", handleManageClick);
+              container._clickAttached = true;
+            }
+            if (!container._submitAttached) {
+              container.addEventListener("submit", handleManageSubmit);
+              container._submitAttached = true;
+            }
+            return;
+          }
+
+          const keys = Object.keys(data[0]);
+          const ordered = [pkName].concat(keys.filter(k => k !== pkName));
+
+          let html = "<div class='table-wrapper'><table>";
+          html += "<thead><tr>";
+          ordered.forEach(k => {
+            html += `<th>${k}</th>`;
+          });
+          html += "<th>Actions</th>";
+          html += "</tr></thead><tbody>";
+
+          data.forEach((row, idx) => {
+            html += "<tr>";
+            ordered.forEach(k => {
+              let value = row[k];
+              if (value === null || value === undefined) value = "";
+              html += `<td>${escapeHtml(value)}</td>`;
+            });
+            html += `<td>
+                       <button class="button small" data-action="edit" data-index="${idx}">Edit</button>
+                       <button class="button small" data-action="delete" data-index="${idx}">Delete</button>
+                     </td>`;
+            html += "</tr>";
+          });
+
+          html += "</tbody></table></div>";
+          html += `
+            <ul class="actions">
+              <li><button class="button primary small" data-action="add">Add New Row</button></li>
+            </ul>
+            <div class="manage-form-container"></div>
+          `;
+
+          container.innerHTML = html;
+
+          if (!container._clickAttached) {
+            container.addEventListener("click", handleManageClick);
+            container._clickAttached = true;
+          }
+          if (!container._submitAttached) {
+            container.addEventListener("submit", handleManageSubmit);
+            container._submitAttached = true;
+          }
+        }
+
+        async function loadManage(group, category, container) {
+          if (!category) {
+            container.innerHTML = "<p>Please select a table.</p>";
+            return;
+          }
+          container.innerHTML = "<p>Loading...</p>";
+
+          const pkName = PK_MAP[group][category];
+
+          try {
+            const res = await fetch(`/api/admin/manage/${group}/${category}`);
+            if (!res.ok) {
+              container.innerHTML = "<p>Error loading data.</p>";
+              return;
+            }
+            const data = await res.json();
+            renderManageTable(data, container, { group, category, pkName });
+          } catch (err) {
+            console.error(err);
+            container.innerHTML = "<p>Network error loading data.</p>";
+          }
+        }
+
+        function showEditForm(container, mode, rowOrNull, pkName) {
+          const formContainer = container.querySelector(".manage-form-container");
+          if (!formContainer) return;
+
+          const rows = container._manageRows || [];
+          const isAdd = mode === "add";
+
+          let editable = {};
+          let pkValue = "";
+
+          if (isAdd) {
+            if (!rows.length) {
+              alert("No sample row to infer columns from. Insert via SQL first.");
+              return;
+            }
+            const sample = rows[0];
+            Object.keys(sample).forEach(col => {
+              if (col !== pkName) editable[col] = "";
+            });
+          } else {
+            const row = rowOrNull || {};
+            pkValue = row[pkName];
+            Object.keys(row).forEach(col => {
+              if (col !== pkName) editable[col] = row[col];
+            });
+          }
+
+          let html = `<form class="manage-form" data-mode="${mode}" data-pk="${pkValue}">
+                        <div class="fields">`;
+
+          Object.keys(editable).forEach(col => {
+            const value = editable[col] === null || editable[col] === undefined
+              ? ""
+              : editable[col];
+            html += `
+              <div class="field">
+                <label>${col}</label>
+                <input type="text" data-column="${col}" value="${escapeHtml(value)}" />
+              </div>`;
+          });
+
+          html += `</div>
+                   <ul class="actions">
+                     <li><input type="submit" value="${isAdd ? "Create" : "Update"}" class="primary small" /></li>
+                     <li><button type="button" class="button small" data-action="cancel-form">Cancel</button></li>
+                   </ul>
+                   <p class="manage-form-status"></p>
+                  </form>`;
+
+          formContainer.innerHTML = html;
+        }
+
+        async function handleManageClick(event) {
+          const btn = event.target.closest("button[data-action]");
+          if (!btn) return;
+
+          const action = btn.dataset.action;
+          const container = event.currentTarget;
+          const options = container._manageOptions;
+          if (!options) return;
+
+          const rows = container._manageRows || [];
+          const { group, category, pkName } = options;
+          const baseUrl = `/api/admin/manage/${group}/${category}`;
+
+          if (action === "cancel-form") {
+            const fc = container.querySelector(".manage-form-container");
+            if (fc) fc.innerHTML = "";
+            return;
+          }
+
+          if (action === "add") {
+            showEditForm(container, "add", null, pkName);
+            return;
+          }
+
+          const index = parseInt(btn.dataset.index, 10);
+          const row = rows[index];
+          if (!row) return;
+          const pkValue = row[pkName];
+
+          if (action === "delete") {
+            if (!confirm(`Delete row with ${pkName} = ${pkValue}?`)) return;
+            try {
+              const res = await fetch(`${baseUrl}/${pkValue}`, {
+                method: "DELETE"
+              });
+              if (!res.ok) {
+                alert("Error deleting row.");
+                return;
+              }
+              await loadManage(group, category, container);
+            } catch (err) {
+              console.error(err);
+              alert("Network error.");
+            }
+          }
+
+          if (action === "edit") {
+            showEditForm(container, "edit", row, pkName);
+          }
+        }
+
+        async function handleManageSubmit(event) {
+          const form = event.target;
+          if (!form.classList || !form.classList.contains("manage-form")) return;
+          event.preventDefault();
+
+          const container = event.currentTarget;
+          const options = container._manageOptions;
+          if (!options) return;
+
+          const { group, category, pkName } = options;
+          const baseUrl = `/api/admin/manage/${group}/${category}`;
+          const mode = form.dataset.mode;
+          const pkValue = form.dataset.pk;
+
+          const statusEl = form.querySelector(".manage-form-status");
+          statusEl.textContent = "";
+
+          const inputs = form.querySelectorAll("input[data-column]");
+          const payload = {};
+          inputs.forEach(inp => {
+            payload[inp.dataset.column] = inp.value;
+          });
+
+          try {
+            let url = baseUrl;
+            let method = "POST";
+            if (mode === "edit") {
+              url = `${baseUrl}/${pkValue}`;
+              method = "PUT";
+            }
+
+            const res = await fetch(url, {
+              method,
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload)
+            });
+
+            if (!res.ok) {
+              statusEl.textContent = "Error saving changes.";
+              statusEl.style.color = "red";
+              return;
+            }
+
+            statusEl.textContent = "Saved.";
+            statusEl.style.color = "green";
+            // Reload table to reflect changes
+            await loadManage(group, category, container);
+          } catch (err) {
+            console.error(err);
+            statusEl.textContent = "Network error.";
+            statusEl.style.color = "red";
+          }
+        }
+
+        // Dropdown change handlers
+        recordsCategory.addEventListener("change", function () {
+          loadManage("records", recordsCategory.value, recordsWrapper);
+        });
+
+        resourcesCategory.addEventListener("change", function () {
+          loadManage("resources", resourcesCategory.value, resourcesWrapper);
+        });
+
+        // Initial load
+        loadStudents();
+      });
+    </script>
+  </body>
+</html>

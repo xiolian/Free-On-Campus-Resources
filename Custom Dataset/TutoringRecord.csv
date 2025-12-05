@@ -1,0 +1,41 @@
+studentID,studentName,tutoring_id,resource_type,subject,department,building,location,weekday,start_time,end_time
+100406100,Sandra Martin,49,STEM Tutoring,MATH 23,STEM Center,SSB 320,Student Services Building,"Monday, Tuesday, Wednesday, Thursday",10:00 AM,6:00 PM
+100406100,Sandra Martin,50,STEM Tutoring,MATH 23,STEM Center,SSB 320,Student Services Building,Friday,10:00 AM,3:00 PM
+100406102,Donna Perez,16,STEM Tutoring,CHEM 10,STEM Center,SSB 330,Student Services Building,"Tuesday, Wednesday, Thursday",10:00 AM,5:00 PM
+100406102,Donna Perez,57,STEM Tutoring,PHYS 8,STEM Center,SSB 340,Student Services Building,Wednesday,10:30 AM,3:00 PM
+100406106,Susan Moore,60,STEM Tutoring,PHYS 9,STEM Center,SSB 340,Student Services Building,Wednesday,10:30 AM,3:00 PM
+100406106,Susan Moore,26,STEM Tutoring,CSE 19,STEM Center,SSB 340,Student Services Building,Tuesday,3:00 PM,6:00 PM
+100406106,Susan Moore,59,STEM Tutoring,PHYS 9,STEM Center,SSB 340,Student Services Building,Tuesday,10:00 AM,5:00 PM
+100406107,Michelle Torres,53,STEM Tutoring,MATH 32,STEM Center,SSB 320,Student Services Building,"Monday, Tuesday, Wednesday, Thursday",10:00 AM,6:00 PM
+100406107,Michelle Torres,5,STEM Tutoring,BIO 110,STEM Center,SSB 340,Student Services Building,,,
+100406109,James Jackson,64,STEM Tutoring,PHYS 19,STEM Center,SSB 340,Student Services Building,"Monday, Thursday",11:00 AM,5:00 PM
+100406109,James Jackson,47,STEM Tutoring,MATH 22,STEM Center,SSB 320,Student Services Building,"Monday, Tuesday, Wednesday, Thursday",10:00 AM,6:00 PM
+100406110,Mary Thompson,36,STEM Tutoring,CSE 24,STEM Center,SSB 340,Student Services Building,Tuesday,3:00 PM,6:00 PM
+100406114,Anthony Nelson,39,STEM Tutoring,MATH 5,STEM Center,SSB 320,Student Services Building,"Monday, Tuesday, Wednesday, Thursday",10:00 AM,6:00 PM
+100406117,Sandra Clark,7,STEM Tutoring,BIO 150,STEM Center,SSB 340,Student Services Building,,,
+100406119,Christopher Hill,10,STEM Tutoring,CHEM 1,STEM Center,SSB 330,Student Services Building,"Tuesday, Wednesday, Thursday",10:00 AM,5:00 PM
+100406119,Christopher Hill,71,Writing Consultation,WRI,University Writing Center,KL 296,Kolligian Library,Friday,9:00 AM,3:00 PM
+100406121,Donald Campbell,60,STEM Tutoring,PHYS 9,STEM Center,SSB 340,Student Services Building,Wednesday,10:30 AM,3:00 PM
+100406121,Donald Campbell,44,STEM Tutoring,MATH 12,STEM Center,SSB 320,Student Services Building,Friday,10:00 AM,3:00 PM
+100406122,Elizabeth Baker,61,STEM Tutoring,PHYS 18,STEM Center,SSB 340,Student Services Building,"Monday, Thursday",11:00 AM,5:00 PM
+100406122,Elizabeth Baker,8,STEM Tutoring,BIO 161,STEM Center,SSB 340,Student Services Building,,,
+100406123,John Anderson,53,STEM Tutoring,MATH 32,STEM Center,SSB 320,Student Services Building,"Monday, Tuesday, Wednesday, Thursday",10:00 AM,6:00 PM
+100406123,John Anderson,44,STEM Tutoring,MATH 12,STEM Center,SSB 320,Student Services Building,Friday,10:00 AM,3:00 PM
+100406123,John Anderson,11,STEM Tutoring,CHEM 2,STEM Center,SSB 330,Student Services Building,Monday,10:00 AM,4:00 PM
+100406125,Betty Rodriguez,20,STEM Tutoring,CSE 5,STEM Center,SSB 340,Student Services Building,Tuesday,10:00 AM,1:00 PM
+100406128,Lisa Baker,3,STEM Tutoring,BIO 5,STEM Center,SSB 340,Student Services Building,,,
+100406128,Lisa Baker,35,STEM Tutoring,CSE 24,STEM Center,SSB 340,Student Services Building,Tuesday,10:00 AM,1:00 PM
+100406132,William Allen,56,STEM Tutoring,PHYS 8,STEM Center,SSB 340,Student Services Building,Tuesday,10:00 AM,5:00 PM
+100406132,William Allen,34,STEM Tutoring,CSE 24,STEM Center,SSB 340,Student Services Building,"Monday, Wednesday",10:00 AM,5:00 PM
+100406132,William Allen,63,STEM Tutoring,PHYS 18,STEM Center,SSB 340,Student Services Building,Wednesday,10:30 AM,3:00 PM
+100406135,Kevin Gonzales,34,STEM Tutoring,CSE 24,STEM Center,SSB 340,Student Services Building,"Monday, Wednesday",10:00 AM,5:00 PM
+100406136,Anthony Lee,31,STEM Tutoring,CSE 22,STEM Center,SSB 340,Student Services Building,Tuesday,3:00 PM,6:00 PM
+100406136,Anthony Lee,46,STEM Tutoring,MATH 21,STEM Center,SSB 320,Student Services Building,Friday,10:00 AM,3:00 PM
+100406136,Anthony Lee,36,STEM Tutoring,CSE 24,STEM Center,SSB 340,Student Services Building,Tuesday,3:00 PM,6:00 PM
+100406139,Emily Smith,52,STEM Tutoring,MATH 24,STEM Center,SSB 320,Student Services Building,Friday,10:00 AM,3:00 PM
+100406141,Betty Nelson,20,STEM Tutoring,CSE 5,STEM Center,SSB 340,Student Services Building,Tuesday,10:00 AM,1:00 PM
+100406141,Betty Nelson,63,STEM Tutoring,PHYS 18,STEM Center,SSB 340,Student Services Building,Wednesday,10:30 AM,3:00 PM
+100406146,Mary Rodriguez,10,STEM Tutoring,CHEM 1,STEM Center,SSB 330,Student Services Building,"Tuesday, Wednesday, Thursday",10:00 AM,5:00 PM
+100406146,Mary Rodriguez,36,STEM Tutoring,CSE 24,STEM Center,SSB 340,Student Services Building,Tuesday,3:00 PM,6:00 PM
+100406148,Michael Robinson,23,STEM Tutoring,CSE 5,STEM Center,SSB 340,Student Services Building,Thursday,3:00 PM,6:00 PM
+100406149,Joseph Roberts,7,STEM Tutoring,BIO 150,STEM Center,SSB 340,Student Services Building,,,
