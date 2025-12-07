@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="/assets/css/main.css" />
     <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
     <style>
+
+    /* Let the admin page use the full screen width instead of the narrow Phantom container */
+    .admin-compact #main .inner {
+        max-width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    /* Make the table itself stretch to available width */
+    .admin-compact .table-wrapper table {
+        width: 100%;
+    }
+
     .admin-compact .table-wrapper {
         overflow-x: auto;              /* horizontal scroll if many columns */
     }
@@ -90,18 +103,6 @@
             </p>
           </header>
 
-          <!-- Overview of all students (read-only) -->
-          <!-- <section id="admin-students"> -->
-            <!-- <h2>All Students &amp; Resource Usage</h2> -->
-            <!-- <p> -->
-              <!-- Aggregated counts from all *Record tables (advisors, tutoring, -->
-              <!-- supplies, health, academic support, funding). -->
-            <!-- </p> -->
-            <!-- <div id="admin-students-table-wrapper"> -->
-              <!-- Table will be injected here -->
-            <!-- </div> -->
-          <!-- </section> -->
-
           <hr />
 
           <!-- Manage RECORD tables (per-student histories) -->
@@ -160,6 +161,23 @@
             </div>
           </section>
 
+          <hr />
+
+          <!-- Manage STUDENT accounts -->
+          <section id="admin-manage-students">
+            <h2>Manage Student Accounts</h2>
+            <p>
+              View and edit student IDs, names, and passwords. Deleting a student
+              will also delete all of their associated resource history records.
+            </p>
+
+            <div id="manage-students-table-wrapper">
+              <!-- Editable student table will be injected here -->
+            </div>
+          </section>
+
+          <hr />
+
         </div>
       </div>
 
@@ -184,7 +202,8 @@
     <!-- Admin-specific JS -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const studentsWrapper = document.getElementById("admin-students-table-wrapper");
+        const studentsWrapper       = document.getElementById("admin-students-table-wrapper");
+        const manageStudentsWrapper = document.getElementById("manage-students-table-wrapper");
 
         const recordsCategory   = document.getElementById("manage-records-category");
         const recordsWrapper    = document.getElementById("manage-records-table-wrapper");
@@ -209,6 +228,10 @@
             health:           "health_id",
             supplies:         "supply_id",
             tutoring:         "tutoring_id"
+          },
+          // NEW: student accounts group
+          students: {
+            students:         "studentID"
           }
         };
 
@@ -222,7 +245,7 @@
             .replace(/'/g, "&#39;");
         }
 
-        // ---------- Basic read-only table (students) ----------
+        // ---------- Basic read-only table (aggregated students) ----------
         function renderTable(data, container, columnOrder = null) {
           if (!data || !data.length) {
             container.innerHTML = "<p>No data found.</p>";
@@ -280,7 +303,7 @@
           }
         }
 
-        // ---------- Editable tables for records/resources ----------
+        // ---------- Editable tables for records/resources/students ----------
 
         function renderManageTable(data, container, options) {
           const { group, category, pkName } = options;
@@ -308,7 +331,29 @@
           }
 
           const keys = Object.keys(data[0]);
-          const ordered = [pkName].concat(keys.filter(k => k !== pkName));
+          let ordered;
+
+          if (group === "records") {
+            // For record tables, put studentID and studentName first, then pk, then the rest
+            const base = [];
+            if (keys.includes("studentID"))   base.push("studentID");
+            if (keys.includes("studentName")) base.push("studentName");
+            if (keys.includes(pkName))        base.push(pkName);
+
+            const rest = keys.filter(k => !base.includes(k));
+            ordered = base.concat(rest);
+          } else if (group === "students") {
+            // For student accounts: ID, name, pass first
+            const base = [];
+            if (keys.includes("studentID"))   base.push("studentID");
+            if (keys.includes("studentName")) base.push("studentName");
+            if (keys.includes("studentPass")) base.push("studentPass");
+            const rest = keys.filter(k => !base.includes(k));
+            ordered = base.concat(rest);
+          } else {
+            // For resource tables, keep pk first, then everything else
+            ordered = [pkName].concat(keys.filter(k => k !== pkName));
+          }
 
           let html = "<div class='table-wrapper'><table>";
           html += "<thead><tr>";
@@ -326,9 +371,9 @@
               html += `<td>${escapeHtml(value)}</td>`;
             });
             html += `<td>
-                       <button class="button small" data-action="edit" data-index="${idx}">Edit</button>
-                       <button class="button small" data-action="delete" data-index="${idx}">Delete</button>
-                     </td>`;
+                      <button class="button small" data-action="edit" data-index="${idx}">Edit</button>
+                      <button class="button small" data-action="delete" data-index="${idx}">Delete</button>
+                    </td>`;
             html += "</tr>";
           });
 
@@ -375,9 +420,12 @@
           }
         }
 
-        function showEditForm(container, mode, rowOrNull, pkName) {
+        function showEditForm(container, mode, rowOrNull) {
           const formContainer = container.querySelector(".manage-form-container");
           if (!formContainer) return;
+
+          const options = container._manageOptions || {};
+          const { group, pkName } = options;
 
           const rows = container._manageRows || [];
           const isAdd = mode === "add";
@@ -392,13 +440,22 @@
             }
             const sample = rows[0];
             Object.keys(sample).forEach(col => {
-              if (col !== pkName) editable[col] = "";
+              if (group === "students") {
+                // For students we allow editing ID as well
+                editable[col] = "";
+              } else if (col !== pkName) {
+                editable[col] = "";
+              }
             });
           } else {
             const row = rowOrNull || {};
             pkValue = row[pkName];
             Object.keys(row).forEach(col => {
-              if (col !== pkName) editable[col] = row[col];
+              if (group === "students") {
+                editable[col] = row[col];
+              } else if (col !== pkName) {
+                editable[col] = row[col];
+              }
             });
           }
 
@@ -417,11 +474,11 @@
           });
 
           html += `</div>
-                   <ul class="actions">
-                     <li><input type="submit" value="${isAdd ? "Create" : "Update"}" class="primary small" /></li>
-                     <li><button type="button" class="button small" data-action="cancel-form">Cancel</button></li>
-                   </ul>
-                   <p class="manage-form-status"></p>
+                  <ul class="actions">
+                    <li><input type="submit" value="${isAdd ? "Create" : "Update"}" class="primary small" /></li>
+                    <li><button type="button" class="button small" data-action="cancel-form">Cancel</button></li>
+                  </ul>
+                  <p class="manage-form-status"></p>
                   </form>`;
 
           formContainer.innerHTML = html;
@@ -447,7 +504,7 @@
           }
 
           if (action === "add") {
-            showEditForm(container, "add", null, pkName);
+            showEditForm(container, "add", null);
             return;
           }
 
@@ -457,13 +514,18 @@
           const pkValue = row[pkName];
 
           if (action === "delete") {
-            if (!confirm(`Delete row with ${pkName} = ${pkValue}?`)) return;
+            const msg = group === "students"
+              ? `Delete student ${pkValue} and ALL of their resource records?`
+              : `Delete row with ${pkName} = ${pkValue}?`;
+            if (!confirm(msg)) return;
+
             try {
               const res = await fetch(`${baseUrl}/${pkValue}`, {
                 method: "DELETE"
               });
-              if (!res.ok) {
-                alert("Error deleting row.");
+              const data = await res.json().catch(() => ({}));
+              if (!res.ok || data.error) {
+                alert("Error deleting row: " + (data.error || "Unknown error."));
                 return;
               }
               await loadManage(group, category, container);
@@ -471,10 +533,11 @@
               console.error(err);
               alert("Network error.");
             }
+            return;
           }
 
           if (action === "edit") {
-            showEditForm(container, "edit", row, pkName);
+            showEditForm(container, "edit", row);
           }
         }
 
@@ -515,8 +578,9 @@
               body: JSON.stringify(payload)
             });
 
-            if (!res.ok) {
-              statusEl.textContent = "Error saving changes.";
+            const data = await res.json().catch(() => ({}));
+            if (!res.ok || data.error) {
+              statusEl.textContent = "Error saving changes: " + (data.error || "Unknown error.");
               statusEl.style.color = "red";
               return;
             }
@@ -543,7 +607,13 @@
 
         // Initial load
         loadStudents();
+
+        // Load student-accounts table if wrapper exists
+        if (manageStudentsWrapper) {
+          loadManage("students", "students", manageStudentsWrapper);
+        }
       });
     </script>
+
   </body>
 </html>

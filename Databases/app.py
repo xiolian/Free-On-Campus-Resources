@@ -9,17 +9,14 @@ app = Flask(
     static_url_path=""
 )
 
-# Single shared connection.
-# If you hit thread errors, change databaseConn.openConnection to use:
-# sqlite3.connect(_dbFile, check_same_thread=False)
+# IMPORTANT: openConnection in databaseFuncs should use check_same_thread=False
 conn = dbc.openConnection("resource.sqlite")
 
 # ------------------------------------------------------------
-# Admin table config (for admin.html)
+# Admin table configuration
 # ------------------------------------------------------------
 
 TABLE_CONFIG = {
-    # Per-student history tables (NO explicit PK; we use SQLite rowid)
     "records": {
         "academic_support": {"table": "AcademicSupportRecord", "pk": "rowid"},
         "advisor":          {"table": "AdvisorRecord",          "pk": "rowid"},
@@ -28,7 +25,6 @@ TABLE_CONFIG = {
         "supplies":         {"table": "StudentSuppliesRecord",  "pk": "rowid"},
         "tutoring":         {"table": "TutoringRecord",         "pk": "rowid"},
     },
-    # Underlying resource tables (have real PK columns)
     "resources": {
         "academic_support": {"table": "academic_support",   "pk": "support_id"},
         "advisor":          {"table": "academic_advising",  "pk": "advisor_id"},
@@ -36,7 +32,11 @@ TABLE_CONFIG = {
         "health":           {"table": "health_services",    "pk": "health_id"},
         "supplies":         {"table": "student_supplies",   "pk": "supply_id"},
         "tutoring":         {"table": "tutoring",           "pk": "tutoring_id"},
-    }
+    },
+    # New group for student accounts
+    "students": {
+        "students":         {"table": "Student",            "pk": "studentID"},
+    },
 }
 
 
@@ -62,16 +62,14 @@ def admin_dashboard():
 
 
 # ------------------------------------------------------------
-# API: unified list of all available resources (catalog)
+# Resource catalog for student view
 # ------------------------------------------------------------
 
 @app.route("/api/resources", methods=["GET"])
 def list_resources():
     """
-    Return all resources from the master resource tables.
-
-    Optional query param:
-      ?category=supplies|tutoring|health|funding|academic_support|advisor
+    Unified list of all resources from the master tables.
+    Optional query param: ?category=...
     """
     category_filter = request.args.get("category")
 
@@ -180,37 +178,31 @@ def list_resources():
     cur = conn.cursor()
     cur.execute(sql)
     rows = cur.fetchall()
-
-    columns = [
+    cols = [
         "category_key", "resource_id", "category", "name",
         "department", "building", "location",
         "weekday", "start_time", "end_time",
         "notes", "link",
     ]
-
-    results = [dict(zip(columns, row)) for row in rows]
+    result = [dict(zip(cols, r)) for r in rows]
 
     if category_filter:
-        results = [r for r in results if r["category_key"] == category_filter]
+        result = [r for r in result if r["category_key"] == category_filter]
 
-    return jsonify(results)
+    return jsonify(result)
 
 
 # ------------------------------------------------------------
-# Helpers for Student authentication / creation
-# Uses Student(studentID, studentName, studentPass)
+# Helpers for student auth / creation (uses Student.studentPass)
 # ------------------------------------------------------------
 
 def ensure_student_with_pass(cur, student_id, student_name, student_pass):
     """
-    Ensure there is a Student row with this ID and studentPass.
-
-    For CHECKOUT:
-      - If no row exists: create one with (studentID, studentName, studentPass).
-      - If row exists and studentPass is NULL: first-time setup, set it to the
-        provided value and update name.
-      - If row exists and studentPass matches: optionally update name.
-      - If row exists and studentPass DOES NOT match: return (False, error_msg).
+    For checkout:
+      - If no Student row: create (id, name, pass)
+      - If row exists & studentPass is NULL: set pass & update name
+      - If row exists & pass matches: update name
+      - If row exists & pass mismatch: return (False, message)
     """
     cur.execute(
         "SELECT studentName, studentPass FROM Student WHERE studentID = ?",
@@ -219,7 +211,6 @@ def ensure_student_with_pass(cur, student_id, student_name, student_pass):
     row = cur.fetchone()
 
     if row is None:
-        # Auto-create new student
         cur.execute(
             "INSERT INTO Student (studentID, studentName, studentPass) VALUES (?, ?, ?)",
             (student_id, student_name, student_pass),
@@ -228,7 +219,6 @@ def ensure_student_with_pass(cur, student_id, student_name, student_pass):
 
     existing_name, existing_pass = row
 
-    # First-time password setup for existing row
     if existing_pass is None:
         cur.execute(
             "UPDATE Student SET studentName = ?, studentPass = ? WHERE studentID = ?",
@@ -236,11 +226,9 @@ def ensure_student_with_pass(cur, student_id, student_name, student_pass):
         )
         return True, None
 
-    # Password mismatch -> reject
     if existing_pass != student_pass:
         return False, "Incorrect password for this student ID."
 
-    # Password OK; keep name fresh if it changed
     if existing_name != student_name:
         cur.execute(
             "UPDATE Student SET studentName = ? WHERE studentID = ?",
@@ -251,7 +239,7 @@ def ensure_student_with_pass(cur, student_id, student_name, student_pass):
 
 
 # ------------------------------------------------------------
-# Helpers to insert checkout rows into *Record tables
+# Insert one record row for a checked-out resource
 # ------------------------------------------------------------
 
 def insert_record_for_item(cur, student_id, student_name, category_key, resource_id):
@@ -282,12 +270,12 @@ def insert_record_for_item(cur, student_id, student_name, category_key, resource
                 studentID, studentName, tutoring_id,
                 resource_type, subject, department,
                 building, location, weekday,
-                start_time, end_time, notes
+                start_time, end_time
             )
             SELECT ?, ?, tutoring_id,
                    resource_type, subject, department,
                    building, location, weekday,
-                   start_time, end_time, notes
+                   start_time, end_time
             FROM tutoring
             WHERE tutoring_id = ?
             """,
@@ -371,39 +359,30 @@ def insert_record_for_item(cur, student_id, student_name, category_key, resource
 
 
 # ------------------------------------------------------------
-# API: checkout selected resources for a student
+# Cart checkout (student side)
 # ------------------------------------------------------------
 
 @app.route("/api/cart/checkout", methods=["POST"])
 def checkout_cart():
     data = request.get_json(silent=True) or {}
-    student_id = data.get("studentID", "").strip()
-    student_name = data.get("studentName", "").strip()
-    # This "password" key is from the front-end; we store/compare it as Student.studentPass
-    password = data.get("password", "").strip()
-    items = data.get("items", [])
+    student_id = (data.get("studentID") or "").strip()
+    student_name = (data.get("studentName") or "").strip()
+    password = (data.get("password") or "").strip()
+    items = data.get("items") or []
 
     if not student_id or not student_name or not password:
-        return jsonify({
-            "success": False,
-            "error": "studentID, studentName, and password are required."
-        }), 400
+        return jsonify({"success": False, "error": "studentID, studentName, and password are required."}), 400
 
     if not isinstance(items, list) or not items:
-        return jsonify({
-            "success": False,
-            "error": "No items in cart."
-        }), 400
+        return jsonify({"success": False, "error": "No items in cart."}), 400
 
     cur = conn.cursor()
     try:
-        # 1) Ensure / validate Student row (auto-create + password check, using studentPass)
         ok, err = ensure_student_with_pass(cur, student_id, student_name, password)
         if not ok:
             conn.rollback()
             return jsonify({"success": False, "error": err}), 401
 
-        # 2) Insert each cart item into the appropriate *Record table
         inserted = 0
         for item in items:
             category_key = item.get("category_key")
@@ -414,34 +393,21 @@ def checkout_cart():
             inserted += 1
 
         conn.commit()
+        return jsonify({"success": True, "inserted": inserted})
     except Exception as e:
         conn.rollback()
         return jsonify({"success": False, "error": str(e)}), 500
 
-    return jsonify({"success": True, "inserted": inserted})
-
 
 # ------------------------------------------------------------
-# API: student resource / cart history with login
+# Student resource history (with password)
 # ------------------------------------------------------------
 
 @app.route("/api/resources-history", methods=["POST"])
 def resources_history():
-    """
-    Returns a student's full resource usage history.
-
-    Expects JSON:
-      { "studentID": "...", "password": "..." }
-
-    Behaviour:
-      - If Student row doesn't exist -> error.
-      - If studentPass is NULL -> set it to the provided one (first login).
-      - If password mismatch -> error.
-      - If OK -> returns history via studentFuncs.viewResourcesHistory.
-    """
     data = request.get_json(silent=True) or {}
-    student_id = data.get("studentID", "").strip()
-    password = data.get("password", "").strip()
+    student_id = (data.get("studentID") or "").strip()
+    password = (data.get("password") or "").strip()
 
     if not student_id or not password:
         return jsonify({"error": "studentID and password are required."}), 400
@@ -453,14 +419,11 @@ def resources_history():
             (student_id,),
         )
         row = cur.fetchone()
-
         if row is None:
             conn.rollback()
             return jsonify({"error": "Student ID not found."}), 404
 
-        existing_name, existing_pass = row
-
-        # First-time password setup
+        _, existing_pass = row
         if existing_pass is None:
             cur.execute(
                 "UPDATE Student SET studentPass = ? WHERE studentID = ?",
@@ -476,38 +439,16 @@ def resources_history():
         conn.rollback()
         return jsonify({"error": str(e)}), 500
 
-    # Now that password is validated, fetch the history
     history = sf.viewResourcesHistory(conn, student_id)
     return jsonify(history)
 
 
 # ------------------------------------------------------------
-# API: delete a single history entry (with password)
+# Delete a single history entry (with password)
 # ------------------------------------------------------------
 
 @app.route("/api/resources-history/delete", methods=["POST"])
 def delete_history_entry():
-    """
-    Delete ONE matching history entry from the appropriate *Record table.
-
-    Expects JSON:
-    {
-      "studentID": "...",
-      "password": "...",
-      "entry": {
-          "category": "Tutoring" | "Supplies" | "Health Service" |
-                      "Academic Support" | "Advisor" | "Funding",
-          "name": "...",
-          "department": "...",
-          "building": "...",
-          "location": "...",
-          "weekday": "...",
-          "start_time": "...",
-          "end_time": "...",
-          "link": "..."
-      }
-    }
-    """
     data = request.get_json(silent=True) or {}
     student_id = (data.get("studentID") or "").strip()
     password = (data.get("password") or "").strip()
@@ -530,12 +471,9 @@ def delete_history_entry():
 
     cur = conn.cursor()
 
-    # Step 1: validate password (do NOT auto-create here)
+    # validate password
     try:
-        cur.execute(
-            "SELECT studentPass FROM Student WHERE studentID = ?",
-            (student_id,),
-        )
+        cur.execute("SELECT studentPass FROM Student WHERE studentID = ?", (student_id,))
         row = cur.fetchone()
         if row is None:
             conn.rollback()
@@ -543,8 +481,6 @@ def delete_history_entry():
 
         existing_pass = row[0]
         if existing_pass is None:
-            # First-time password set via delete is allowed, but unusual;
-            # we mimic resources_history behaviour.
             cur.execute(
                 "UPDATE Student SET studentPass = ? WHERE studentID = ?",
                 (password, student_id),
@@ -559,16 +495,16 @@ def delete_history_entry():
         conn.rollback()
         return jsonify({"success": False, "error": str(e)}), 500
 
-    # Step 2: map category -> table + "name" column
+    # map category name to table + column
     if category == "Tutoring":
         table = "TutoringRecord"
         name_col = "subject"
         extra_cols = ["department", "building", "location", "weekday", "start_time", "end_time"]
-    elif category == "Supplies":
+    elif category == "Supplies" or category == "Student Supplies":
         table = "StudentSuppliesRecord"
         name_col = "item"
         extra_cols = ["department", "building", "location", "weekday", "start_time", "end_time"]
-    elif category == "Health Service":
+    elif category == "Health Service" or category == "Health Services":
         table = "HealthRecord"
         name_col = "service"
         extra_cols = ["location", "weekday", "start_time", "end_time"]
@@ -587,7 +523,6 @@ def delete_history_entry():
     else:
         return jsonify({"success": False, "error": f"Unknown category: {category}"}), 400
 
-    # Step 3: build WHERE clause using non-empty fields
     where_clauses = ["studentID = ?", f"{name_col} = ?"]
     params = [student_id, name]
 
@@ -596,7 +531,6 @@ def delete_history_entry():
             where_clauses.append(f"{col_name} = ?")
             params.append(value)
 
-    # Map extra columns from the generic fields
     for col in extra_cols:
         if col == "department":
             add_if("department", department)
@@ -612,14 +546,13 @@ def delete_history_entry():
             add_if("end_time", end_time)
 
     where_sql = " AND ".join(where_clauses)
-
     sql = f"""
-    DELETE FROM {table}
-    WHERE rowid IN (
-        SELECT rowid FROM {table}
-        WHERE {where_sql}
-        LIMIT 1
-    )
+        DELETE FROM {table}
+        WHERE rowid IN (
+            SELECT rowid FROM {table}
+            WHERE {where_sql}
+            LIMIT 1
+        )
     """
 
     try:
@@ -637,8 +570,172 @@ def delete_history_entry():
 
 
 # ------------------------------------------------------------
-# Admin: read-only summary of all students & counts
-# (used by admin.html if you re-enable that section)
+# Most popular resources (student view)
+# ------------------------------------------------------------
+
+@app.route("/api/popular-resources", methods=["GET"])
+def popular_resources():
+    limit = request.args.get("limit", 10, type=int)
+    cur = conn.cursor()
+
+    sql = """
+    SELECT *
+    FROM (
+        -- Student Supplies
+        SELECT
+            'supplies'          AS category_key,
+            ss.supply_id        AS resource_id,
+            'Student Supplies'  AS category,
+            ss.item             AS name,
+            ss.department,
+            ss.building,
+            ss.location,
+            ss.weekday,
+            ss.start_time,
+            ss.end_time,
+            NULL                AS link,
+            COUNT(ssr.studentID)              AS total_visits,
+            COUNT(DISTINCT ssr.studentID)     AS unique_students
+        FROM student_supplies ss
+        LEFT JOIN StudentSuppliesRecord ssr
+          ON ssr.supply_id = ss.supply_id
+        GROUP BY
+            ss.supply_id, ss.item, ss.department, ss.building,
+            ss.location, ss.weekday, ss.start_time, ss.end_time
+
+        UNION ALL
+
+        -- Tutoring
+        SELECT
+            'tutoring'          AS category_key,
+            t.tutoring_id       AS resource_id,
+            'Tutoring'          AS category,
+            t.subject           AS name,
+            t.department,
+            t.building,
+            t.location,
+            t.weekday,
+            t.start_time,
+            t.end_time,
+            NULL                AS link,
+            COUNT(tr.studentID)              AS total_visits,
+            COUNT(DISTINCT tr.studentID)     AS unique_students
+        FROM tutoring t
+        LEFT JOIN TutoringRecord tr
+          ON tr.tutoring_id = t.tutoring_id
+        GROUP BY
+            t.tutoring_id, t.subject, t.department, t.building,
+            t.location, t.weekday, t.start_time, t.end_time
+
+        UNION ALL
+
+        -- Health Services
+        SELECT
+            'health'            AS category_key,
+            h.health_id         AS resource_id,
+            'Health Services'   AS category,
+            h.service           AS name,
+            NULL                AS department,
+            NULL                AS building,
+            h.location,
+            h.weekday,
+            h.start_time,
+            h.end_time,
+            h.link              AS link,
+            COUNT(hr.studentID)              AS total_visits,
+            COUNT(DISTINCT hr.studentID)     AS unique_students
+        FROM health_services h
+        LEFT JOIN HealthRecord hr
+          ON hr.health_id = h.health_id
+        GROUP BY
+            h.health_id, h.service, h.location,
+            h.weekday, h.start_time, h.end_time, h.link
+
+        UNION ALL
+
+        -- Funding
+        SELECT
+            'funding'           AS category_key,
+            f.funding_id        AS resource_id,
+            'Funding'           AS category,
+            f.funding_name      AS name,
+            f.department,
+            f.building,
+            f.location,
+            f.weekday,
+            f.start_time,
+            f.end_time,
+            f.link              AS link,
+            COUNT(fr.studentID)              AS total_visits,
+            COUNT(DISTINCT fr.studentID)     AS unique_students
+        FROM funding f
+        LEFT JOIN FundingRecord fr
+          ON fr.funding_id = f.funding_id
+        GROUP BY
+            f.funding_id, f.funding_name, f.department, f.building,
+            f.location, f.weekday, f.start_time, f.end_time, f.link
+
+        UNION ALL
+
+        -- Academic Support
+        SELECT
+            'academic_support'  AS category_key,
+            a.support_id        AS resource_id,
+            'Academic Support'  AS category,
+            a.service_name      AS name,
+            a.department,
+            a.building,
+            a.location,
+            a.weekday,
+            a.start_time,
+            a.end_time,
+            a.link              AS link,
+            COUNT(ar.studentID)              AS total_visits,
+            COUNT(DISTINCT ar.studentID)     AS unique_students
+        FROM academic_support a
+        LEFT JOIN AcademicSupportRecord ar
+          ON ar.support_id = a.support_id
+        GROUP BY
+            a.support_id, a.service_name, a.department, a.building,
+            a.location, a.weekday, a.start_time, a.end_time, a.link
+
+        UNION ALL
+
+        -- Advisors
+        SELECT
+            'advisor'           AS category_key,
+            adv.advisor_id      AS resource_id,
+            'Advisor'           AS category,
+            adv.name            AS name,
+            adv.affiliation     AS department,
+            adv.building,
+            adv.location,
+            NULL                AS weekday,
+            NULL                AS start_time,
+            NULL                AS end_time,
+            adv.link            AS link,
+            COUNT(avr.studentID)              AS total_visits,
+            COUNT(DISTINCT avr.studentID)     AS unique_students
+        FROM academic_advising adv
+        LEFT JOIN AdvisorRecord avr
+          ON avr.advisor_id = adv.advisor_id
+        GROUP BY
+            adv.advisor_id, adv.name, adv.affiliation,
+            adv.building, adv.location, adv.link
+    )
+    ORDER BY total_visits DESC, unique_students DESC, category, name
+    LIMIT ?
+    """
+
+    cur.execute(sql, (limit,))
+    rows = cur.fetchall()
+    cols = [d[0] for d in cur.description]
+    result = [dict(zip(cols, r)) for r in rows]
+    return jsonify(result)
+
+
+# ------------------------------------------------------------
+# Admin: aggregated student usage table
 # ------------------------------------------------------------
 
 @app.route("/api/admin/students", methods=["GET"])
@@ -666,8 +763,7 @@ def admin_students():
 
 
 # ------------------------------------------------------------
-# Admin CRUD APIs for records + resource tables
-# (used by admin.html)
+# Admin generic manage endpoints (records/resources/students)
 # ------------------------------------------------------------
 
 @app.route("/api/admin/manage/<group>/<category>", methods=["GET", "POST"])
@@ -678,26 +774,58 @@ def admin_manage_collection(group, category):
 
     table = cfg["table"]
     pk = cfg["pk"]
-
     cur = conn.cursor()
 
+    # Special handling for student accounts
+    if group == "students" and table == "Student":
+        if request.method == "GET":
+            cur.execute("SELECT studentID, studentName, studentPass FROM Student ORDER BY studentID")
+            rows = cur.fetchall()
+            cols = [d[0] for d in cur.description]
+            result = [dict(zip(cols, r)) for r in rows]
+            return jsonify(result)
+
+        # POST -> create or overwrite student row
+        data = request.get_json(silent=True) or {}
+        student_id = data.get("studentID")
+        student_name = data.get("studentName")
+        student_pass = data.get("studentPass")
+
+        if not student_id or not student_name:
+            return jsonify({"error": "studentID and studentName are required"}), 400
+
+        try:
+            cur.execute(
+                """
+                INSERT INTO Student (studentID, studentName, studentPass)
+                VALUES (?, ?, ?)
+                ON CONFLICT(studentID) DO UPDATE SET
+                    studentName = excluded.studentName,
+                    studentPass = excluded.studentPass
+                """,
+                (student_id, student_name, student_pass),
+            )
+            conn.commit()
+            return jsonify({"success": True, "id": student_id})
+        except Exception as e:
+            conn.rollback()
+            return jsonify({"error": str(e)}), 500
+
+    # Generic handling for records/resources
     if request.method == "GET":
-        # For *Record tables, expose rowid as the pk field
         if group == "records" and pk == "rowid":
             sql = f"SELECT rowid AS {pk}, * FROM {table}"
         else:
             sql = f"SELECT * FROM {table}"
-
         cur.execute(sql)
         rows = cur.fetchall()
         cols = [d[0] for d in cur.description]
         result = [dict(zip(cols, r)) for r in rows]
         return jsonify(result)
 
-    # POST -> create new row
+    # POST -> create new row (pk typically auto)
     data = request.get_json(silent=True) or {}
-    # Never let the client set the PK directly
-    data.pop(pk, None)
+    data.pop(pk, None)  # prevent PK injection
 
     if not data:
         return jsonify({"error": "No data provided"}), 400
@@ -707,15 +835,17 @@ def admin_manage_collection(group, category):
     sql = f"INSERT INTO {table} ({', '.join(columns)}) VALUES ({placeholders})"
     values = [data[c] for c in columns]
 
-    cur.execute(sql, values)
-    conn.commit()
-    new_id = cur.lastrowid
+    try:
+        cur.execute(sql, values)
+        conn.commit()
+        new_id = cur.lastrowid
+        return jsonify({"success": True, "id": new_id})
+    except Exception as e:
+        conn.rollback()
+        return jsonify({"error": str(e)}), 500
 
-    return jsonify({"success": True, "id": new_id})
 
-
-@app.route("/api/admin/manage/<group>/<category>/<int:pk_value>",
-           methods=["PUT", "DELETE"])
+@app.route("/api/admin/manage/<group>/<category>/<pk_value>", methods=["PUT", "DELETE"])
 def admin_manage_item(group, category, pk_value):
     cfg = get_table_config(group, category)
     if not cfg:
@@ -723,22 +853,100 @@ def admin_manage_item(group, category, pk_value):
 
     table = cfg["table"]
     pk = cfg["pk"]
-
     cur = conn.cursor()
 
+    # Special handling for student accounts
+    if group == "students" and table == "Student":
+        student_id_old = pk_value
+
+        if request.method == "DELETE":
+            try:
+                # delete records first
+                for record_table in [
+                    "AcademicSupportRecord",
+                    "AdvisorRecord",
+                    "FundingRecord",
+                    "HealthRecord",
+                    "StudentSuppliesRecord",
+                    "TutoringRecord",
+                ]:
+                    cur.execute(f"DELETE FROM {record_table} WHERE studentID = ?", (student_id_old,))
+                # then delete student row
+                cur.execute("DELETE FROM Student WHERE studentID = ?", (student_id_old,))
+                conn.commit()
+                return jsonify({"success": True})
+            except Exception as e:
+                conn.rollback()
+                return jsonify({"error": str(e)}), 500
+
+        # PUT -> update student row (including optional ID change)
+        data = request.get_json(silent=True) or {}
+        new_id = data.get("studentID", student_id_old)
+        new_name = data.get("studentName")
+        new_pass = data.get("studentPass")
+
+        if not new_name:
+            # if they didn't send name, keep existing
+            cur.execute("SELECT studentName, studentPass FROM Student WHERE studentID = ?", (student_id_old,))
+            row = cur.fetchone()
+            if not row:
+                return jsonify({"error": "Student not found"}), 404
+            existing_name, existing_pass = row
+            if new_name is None:
+                new_name = existing_name
+            if new_pass is None:
+                new_pass = existing_pass
+
+        try:
+            # update Student row
+            cur.execute(
+                """
+                UPDATE Student
+                SET studentID = ?, studentName = ?, studentPass = ?
+                WHERE studentID = ?
+                """,
+                (new_id, new_name, new_pass, student_id_old),
+            )
+
+            # cascade ID change into record tables if needed
+            if new_id != student_id_old:
+                for record_table in [
+                    "AcademicSupportRecord",
+                    "AdvisorRecord",
+                    "FundingRecord",
+                    "HealthRecord",
+                    "StudentSuppliesRecord",
+                    "TutoringRecord",
+                ]:
+                    cur.execute(
+                        f"UPDATE {record_table} SET studentID = ? WHERE studentID = ?",
+                        (new_id, student_id_old),
+                    )
+
+            conn.commit()
+            return jsonify({"success": True})
+        except Exception as e:
+            conn.rollback()
+            return jsonify({"error": str(e)}), 500
+
+    # Generic handling for records/resources
     if request.method == "DELETE":
         if pk == "rowid":
             sql = f"DELETE FROM {table} WHERE rowid = ?"
         else:
             sql = f"DELETE FROM {table} WHERE {pk} = ?"
-        cur.execute(sql, (pk_value,))
-        conn.commit()
-        return jsonify({"success": True})
+        try:
+            cur.execute(sql, (pk_value,))
+            conn.commit()
+            return jsonify({"success": True})
+        except Exception as e:
+            conn.rollback()
+            return jsonify({"error": str(e)}), 500
 
-    # PUT -> update
+    # PUT -> generic update (cannot change PK)
     data = request.get_json(silent=True) or {}
-    # Do not allow changing PK
     data.pop(pk, None)
+
     if not data:
         return jsonify({"error": "No columns to update"}), 400
 
@@ -751,9 +959,13 @@ def admin_manage_item(group, category, pk_value):
     else:
         sql = f"UPDATE {table} SET {set_clause} WHERE {pk} = ?"
 
-    cur.execute(sql, params)
-    conn.commit()
-    return jsonify({"success": True})
+    try:
+        cur.execute(sql, params)
+        conn.commit()
+        return jsonify({"success": True})
+    except Exception as e:
+        conn.rollback()
+        return jsonify({"error": str(e)}), 500
 
 
 if __name__ == "__main__":

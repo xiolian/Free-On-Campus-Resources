@@ -70,7 +70,14 @@
                       <option value="advisor">Advisors</option>
                     </select>
                   </div>
+                  <div class="field half">
+                    <label for="filter-search">Search (like Ctrl+F)</label>
+                    <input type="text"
+                          id="filter-search"
+                          placeholder="Type to search name, department, location, etc." />
+                  </div>
                 </div>
+
 
                 <div id="resource-table-wrapper">
                   <p>Loading resources...</p>
@@ -111,6 +118,21 @@
           </section>
 
           <hr />
+
+          <!-- Most Popular Resources -->
+          <section id="popular-resources">
+            <h2>Most Popular Resources</h2>
+            <p>
+              These are the campus resources that students are using the most,
+              across all categories (supplies, tutoring, health, funding,
+              academic support, and advising).
+            </p>
+
+            <div id="popular-resources-wrapper">
+              <p>Loading popular resources...</p>
+            </div>
+          </section>
+
 
           <!-- Resource History -->
           <section id="student-history">
@@ -166,6 +188,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const filterCategory   = document.getElementById("filter-category");
+        const filterSearch     = document.getElementById("filter-search");
         const resourceWrapper  = document.getElementById("resource-table-wrapper");
         const cartContents     = document.getElementById("cart-contents");
         const checkoutForm     = document.getElementById("checkout-form");
@@ -174,8 +197,13 @@
         const historyForm      = document.getElementById("history-form");
         const historyResults   = document.getElementById("history-results");
 
+        const form             = document.getElementById("resource-form");
+        const resultsContainer = document.getElementById("resource-results");
+        const popularContainer = document.getElementById("popular-resources-wrapper");
+
         // Cart data: array of {category_key, resource_id, name, category}
         let cart = [];
+        let allResources = [];
 
         // History data (after login)
         let historyData = [];
@@ -276,9 +304,7 @@
             return;
           }
 
-          let html = `
-            <ul>
-          `;
+          let html = `<ul>`;
           cart.forEach((item, index) => {
             html += `
               <li>
@@ -366,27 +392,141 @@
         }
 
         // ------------------------
+        // Popular resources
+        // ------------------------
+        async function loadPopularResources() {
+          if (!popularContainer) return;
+
+          popularContainer.innerHTML = "<p>Loading popular resources...</p>";
+
+          try {
+            const res = await fetch("/api/popular-resources?limit=10");
+            const data = await res.json();
+
+            if (!res.ok) {
+              popularContainer.innerHTML =
+                `<p>Error loading popular resources: ${data.error || "Request failed."}</p>`;
+              return;
+            }
+
+            if (!Array.isArray(data) || !data.length) {
+              popularContainer.innerHTML = "<p>No usage data yet.</p>";
+              return;
+            }
+
+            let html = `
+              <div class="table-wrapper">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>Name</th>
+                      <th>Department</th>
+                      <th>Building</th>
+                      <th>Location</th>
+                      <th>When</th>
+                      <th>Link</th>
+                      <th>Total Uses</th>
+                      <th>Unique Students</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+            `;
+
+            data.forEach(item => {
+              const when = item.weekday
+                ? `${item.weekday} ${item.start_time || ""}-${item.end_time || ""}`.trim()
+                : "";
+              const link = item.link
+                ? `<a href="${escapeHtml(item.link)}" target="_blank">Link</a>`
+                : "";
+
+              html += `
+                <tr>
+                  <td>${escapeHtml(item.category)}</td>
+                  <td>${escapeHtml(item.name)}</td>
+                  <td>${escapeHtml(item.department)}</td>
+                  <td>${escapeHtml(item.building)}</td>
+                  <td>${escapeHtml(item.location)}</td>
+                  <td>${escapeHtml(when)}</td>
+                  <td>${link}</td>
+                  <td>${item.total_visits || 0}</td>
+                  <td>${item.unique_students || 0}</td>
+                </tr>
+              `;
+            });
+
+            html += `
+                  </tbody>
+                </table>
+              </div>
+            `;
+
+            popularContainer.innerHTML = html;
+          } catch (err) {
+            console.error(err);
+            popularContainer.innerHTML =
+              "<p>Network error loading popular resources. Please try again.</p>";
+          }
+        }
+
+        // ------------------------
         // Load resources
         // ------------------------
+        // Apply both category + text search to allResources and render
+        function applyResourceFilters() {
+          const cat   = filterCategory.value;
+          const term  = filterSearch.value.toLowerCase().trim();
+
+          let filtered = allResources;
+
+          if (cat) {
+            filtered = filtered.filter(r => r.category_key === cat);
+          }
+
+          if (term) {
+            filtered = filtered.filter(r => {
+              // search across multiple fields
+              return [
+                r.category,
+                r.name,
+                r.department,
+                r.building,
+                r.location,
+                r.weekday,
+                r.start_time,
+                r.end_time,
+                r.notes
+              ].some(field =>
+                (field || "").toString().toLowerCase().includes(term)
+              );
+            });
+          }
+
+          renderResourceTable(filtered);
+        }
+
+        // Load resources once, then filter on the client
         async function loadResources() {
           resourceWrapper.innerHTML = "<p>Loading resources...</p>";
           try {
-            const cat = filterCategory.value;
-            const url = cat ? `/api/resources?category=${encodeURIComponent(cat)}` : "/api/resources";
-            const res = await fetch(url);
+            const res = await fetch("/api/resources");
             if (!res.ok) {
               resourceWrapper.innerHTML = "<p>Error loading resources.</p>";
               return;
             }
             const data = await res.json();
-            renderResourceTable(data);
+            allResources = Array.isArray(data) ? data : [];
+            applyResourceFilters();
           } catch (err) {
             console.error(err);
             resourceWrapper.innerHTML = "<p>Network error loading resources.</p>";
           }
         }
 
-        filterCategory.addEventListener("change", loadResources);
+        // Re-apply filters whenever category or search text changes
+        filterCategory.addEventListener("change", applyResourceFilters);
+        filterSearch.addEventListener("input", applyResourceFilters);
 
         // ------------------------
         // Checkout handler
@@ -538,7 +678,9 @@
         // Initial load
         renderCart();
         loadResources();
+        loadPopularResources();
       });
     </script>
+
   </body>
 </html>
