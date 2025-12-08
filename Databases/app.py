@@ -127,22 +127,18 @@ def ensure_student_with_pass(cur, student_id, student_name, student_pass):
 # ------------------------------------------------------------
 
 def insert_record_for_item(cur, student_id, student_name, category_key, resource_id):
-    """Insert one checked-out item into the appropriate *Record table."""
+    """Insert one checked-out item into the appropriate *Record table.
+
+    After slimming the Record tables, we only store:
+      - studentID
+      - studentName
+      - the resource's primary key
+    """
     if category_key == "supplies":
         cur.execute(
             """
-            INSERT INTO StudentSuppliesRecord (
-                studentID, studentName, supply_id,
-                resource_type, item, department,
-                building, location, weekday,
-                start_time, end_time
-            )
-            SELECT ?, ?, supply_id,
-                   resource_type, item, department,
-                   building, location, weekday,
-                   start_time, end_time
-            FROM student_supplies
-            WHERE supply_id = ?
+            INSERT INTO StudentSuppliesRecord (studentID, studentName, supply_id)
+            VALUES (?, ?, ?)
             """,
             (student_id, student_name, resource_id),
         )
@@ -150,18 +146,8 @@ def insert_record_for_item(cur, student_id, student_name, category_key, resource
     elif category_key == "tutoring":
         cur.execute(
             """
-            INSERT INTO TutoringRecord (
-                studentID, studentName, tutoring_id,
-                resource_type, subject, department,
-                building, location, weekday,
-                start_time, end_time
-            )
-            SELECT ?, ?, tutoring_id,
-                   resource_type, subject, department,
-                   building, location, weekday,
-                   start_time, end_time
-            FROM tutoring
-            WHERE tutoring_id = ?
+            INSERT INTO TutoringRecord (studentID, studentName, tutoring_id)
+            VALUES (?, ?, ?)
             """,
             (student_id, student_name, resource_id),
         )
@@ -169,16 +155,8 @@ def insert_record_for_item(cur, student_id, student_name, category_key, resource
     elif category_key == "health":
         cur.execute(
             """
-            INSERT INTO HealthRecord (
-                studentID, studentName, health_id,
-                health_category, service, location,
-                weekday, start_time, end_time, link
-            )
-            SELECT ?, ?, health_id,
-                   health_category, service, location,
-                   weekday, start_time, end_time, link
-            FROM health_services
-            WHERE health_id = ?
+            INSERT INTO HealthRecord (studentID, studentName, health_id)
+            VALUES (?, ?, ?)
             """,
             (student_id, student_name, resource_id),
         )
@@ -186,18 +164,8 @@ def insert_record_for_item(cur, student_id, student_name, category_key, resource
     elif category_key == "funding":
         cur.execute(
             """
-            INSERT INTO FundingRecord (
-                studentID, studentName, funding_id,
-                funding_type, funding_name, department,
-                building, location, weekday,
-                start_time, end_time, link
-            )
-            SELECT ?, ?, funding_id,
-                   funding_type, funding_name, department,
-                   building, location, weekday,
-                   start_time, end_time, link
-            FROM funding
-            WHERE funding_id = ?
+            INSERT INTO FundingRecord (studentID, studentName, funding_id)
+            VALUES (?, ?, ?)
             """,
             (student_id, student_name, resource_id),
         )
@@ -205,18 +173,8 @@ def insert_record_for_item(cur, student_id, student_name, category_key, resource
     elif category_key == "academic_support":
         cur.execute(
             """
-            INSERT INTO AcademicSupportRecord (
-                studentID, studentName, support_id,
-                aca_supp_service, service_name, department,
-                building, location, weekday,
-                start_time, end_time, link
-            )
-            SELECT ?, ?, support_id,
-                   aca_supp_service, service_name, department,
-                   building, location, weekday,
-                   start_time, end_time, link
-            FROM academic_support
-            WHERE support_id = ?
+            INSERT INTO AcademicSupportRecord (studentID, studentName, support_id)
+            VALUES (?, ?, ?)
             """,
             (student_id, student_name, resource_id),
         )
@@ -224,22 +182,15 @@ def insert_record_for_item(cur, student_id, student_name, category_key, resource
     elif category_key == "advisor":
         cur.execute(
             """
-            INSERT INTO AdvisorRecord (
-                studentID, studentName, advisor_id,
-                name, affiliation, role,
-                building, location, link
-            )
-            SELECT ?, ?, advisor_id,
-                   name, affiliation, role,
-                   building, location, link
-            FROM academic_advising
-            WHERE advisor_id = ?
+            INSERT INTO AdvisorRecord (studentID, studentName, advisor_id)
+            VALUES (?, ?, ?)
             """,
             (student_id, student_name, resource_id),
         )
 
     else:
         raise ValueError(f"Unknown category_key: {category_key}")
+
 
 
 # ------------------------------------------------------------
@@ -335,27 +286,22 @@ def resources_history():
 def delete_history_entry():
     data = request.get_json(silent=True) or {}
     student_id = (data.get("studentID") or "").strip()
-    password = (data.get("password") or "").strip()
-    entry = data.get("entry") or {}
+    password   = (data.get("password") or "").strip()
+    entry      = data.get("entry") or {}
 
     if not student_id or not password:
         return jsonify({"success": False, "error": "studentID and password are required."}), 400
 
-    category = (entry.get("category") or "").strip()
-    name = (entry.get("name") or "").strip()
-    department = (entry.get("department") or "").strip()
-    building = (entry.get("building") or "").strip()
-    location = (entry.get("location") or "").strip()
-    weekday = (entry.get("weekday") or "").strip()
-    start_time = (entry.get("start_time") or "").strip()
-    end_time = (entry.get("end_time") or "").strip()
+    # NOTE: front-end now sends category_key + resource_id, not a bunch of fields
+    category_key = (entry.get("category_key") or "").strip()
+    resource_id  = entry.get("resource_id")
 
-    if not category or not name:
-        return jsonify({"success": False, "error": "category and name are required in entry."}), 400
+    if not category_key or resource_id is None:
+        return jsonify({"success": False, "error": "category_key and resource_id are required in entry."}), 400
 
     cur = conn.cursor()
 
-    # validate password
+    # validate password (same logic as the history GET)
     try:
         cur.execute("SELECT studentPass FROM Student WHERE studentID = ?", (student_id,))
         row = cur.fetchone()
@@ -365,6 +311,7 @@ def delete_history_entry():
 
         existing_pass = row[0]
         if existing_pass is None:
+            # first-time password set
             cur.execute(
                 "UPDATE Student SET studentPass = ? WHERE studentID = ?",
                 (password, student_id),
@@ -379,68 +326,40 @@ def delete_history_entry():
         conn.rollback()
         return jsonify({"success": False, "error": str(e)}), 500
 
-    # map category name to table + column
-    if category == "Tutoring":
+    # Map category_key -> record table + id column
+    if category_key == "tutoring":
         table = "TutoringRecord"
-        name_col = "subject"
-        extra_cols = ["department", "building", "location", "weekday", "start_time", "end_time"]
-    elif category == "Supplies" or category == "Student Supplies":
+        id_col = "tutoring_id"
+    elif category_key == "supplies":
         table = "StudentSuppliesRecord"
-        name_col = "item"
-        extra_cols = ["department", "building", "location", "weekday", "start_time", "end_time"]
-    elif category == "Health Service" or category == "Health Services":
+        id_col = "supply_id"
+    elif category_key == "health":
         table = "HealthRecord"
-        name_col = "service"
-        extra_cols = ["location", "weekday", "start_time", "end_time"]
-    elif category == "Academic Support":
+        id_col = "health_id"
+    elif category_key == "academic_support":
         table = "AcademicSupportRecord"
-        name_col = "aca_supp_service"
-        extra_cols = ["department", "building", "location", "weekday", "start_time", "end_time"]
-    elif category == "Advisor":
+        id_col = "support_id"
+    elif category_key == "advisor":
         table = "AdvisorRecord"
-        name_col = "name"
-        extra_cols = ["building", "location"]
-    elif category == "Funding":
+        id_col = "advisor_id"
+    elif category_key == "funding":
         table = "FundingRecord"
-        name_col = "funding_name"
-        extra_cols = ["department", "building", "location", "weekday", "start_time", "end_time"]
+        id_col = "funding_id"
     else:
-        return jsonify({"success": False, "error": f"Unknown category: {category}"}), 400
+        return jsonify({"success": False, "error": f"Unknown category_key: {category_key}"}), 400
 
-    where_clauses = ["studentID = ?", f"{name_col} = ?"]
-    params = [student_id, name]
-
-    def add_if(col_name, value):
-        if value:
-            where_clauses.append(f"{col_name} = ?")
-            params.append(value)
-
-    for col in extra_cols:
-        if col == "department":
-            add_if("department", department)
-        elif col == "building":
-            add_if("building", building)
-        elif col == "location":
-            add_if("location", location)
-        elif col == "weekday":
-            add_if("weekday", weekday)
-        elif col == "start_time":
-            add_if("start_time", start_time)
-        elif col == "end_time":
-            add_if("end_time", end_time)
-
-    where_sql = " AND ".join(where_clauses)
+    # Delete a single matching row for this student + resource id
     sql = f"""
         DELETE FROM {table}
         WHERE rowid IN (
             SELECT rowid FROM {table}
-            WHERE {where_sql}
+            WHERE studentID = ? AND {id_col} = ?
             LIMIT 1
         )
     """
 
     try:
-        cur.execute(sql, params)
+        cur.execute(sql, (student_id, resource_id))
         deleted = cur.rowcount
         conn.commit()
     except Exception as e:
@@ -451,6 +370,7 @@ def delete_history_entry():
         return jsonify({"success": False, "error": "No matching entry found to delete."}), 404
 
     return jsonify({"success": True, "deleted": int(deleted)})
+
 
 
 # ------------------------------------------------------------

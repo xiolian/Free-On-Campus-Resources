@@ -235,18 +235,19 @@ class adminFuncs:
     def viewAllStudents(_conn):
         """
         Return aggregate resource counts per student as a list of dicts.
+        Shows all students, with 0 counts when they have no records in a category.
         """
         try:
             sql = """
             SELECT
                 s.studentID,
                 s.studentName,
-                COUNT(DISTINCT a.advisor_id) AS advisor_count,
-                COUNT(DISTINCT t.tutoring_id) AS tutoring_count,
-                COUNT(DISTINCT sup.supply_id) AS supplies_count,
-                COUNT(DISTINCT h.health_id) AS health_count,
-                COUNT(DISTINCT asupp.support_id) AS academic_support_count,
-                COUNT(DISTINCT f.funding_id) AS funding_count,
+                COUNT(DISTINCT a.advisor_id)        AS advisor_count,
+                COUNT(DISTINCT t.tutoring_id)       AS tutoring_count,
+                COUNT(DISTINCT sup.supply_id)       AS supplies_count,
+                COUNT(DISTINCT h.health_id)         AS health_count,
+                COUNT(DISTINCT asupp.support_id)    AS academic_support_count,
+                COUNT(DISTINCT f.funding_id)        AS funding_count,
                 (
                     COUNT(DISTINCT a.advisor_id) +
                     COUNT(DISTINCT t.tutoring_id) +
@@ -255,16 +256,15 @@ class adminFuncs:
                     COUNT(DISTINCT asupp.support_id) +
                     COUNT(DISTINCT f.funding_id)
                 ) AS total_resource_count
-            FROM Student AS s, AdvisorRecord AS a, TutoringRecord AS t,
-                 StudentSuppliesRecord AS sup, HealthRecord AS h,
-                 FundingRecord AS f, AcademicSupportRecord AS asupp
-            WHERE a.studentID   = s.studentID
-              AND t.studentID   = s.studentID
-              AND sup.studentID = s.studentID
-              AND h.studentID   = s.studentID
-              AND asupp.studentID = s.studentID
-              AND f.studentID   = s.studentID
-            GROUP BY s.studentID, s.studentName;
+            FROM Student AS s
+            LEFT JOIN AdvisorRecord        AS a     ON a.studentID     = s.studentID
+            LEFT JOIN TutoringRecord       AS t     ON t.studentID     = s.studentID
+            LEFT JOIN StudentSuppliesRecord AS sup  ON sup.studentID   = s.studentID
+            LEFT JOIN HealthRecord         AS h     ON h.studentID     = s.studentID
+            LEFT JOIN FundingRecord        AS f     ON f.studentID     = s.studentID
+            LEFT JOIN AcademicSupportRecord AS asupp ON asupp.studentID = s.studentID
+            GROUP BY s.studentID, s.studentName
+            ORDER BY s.studentName;
             """
             cur = _conn.cursor()
             cur.execute(sql)
@@ -273,20 +273,21 @@ class adminFuncs:
             results = []
             for row in rows:
                 results.append({
-                    "studentID": row[0],
-                    "studentName": row[1],
-                    "advisor_count": row[2],
-                    "tutoring_count": row[3],
-                    "supplies_count": row[4],
-                    "health_count": row[5],
-                    "academic_support_count": row[6],
-                    "funding_count": row[7],
-                    "total_resource_count": row[8],
+                    "StudentID":          row[0],
+                    "Student Name":       row[1],
+                    "Advisor":            row[2],
+                    "Tutoring":           row[3],
+                    "Supplies":           row[4],
+                    "Health":             row[5],
+                    "Academic Support":   row[6],
+                    "Funding":            row[7],
+                    "Total":              row[8],
                 })
             return results
         except Error as e:
             print(e)
             return []
+
 
 
 class studentFuncs:
@@ -309,110 +310,143 @@ class studentFuncs:
         """
         Returns all resources a student has obtained, unified across all *Record tables,
         as a JSON-serializable list of dictionaries.
+
+        After slimming Record tables, descriptive columns (name, department, etc.)
+        are pulled from the master resource tables via JOIN.
         """
         try:
             cursor = _conn.cursor()
 
             sql = """
                 -- Tutoring
-                SELECT studentID,
-                       studentName,
-                       'Tutoring' AS category,
-                       subject     AS name,
-                       department,
-                       building,
-                       location,
-                       weekday,
-                       start_time,
-                       end_time,
-                       NULL AS link
-                FROM TutoringRecord
-                WHERE studentID = ?
+                SELECT
+                    'tutoring'              AS category_key,
+                    t.tutoring_id           AS resource_id,
+                    tr.studentID,
+                    tr.studentName,
+                    'Tutoring'              AS category,
+                    t.subject               AS name,
+                    t.department,
+                    t.building,
+                    t.location,
+                    t.weekday,
+                    t.start_time,
+                    t.end_time,
+                    NULL                    AS link
+                FROM TutoringRecord tr
+                JOIN tutoring t
+                  ON t.tutoring_id = tr.tutoring_id
+                WHERE tr.studentID = ?
 
                 UNION ALL
 
                 -- Student Supplies
-                SELECT studentID,
-                       studentName,
-                       'Supplies'  AS category,
-                       item        AS name,
-                       department,
-                       building,
-                       location,
-                       weekday,
-                       start_time,
-                       end_time,
-                       NULL AS link
-                FROM StudentSuppliesRecord
-                WHERE studentID = ?
+                SELECT
+                    'supplies'              AS category_key,
+                    ss.supply_id            AS resource_id,
+                    ssr.studentID,
+                    ssr.studentName,
+                    'Supplies'              AS category,
+                    ss.item                 AS name,
+                    ss.department,
+                    ss.building,
+                    ss.location,
+                    ss.weekday,
+                    ss.start_time,
+                    ss.end_time,
+                    NULL                    AS link
+                FROM StudentSuppliesRecord ssr
+                JOIN student_supplies ss
+                  ON ss.supply_id = ssr.supply_id
+                WHERE ssr.studentID = ?
 
                 UNION ALL
 
                 -- Health Services
-                SELECT studentID,
-                       studentName,
-                       'Health Service' AS category,
-                       service          AS name,
-                       NULL AS department,
-                       NULL AS building,
-                       location,
-                       weekday,
-                       start_time,
-                       end_time,
-                       link
-                FROM HealthRecord
-                WHERE studentID = ?
+                SELECT
+                    'health'                AS category_key,
+                    h.health_id             AS resource_id,
+                    hr.studentID,
+                    hr.studentName,
+                    'Health Service'        AS category,
+                    h.service               AS name,
+                    NULL                    AS department,
+                    NULL                    AS building,
+                    h.location,
+                    h.weekday,
+                    h.start_time,
+                    h.end_time,
+                    h.link                  AS link
+                FROM HealthRecord hr
+                JOIN health_services h
+                  ON h.health_id = hr.health_id
+                WHERE hr.studentID = ?
 
                 UNION ALL
 
                 -- Academic Support
-                SELECT studentID,
-                       studentName,
-                       'Academic Support' AS category,
-                       aca_supp_service   AS name,
-                       department,
-                       building,
-                       location,
-                       weekday,
-                       start_time,
-                       end_time,
-                       link
-                FROM AcademicSupportRecord
-                WHERE studentID = ?
+                SELECT
+                    'academic_support'      AS category_key,
+                    asupp.support_id        AS resource_id,
+                    asr.studentID,
+                    asr.studentName,
+                    'Academic Support'      AS category,
+                    asupp.aca_supp_service  AS name,
+                    asupp.department,
+                    asupp.building,
+                    asupp.location,
+                    asupp.weekday,
+                    asupp.start_time,
+                    asupp.end_time,
+                    asupp.link              AS link
+                FROM AcademicSupportRecord asr
+                JOIN academic_support asupp
+                  ON asupp.support_id = asr.support_id
+                WHERE asr.studentID = ?
 
                 UNION ALL
 
                 -- Advisor assignments
-                SELECT studentID,
-                       studentName,
-                       'Advisor' AS category,
-                       name      AS name,
-                       NULL AS department,
-                       building,
-                       location,
-                       NULL AS weekday,
-                       NULL AS start_time,
-                       NULL AS end_time,
-                       link
-                FROM AdvisorRecord
-                WHERE studentID = ?
+                SELECT
+                    'advisor'               AS category_key,
+                    adv.advisor_id          AS resource_id,
+                    avr.studentID,
+                    avr.studentName,
+                    'Advisor'               AS category,
+                    adv.name                AS name,
+                    adv.affiliation         AS department,
+                    adv.building,
+                    adv.location,
+                    NULL                    AS weekday,
+                    NULL                    AS start_time,
+                    NULL                    AS end_time,
+                    adv.link                AS link
+                FROM AdvisorRecord avr
+                JOIN academic_advising adv
+                  ON adv.advisor_id = avr.advisor_id
+                WHERE avr.studentID = ?
 
                 UNION ALL
 
                 -- Funding
-                SELECT studentID,
-                       studentName,
-                       'Funding' AS category,
-                       funding_name AS name,
-                       department,
-                       building,
-                       location,
-                       weekday,
-                       start_time,
-                       end_time,
-                       link
-                FROM FundingRecord
-                WHERE studentID = ?
+                SELECT
+                    'funding'               AS category_key,
+                    f.funding_id            AS resource_id,
+                    fr.studentID,
+                    fr.studentName,
+                    'Funding'               AS category,
+                    f.funding_name          AS name,
+                    f.department,
+                    f.building,
+                    f.location,
+                    f.weekday,
+                    f.start_time,
+                    f.end_time,
+                    f.link                  AS link
+                FROM FundingRecord fr
+                JOIN funding f
+                  ON f.funding_id = fr.funding_id
+                WHERE fr.studentID = ?
 
                 ORDER BY category, name;
             """
@@ -422,17 +456,19 @@ class studentFuncs:
             resources = []
             for r in rows:
                 resources.append({
-                    "studentID": r[0],
-                    "studentName": r[1],
-                    "category": r[2],
-                    "name": r[3],
-                    "department": r[4],
-                    "building": r[5],
-                    "location": r[6],
-                    "weekday": r[7],
-                    "start_time": r[8],
-                    "end_time": r[9],
-                    "link": r[10],
+                    "category_key": r[0],
+                    "resource_id":  r[1],
+                    "studentID":    r[2],
+                    "studentName":  r[3],
+                    "category":     r[4],
+                    "name":         r[5],
+                    "department":   r[6],
+                    "building":     r[7],
+                    "location":     r[8],
+                    "weekday":      r[9],
+                    "start_time":   r[10],
+                    "end_time":     r[11],
+                    "link":         r[12],
                 })
             return resources
         except Error as e:
