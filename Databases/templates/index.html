@@ -506,27 +506,37 @@
           renderResourceTable(filtered);
         }
 
-        // Load resources once, then filter on the client
+        // Load resources from server using current filters
         async function loadResources() {
+          const cat  = filterCategory.value;
+          const term = filterSearch.value.trim();
+
+          const params = new URLSearchParams();
+          if (cat)  params.set("category", cat);
+          if (term) params.set("search", term);
+
           resourceWrapper.innerHTML = "<p>Loading resources...</p>";
+
           try {
-            const res = await fetch("/api/resources");
+            const res = await fetch("/api/resources?" + params.toString());
             if (!res.ok) {
               resourceWrapper.innerHTML = "<p>Error loading resources.</p>";
               return;
             }
             const data = await res.json();
-            allResources = Array.isArray(data) ? data : [];
-            applyResourceFilters();
+            renderResourceTable(data);   // same function you already have
           } catch (err) {
             console.error(err);
             resourceWrapper.innerHTML = "<p>Network error loading resources.</p>";
           }
         }
 
-        // Re-apply filters whenever category or search text changes
-        filterCategory.addEventListener("change", applyResourceFilters);
-        filterSearch.addEventListener("input", applyResourceFilters);
+        // On page load
+        loadResources();
+
+        // Whenever filters change, re-query the backend
+        filterCategory.addEventListener("change", loadResources);
+        filterSearch.addEventListener("input", loadResources);
 
         // ------------------------
         // Checkout handler

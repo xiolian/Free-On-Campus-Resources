@@ -20,6 +20,7 @@ pip install werkzeug
 ```
 
 4. Run Application
+
 Go into /Databases/ directory and enter:
 ```
 python3 app.py

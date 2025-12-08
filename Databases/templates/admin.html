@@ -105,6 +105,29 @@
 
           <hr />
 
+                    <!-- All Students & Resource Usage (collapsible) -->
+          <section id="admin-students">
+            <h2>
+              <button type="button"
+                      id="toggle-students-usage"
+                      class="button small">
+                Show All Students &amp; Resource Usage
+              </button>
+            </h2>
+            <p>
+              Aggregated counts of how many times each student has used each
+              resource category (tutoring, supplies, health, funding, etc.).
+            </p>
+
+            <!-- Hidden by default; populated via /api/admin/students -->
+            <div id="admin-students-table-wrapper" style="display:none;">
+              <!-- Table will be injected here -->
+            </div>
+          </section>
+
+          <hr />
+
+
           <!-- Manage RECORD tables (per-student histories) -->
           <section id="admin-records">
             <h2>Manage Record Tables (per-student history)</h2>
@@ -203,6 +226,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const studentsWrapper       = document.getElementById("admin-students-table-wrapper");
+        const toggleStudentsBtn     = document.getElementById("toggle-students-usage");
         const manageStudentsWrapper = document.getElementById("manage-students-table-wrapper");
 
         const recordsCategory   = document.getElementById("manage-records-category");
@@ -229,7 +253,7 @@
             supplies:         "supply_id",
             tutoring:         "tutoring_id"
           },
-          // NEW: student accounts group
+          // student accounts group
           students: {
             students:         "studentID"
           }
@@ -276,6 +300,7 @@
         }
 
         async function loadStudents() {
+          if (!studentsWrapper) return;
           studentsWrapper.innerHTML = "<p>Loading students...</p>";
           try {
             const res = await fetch("/api/admin/students");
@@ -285,6 +310,7 @@
             }
             const data = await res.json();
 
+            // columns for aggregate counts from /api/admin/students
             const studentColumns = [
               "studentID",
               "studentName",
@@ -605,15 +631,31 @@
           loadManage("resources", resourcesCategory.value, resourcesWrapper);
         });
 
-        // Initial load
-        loadStudents();
+        // Collapsible toggle for "All Students & Resource Usage"
+        if (toggleStudentsBtn && studentsWrapper) {
+          let isShown = false;
+          toggleStudentsBtn.addEventListener("click", function () {
+            isShown = !isShown;
+            studentsWrapper.style.display = isShown ? "block" : "none";
+            toggleStudentsBtn.textContent = isShown
+              ? "Hide All Students & Resource Usage"
+              : "Show All Students & Resource Usage";
 
-        // Load student-accounts table if wrapper exists
+            // Lazy-load data on first open
+            if (isShown && !studentsWrapper._loaded) {
+              loadStudents();
+              studentsWrapper._loaded = true;
+            }
+          });
+        }
+
+        // Initial load: student accounts table only
         if (manageStudentsWrapper) {
           loadManage("students", "students", manageStudentsWrapper);
         }
       });
     </script>
+
 
   </body>
 </html>

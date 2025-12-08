@@ -31,9 +31,12 @@ class databaseConn:
             print(e)
 
         print("++++++++++++++++++++++++++++++++++")
+    
+
 
 
 class adminFuncs:
+
     def viewAcaSuppRecord(_conn):
         """
         Return all rows from AcademicSupportRecord as a list of dicts.
@@ -623,3 +626,155 @@ class studentFuncs:
         except Error as e:
             print(e)
             return []
+
+    def searchResources(_conn, category_key=None, term=None):
+        """
+        Return a unified list of resources, optionally filtered by:
+          - category_key (e.g. 'tutoring', 'supplies', etc.)
+          - term (text search across name/department/building/location/notes)
+        """
+        term = (term or "").strip().lower()
+        category_key = (category_key or "").strip()
+
+        cur = _conn.cursor()
+
+        base_sql = """
+        SELECT *
+        FROM (
+            SELECT
+                'supplies'          AS category_key,
+                supply_id           AS resource_id,
+                'Student Supplies'  AS category,
+                item                AS name,
+                department,
+                building,
+                location,
+                weekday,
+                start_time,
+                end_time,
+                notes,
+                NULL                AS link
+            FROM student_supplies
+
+            UNION ALL
+
+            SELECT
+                'tutoring'          AS category_key,
+                tutoring_id         AS resource_id,
+                'Tutoring'          AS category,
+                subject             AS name,
+                department,
+                building,
+                location,
+                weekday,
+                start_time,
+                end_time,
+                notes,
+                NULL                AS link
+            FROM tutoring
+
+            UNION ALL
+
+            SELECT
+                'health'            AS category_key,
+                health_id           AS resource_id,
+                'Health Services'   AS category,
+                service             AS name,
+                NULL                AS department,
+                NULL                AS building,
+                location,
+                weekday,
+                start_time,
+                end_time,
+                NULL                AS notes,
+                link
+            FROM health_services
+
+            UNION ALL
+
+            SELECT
+                'funding'           AS category_key,
+                funding_id          AS resource_id,
+                'Funding'           AS category,
+                funding_name        AS name,
+                department,
+                building,
+                location,
+                weekday,
+                start_time,
+                end_time,
+                NULL                AS notes,
+                link
+            FROM funding
+
+            UNION ALL
+
+            SELECT
+                'academic_support'  AS category_key,
+                support_id          AS resource_id,
+                'Academic Support'  AS category,
+                service_name        AS name,
+                department,
+                building,
+                location,
+                weekday,
+                start_time,
+                end_time,
+                NULL                AS notes,
+                link
+            FROM academic_support
+
+            UNION ALL
+
+            SELECT
+                'advisor'           AS category_key,
+                advisor_id          AS resource_id,
+                'Advisor'           AS category,
+                name                AS name,
+                affiliation         AS department,
+                building,
+                location,
+                NULL                AS weekday,
+                NULL                AS start_time,
+                NULL                AS end_time,
+                NULL                AS notes,
+                link
+            FROM academic_advising
+        ) AS all_resources
+        """
+
+        where_clauses = []
+        params = []
+
+        if category_key:
+            where_clauses.append("category_key = ?")
+            params.append(category_key)
+
+        if term:
+            like = f"%{term}%"
+            where_clauses.append("""
+                (
+                    LOWER(name)        LIKE ?
+                    OR LOWER(COALESCE(department,'')) LIKE ?
+                    OR LOWER(COALESCE(building,''))   LIKE ?
+                    OR LOWER(COALESCE(location,''))   LIKE ?
+                    OR LOWER(COALESCE(notes,''))      LIKE ?
+                )
+            """)
+            params.extend([like, like, like, like, like])
+
+        if where_clauses:
+            base_sql += " WHERE " + " AND ".join(where_clauses)
+
+        cur.execute(base_sql, params)
+        rows = cur.fetchall()
+
+        cols = [
+            "category_key", "resource_id", "category", "name",
+            "department", "building", "location",
+            "weekday", "start_time", "end_time",
+            "notes", "link",
+        ]
+        return [dict(zip(cols, r)) for r in rows]
+
+

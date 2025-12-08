@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify, render_template
 from databaseFuncs import databaseConn as dbc
 from databaseFuncs import studentFuncs as sf
+from databaseFuncs import adminFuncs as af
 
 app = Flask(
     __name__,
@@ -67,129 +68,12 @@ def admin_dashboard():
 
 @app.route("/api/resources", methods=["GET"])
 def list_resources():
-    """
-    Unified list of all resources from the master tables.
-    Optional query param: ?category=...
-    """
-    category_filter = request.args.get("category")
+    category = request.args.get("category")   # e.g. 'tutoring', 'supplies'
+    search   = request.args.get("search")     # the typed text
 
-    sql = """
-        SELECT
-            'supplies'          AS category_key,
-            supply_id           AS resource_id,
-            'Student Supplies'  AS category,
-            item                AS name,
-            department,
-            building,
-            location,
-            weekday,
-            start_time,
-            end_time,
-            notes,
-            NULL                AS link
-        FROM student_supplies
+    data = sf.searchResources(conn, category_key=category, term=search)
+    return jsonify(data)
 
-        UNION ALL
-
-        SELECT
-            'tutoring'          AS category_key,
-            tutoring_id         AS resource_id,
-            'Tutoring'          AS category,
-            subject             AS name,
-            department,
-            building,
-            location,
-            weekday,
-            start_time,
-            end_time,
-            notes,
-            NULL                AS link
-        FROM tutoring
-
-        UNION ALL
-
-        SELECT
-            'health'            AS category_key,
-            health_id           AS resource_id,
-            'Health Services'   AS category,
-            service             AS name,
-            NULL                AS department,
-            NULL                AS building,
-            location,
-            weekday,
-            start_time,
-            end_time,
-            NULL                AS notes,
-            link
-        FROM health_services
-
-        UNION ALL
-
-        SELECT
-            'funding'           AS category_key,
-            funding_id          AS resource_id,
-            'Funding'           AS category,
-            funding_name        AS name,
-            department,
-            building,
-            location,
-            weekday,
-            start_time,
-            end_time,
-            NULL                AS notes,
-            link
-        FROM funding
-
-        UNION ALL
-
-        SELECT
-            'academic_support'  AS category_key,
-            support_id          AS resource_id,
-            'Academic Support'  AS category,
-            service_name        AS name,
-            department,
-            building,
-            location,
-            weekday,
-            start_time,
-            end_time,
-            NULL                AS notes,
-            link
-        FROM academic_support
-
-        UNION ALL
-
-        SELECT
-            'advisor'           AS category_key,
-            advisor_id          AS resource_id,
-            'Advisor'           AS category,
-            name                AS name,
-            affiliation         AS department,
-            building,
-            location,
-            NULL                AS weekday,
-            NULL                AS start_time,
-            NULL                AS end_time,
-            NULL                AS notes,
-            link
-        FROM academic_advising;
-    """
-
-    cur = conn.cursor()
-    cur.execute(sql)
-    rows = cur.fetchall()
-    cols = [
-        "category_key", "resource_id", "category", "name",
-        "department", "building", "location",
-        "weekday", "start_time", "end_time",
-        "notes", "link",
-    ]
-    result = [dict(zip(cols, r)) for r in rows]
-
-    if category_filter:
-        result = [r for r in result if r["category_key"] == category_filter]
-
-    return jsonify(result)
 
 
 # ------------------------------------------------------------
@@ -740,26 +624,8 @@ def popular_resources():
 
 @app.route("/api/admin/students", methods=["GET"])
 def admin_students():
-    cur = conn.cursor()
-    cur.execute(
-        """
-        SELECT 
-            s.studentID,
-            s.studentName,
-            (SELECT COUNT(*) FROM AcademicSupportRecord WHERE studentID = s.studentID) AS academic_support,
-            (SELECT COUNT(*) FROM AdvisorRecord          WHERE studentID = s.studentID) AS advisor,
-            (SELECT COUNT(*) FROM FundingRecord          WHERE studentID = s.studentID) AS funding,
-            (SELECT COUNT(*) FROM HealthRecord           WHERE studentID = s.studentID) AS health,
-            (SELECT COUNT(*) FROM StudentSuppliesRecord  WHERE studentID = s.studentID) AS supplies,
-            (SELECT COUNT(*) FROM TutoringRecord         WHERE studentID = s.studentID) AS tutoring
-        FROM Student s
-        ORDER BY s.studentID, s.studentName;
-        """
-    )
-    rows = cur.fetchall()
-    cols = [d[0] for d in cur.description]
-    result = [dict(zip(cols, r)) for r in rows]
-    return jsonify(result)
+    data = af.viewAllStudents(conn)
+    return jsonify(data)
 
 
 # ------------------------------------------------------------
