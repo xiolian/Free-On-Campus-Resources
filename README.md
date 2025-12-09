@@ -2,7 +2,7 @@
 
 1. Clone Repo/Project
 ```
-git clone <repo-url>
+git clone <https://github.com/xiolian/Free-On-Campus-Resources.git>
 cd Free-On-Campus-Resources
 ```
 
